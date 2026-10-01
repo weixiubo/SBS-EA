@@ -1,0 +1,63 @@
+{
+  "protocol_version": "sole_prior_semantic_prior_v1",
+  "domain": "pfsp",
+  "source": "llm_prior",
+  "features": [
+    "total_work",
+    "head_tail_balance",
+    "mean_processing_time",
+    "early_work",
+    "late_work",
+    "completion_if_next",
+    "completion_increase",
+    "first_machine_time"
+  ],
+  "interactions": [
+    [
+      "early_work",
+      "late_work"
+    ],
+    [
+      "total_work",
+      "mean_processing_time"
+    ]
+  ],
+  "templates": [
+    "ratio",
+    "difference"
+  ],
+  "feature_priorities": {
+    "total_work": 5,
+    "head_tail_balance": 5,
+    "mean_processing_time": 4,
+    "early_work": 4,
+    "late_work": 4,
+    "completion_if_next": 4,
+    "completion_increase": 4,
+    "first_machine_time": 3
+  },
+  "interaction_priorities": {
+    "early_work|late_work": 5,
+    "mean_processing_time|total_work": 1
+  },
+  "template_priorities": {
+    "ratio": 5,
+    "difference": 4
+  },
+  "macro_expressions": [
+    "early_work - late_work"
+  ],
+  "macro_priorities": {
+    "early_work - late_work": 5
+  },
+  "llm_call_count": 1,
+  "metadata": {
+    "parser": "json_or_literal",
+    "raw_feature_count": 20,
+    "raw_macro_count": 6,
+    "normalization": "priority_ordered_budget_cap_v1",
+    "raw_interaction_count": 10,
+    "feature_budget": 8,
+    "interaction_budget": 12
+  }
+}

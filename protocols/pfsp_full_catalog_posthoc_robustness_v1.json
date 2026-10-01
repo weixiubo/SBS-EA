@@ -1,0 +1,72 @@
+{
+  "protocol_version": "pfsp_full_catalog_posthoc_robustness_v1",
+  "status": "frozen_before_full_catalog_selection_or_VFR220_evaluation",
+  "frozen_at_beijing": "2026-07-20T21:24:38+08:00",
+  "freeze_parent_commit": "2516a233de7a1531d266188adf72bd79442825e4",
+  "scientific_role": "reviewer_motivated_post_hoc_robustness_not_part_of_the_frozen_primary_gate",
+  "motivation": "test_the_final_LLM_sources_against_a_zero_call_source_exposing_the_complete_feature_catalog_under_the_same_full_downstream_search_budget",
+  "control": {
+    "source": "all_feature_prior",
+    "seed": 11001,
+    "model_calls": 0,
+    "feature_count": 21,
+    "feature_budget_cli": 8,
+    "feature_budget_note": "all_feature_prior_ignores_the_subset_cap_and_exposes_all_21_catalog_features_by_definition",
+    "interaction_count": 12,
+    "template_count": 6,
+    "macro_count": 0,
+    "deterministic_fixed_source": true
+  },
+  "selection": {
+    "development_dataset": "taillard_mixed96",
+    "top_atomic_pool": 36,
+    "expected_admitted_atomics": 36,
+    "max_layers": 2,
+    "beam_width": 8,
+    "composition_prescreen_per_split": 2,
+    "search_mode": "lexicographic_additive",
+    "prior_weighting": true,
+    "behavioral_deduplication": true,
+    "derived_features": true,
+    "expected_genome_evaluations": 2908
+  },
+  "comparison": {
+    "llm_condition": "the_127_original_parser_valid_InternVL_sources_from_the_final_confirmation",
+    "control_condition": "one_fixed_deterministic_full_catalog_policy_compared_with_every_LLM_source",
+    "parent_analysis_sha256": "e614d91a3415b298641933ff1259168e007d420658e6e1ffb3c0808334dc0c2a",
+    "parent_policy_evaluations_sha256": "3f437c0b534478936e3afc449ecf26b645de5c178ce2266058d1ac66bfe12270",
+    "final_panel": "the_same_fully_unused_VFR220_panel",
+    "direction": "full_catalog_gap_minus_llm_gap_positive_favors_SBS_EA"
+  },
+  "inference": {
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260722,
+    "crossed_interval": "independently_resample_127_LLM_sources_and_220_physical_instances",
+    "source_interval": "two_sided_95_percent_t_interval_over_127_source_mean_differences",
+    "source_win_interval": "two_sided_95_percent_Wilson_interval",
+    "family_robustness": "independently_resample_127_sources_and_22_family_blocks_retaining_all_10_instances_per_family",
+    "interpretation": "post_hoc_robustness_only_no_change_to_the_frozen_primary_or_secondary_gate"
+  },
+  "integrity": {
+    "selection_must_complete_once_without_retry": true,
+    "control_must_have_zero_model_calls": true,
+    "all_21_features_and_12_interactions_must_be_present": true,
+    "admitted_atomics_and_genome_evaluations_must_match_the_declared_full_budget": true,
+    "parent_hashes_and_VFR220_identity_must_match": true
+  },
+  "deadline_guard": {
+    "maximum_total_wall_clock_seconds": 10800,
+    "selection_task_timeout_seconds": 3600,
+    "retry_count": 0,
+    "if_timeout_or_integrity_failure": "abandon_this_post_hoc_control_and_finalize_the_already_complete_submission"
+  },
+  "reporting_rule": {
+    "report_the_result_regardless_of_direction": true,
+    "forbidden": [
+      "changing_the_control_after_VFR220_outcome_inspection",
+      "dropping_sources_families_or_instances",
+      "retrying_with_another_seed",
+      "calling_a_model"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+[project]
+name = "sbs-ea"
+version = "0.1.0"
+description = "One-call semantic guidance for evolutionary heuristic design."
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy==2.0.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==9.0.2",
+]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+markers = [
+    "repro_assets: requires private paper, benchmark, or frozen evidence assets",
+]

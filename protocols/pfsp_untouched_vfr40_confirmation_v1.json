@@ -1,0 +1,78 @@
+{
+  "protocol_version": "pfsp_untouched_vfr40_confirmation_v1",
+  "status": "frozen_before_any_policy_evaluation_on_the_selected_families",
+  "frozen_at_beijing": "2026-07-20T03:48:00+08:00",
+  "freeze_parent_commit": "2513df49c334952e5019af5380bdef5b75b70340",
+  "scientific_role": "independent_rule_instance_confirmation_of_already_frozen_sources_and_rules",
+  "development_disclosure": {
+    "selected_family_names_were_checked_for_availability_and_prior_use": true,
+    "processing_objectives_or_policy_outcomes_were_not_evaluated": true,
+    "family_choice_used_only_problem_dimensions_and_prior_use_status": true,
+    "previously_used_vfr_families": [
+      "100x20",
+      "100x40",
+      "100x60",
+      "200x20",
+      "200x40",
+      "200x60",
+      "300x20",
+      "300x40",
+      "300x60"
+    ]
+  },
+  "frozen_source_manifest": {
+    "sha256": "1ad2b674405809d90cf2755610b862888165af61620bd8134f619c9d52ed7ea6",
+    "description": "formal InternVL same-model run-02 selection manifest",
+    "allowed_seeds": [701, 702, 703, 704, 705, 706, 707, 708],
+    "allowed_sources": [
+      "llm_prior",
+      "same_catalog_symbolic_prior",
+      "all_feature_prior",
+      "model_free_beam_prior",
+      "large_budget_random_prior"
+    ],
+    "expected_source_rows": 40
+  },
+  "frozen_benchmark": {
+    "archive_sha256": "102b6120c765a48360185a1397aaab8ee0eff1176e655e6155081c1f3ecd7f83",
+    "families": ["20x10", "50x20", "400x40", "600x60"],
+    "instances_per_family": 10,
+    "expected_instance_count": 40,
+    "selection_rationale": "dimension-only diagonal panel spanning 20 to 600 jobs and 10 to 60 machines; every family is absent from all prior project VFR replay manifests"
+  },
+  "execution": {
+    "runner": "scripts/run_pfsp_vfr_transfer_audit.py",
+    "analysis": "scripts/analyze_pfsp_untouched_vfr_confirmation.py",
+    "no_model_calls": true,
+    "no_rule_reselection": true,
+    "no_parameter_tuning": true,
+    "all_40_frozen_source_rows_are_replayed": true,
+    "neh_reference_is_precomputed_once_per_instance": true
+  },
+  "estimands": {
+    "direction": "comparator_gap_minus_llm_gap; positive favors SBS-EA",
+    "primary": "two_way_hierarchical_bootstrap_resampling_eight_sources_and_forty_physical_instances",
+    "secondary": "physical_instance_bootstrap_after_averaging_the_eight_fixed_sources",
+    "source_diagnostic": "eight_source_mean_win_tie_loss",
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 27072027
+  },
+  "go_rule": {
+    "integrity": "all hashes, 40 source rows, 40 instances per row, and exact IDs pass",
+    "same_catalog": "hierarchical_95ci_low_gt_0_and_at_least_6_of_8_source_wins",
+    "all_feature": "hierarchical_95ci_low_gt_0_and_at_least_6_of_8_source_wins",
+    "model_free": "hierarchical_95ci_low_gt_0_and_at_least_5_of_8_source_wins",
+    "large_random": "always reported; not a veto because it receives twice the source budget",
+    "overall": "integrity_and_same_catalog_and_all_feature_and_model_free"
+  },
+  "reporting_rule": {
+    "if_go": "report as untouched VFR40 confirmation and retain all prespecified controls",
+    "if_no_go": "report the failure internally and do not use the panel to strengthen acceptance claims",
+    "forbidden": [
+      "dropping_a_family_or_instance",
+      "changing_a_rule_or_source",
+      "replacement_model_calls",
+      "changing_the_gate_after_outcome_inspection"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "protocol_version": "pfsp_enlarged_random_posthoc_robustness_v1",
+  "status": "frozen_before_enlarged_random_selection_or_VFR220_evaluation",
+  "frozen_at_beijing": "2026-07-20T22:15:34+08:00",
+  "freeze_parent_commit": "112c8d11",
+  "scientific_role": "final_reviewer_motivated_post_hoc_robustness_not_part_of_the_frozen_gate",
+  "motivation": "test_the_most_dangerous_zero_call_random_alternative_identified_by_bare_PDF_reviewers_on_the_unchanged_final_panel",
+  "control": {
+    "source": "large_budget_random_prior",
+    "seed_start": 11001,
+    "seed_end": 11128,
+    "excluded_seeds": [11068],
+    "expected_source_count": 127,
+    "model_calls": 0,
+    "feature_budget_cli": 8,
+    "effective_feature_count": 16,
+    "interaction_budget_cli": 12,
+    "effective_interaction_count": 24,
+    "template_count": 6,
+    "macro_count": 0,
+    "construction": "independent_seeded_random_permutation_with_twice_the_nominal_feature_and_interaction_budget"
+  },
+  "selection": {
+    "development_dataset": "taillard_mixed96",
+    "top_atomic_pool": 36,
+    "expected_admitted_atomics": 36,
+    "max_layers": 2,
+    "beam_width": 8,
+    "composition_prescreen_per_split": 2,
+    "search_mode": "lexicographic_additive",
+    "prior_weighting": true,
+    "behavioral_deduplication": true,
+    "derived_features": true,
+    "expected_genome_evaluations": 2908
+  },
+  "comparison": {
+    "llm_condition": "the_127_original_parser_valid_InternVL_sources_from_the_final_confirmation",
+    "control_condition": "127_seed_paired_enlarged_random_sources_with_the_full_downstream_search_budget",
+    "parent_analysis_sha256": "e614d91a3415b298641933ff1259168e007d420658e6e1ffb3c0808334dc0c2a",
+    "parent_policy_evaluations_sha256": "3f437c0b534478936e3afc449ecf26b645de5c178ce2266058d1ac66bfe12270",
+    "final_panel": "the_same_fully_unused_VFR220_panel",
+    "direction": "enlarged_random_gap_minus_llm_gap_positive_favors_SBS_EA"
+  },
+  "inference": {
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260723,
+    "crossed_interval": "independently_resample_127_paired_sources_and_220_physical_instances",
+    "source_interval": "two_sided_95_percent_t_interval_over_127_source_mean_differences",
+    "source_win_interval": "two_sided_95_percent_Wilson_interval",
+    "family_robustness": "independently_resample_127_paired_sources_and_22_family_blocks_retaining_all_10_instances_per_family",
+    "interpretation": "post_hoc_robustness_only_no_change_to_the_frozen_primary_or_secondary_gate"
+  },
+  "integrity": {
+    "all_127_selection_tasks_must_complete_without_retry": true,
+    "all_controls_must_have_zero_model_calls": true,
+    "each_source_must_have_16_features_24_interactions_6_templates_and_no_macros": true,
+    "each_source_must_have_36_admitted_atomics_and_2908_genome_evaluations": true,
+    "parent_hashes_and_VFR220_identity_must_match": true
+  },
+  "deadline_guard": {
+    "maximum_total_wall_clock_seconds": 14400,
+    "per_task_timeout_seconds": 3600,
+    "worker_count": 12,
+    "nice_level": 10,
+    "retry_count": 0,
+    "if_timeout_or_integrity_failure": "stop_this_control_and_finalize_the_already_complete_submission"
+  },
+  "reporting_rule": {
+    "report_the_result_regardless_of_direction": true,
+    "forbidden": [
+      "changing_the_control_after_VFR220_outcome_inspection",
+      "dropping_sources_families_or_instances",
+      "retrying_failed_tasks_or_substituting_seeds",
+      "calling_a_model",
+      "launching_any_further_experimental_branch"
+    ]
+  }
+}
