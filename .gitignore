@@ -15,3 +15,6 @@ outputs/
 !.env.example
 .release-ready.json
 .DS_Store
+
+# External benchmark downloads (their licenses remain upstream).
+benchmarks/
