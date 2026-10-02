@@ -2,20 +2,17 @@ from __future__ import annotations
 
 import pytest
 
-from pairwise_bpp_poc.pfsp import PFSPInstance, neh_makespan
-from pairwise_bpp_poc.pfsp_source_ea import (
+from sbs_ea.adapters import _prior_from_dict, _summaries
+from sbs_ea.pfsp import PFSPInstance, neh_makespan
+from sbs_ea.pfsp_source_ea import (
     PFSPSourceEAConfig,
     run_pfsp_source_ea,
     run_pfsp_source_no_operator,
 )
-from scripts.run_pfsp_source_ea_development import _prior_from_dict, _summaries
 
 
 def _instance(seed: int, split: str) -> PFSPInstance:
-    rows = tuple(
-        tuple(1 + ((job * 7 + machine * 5 + seed) % 13) for machine in range(3))
-        for job in range(7)
-    )
+    rows = tuple(tuple(1 + ((job * 7 + machine * 5 + seed) % 13) for machine in range(3)) for job in range(7))
     base = PFSPInstance(
         family=f"family_{seed % 2}",
         split=split,
@@ -124,10 +121,7 @@ def test_no_operator_control_is_deterministic_and_uses_exact_budget() -> None:
     assert first == second
     assert first.evaluated_candidate_count == 32
     assert first.selected_origin_generation == 0
-    assert (
-        first.generation_logs[0]["search_mode"]
-        == "same_budget_no_operator_random_proposals"
-    )
+    assert first.generation_logs[0]["search_mode"] == "same_budget_no_operator_random_proposals"
 
 
 def test_development_prior_can_exclude_model_generated_macros() -> None:
@@ -155,6 +149,4 @@ def test_development_summary_supports_independent_source_shards() -> None:
         }
     ]
     summary = _summaries(rows)
-    assert summary == [
-        {"source": "model_free_beam_prior", "mean_test_gap": 0.17, "count": 1}
-    ]
+    assert summary == [{"source": "model_free_beam_prior", "mean_test_gap": 0.17, "count": 1}]

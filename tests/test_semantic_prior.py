@@ -2,21 +2,21 @@ from __future__ import annotations
 
 import pytest
 
-from pairwise_bpp_poc.semantic_prior import (
+from sbs_ea.graphprize import build_graphprize_dataset, graphprize_ready_options
+from sbs_ea.maxcover import build_maxcover_dataset, maxcover_ready_options
+from sbs_ea.semantic_prior import (
     augment_jssp_ready_options,
     bpp_ready_options,
     build_prior_spec,
     expression_priority_score,
     feature_names,
     instantiate_prior_expressions,
-    normalize_prior_budget,
     lexicographic_choice,
+    normalize_prior_budget,
     parse_prior_proposal,
     prompt_for_semantic_prior,
     safe_eval_expr,
 )
-from pairwise_bpp_poc.maxcover import build_maxcover_dataset, maxcover_ready_options
-from pairwise_bpp_poc.graphprize import build_graphprize_dataset, graphprize_ready_options
 
 
 def test_semantic_prior_parser_and_instantiation_are_domain_typed() -> None:
@@ -100,8 +100,12 @@ def test_maxcover_prior_uses_budgeted_coverage_features() -> None:
     prior = build_prior_spec("maxcover", "llm_prior", seed=0, feature_budget=6, interaction_budget=4)
     assert prior.features[:3] == ("marginal_gain", "rarity_gain", "cost")
     assert ("marginal_gain", "cost") in prior.interactions
-    instance = build_maxcover_dataset(smoke_per_family=1, val_per_family=1, test_per_family=1, elements=24, items=32, budget=10)["test"][0]
-    ready = maxcover_ready_options(instance, list(range(len(instance.items))), covered_mask=0, remaining_budget=instance.budget)
+    instance = build_maxcover_dataset(
+        smoke_per_family=1, val_per_family=1, test_per_family=1, elements=24, items=32, budget=10
+    )["test"][0]
+    ready = maxcover_ready_options(
+        instance, list(range(len(instance.items))), covered_mask=0, remaining_budget=instance.budget
+    )
     scores = safe_eval_expr("marginal_gain / (cost + eps)", ready)
     assert len(scores) == len(ready)
 
@@ -154,22 +158,32 @@ def test_deterministic_prior_sources_use_same_budgeted_shape() -> None:
 
 
 def test_stronger_non_llm_prior_sources_are_model_free_and_budgeted() -> None:
-    large = build_prior_spec("jssp", "large_budget_random_prior", seed=3, feature_budget=4, interaction_budget=3)
+    large = build_prior_spec(
+        "jssp", "large_budget_random_prior", seed=3, feature_budget=4, interaction_budget=3
+    )
     llm = build_prior_spec("jssp", "llm_prior", seed=3, feature_budget=4, interaction_budget=3)
     beam = build_prior_spec("jssp", "model_free_beam_prior", seed=3, feature_budget=4, interaction_budget=3)
-    symbolic = build_prior_spec("jssp", "same_catalog_symbolic_prior", seed=3, feature_budget=4, interaction_budget=3)
+    symbolic = build_prior_spec(
+        "jssp", "same_catalog_symbolic_prior", seed=3, feature_budget=4, interaction_budget=3
+    )
     assert large.llm_call_count == beam.llm_call_count == symbolic.llm_call_count == 0
     assert len(large.features) > len(beam.features) == len(symbolic.features) == 4
     assert len(large.interactions) > len(beam.interactions) == len(symbolic.interactions) == 3
     assert beam.features != llm.features
     assert any("work" in feature or "completion" in feature for feature in beam.features)
-    assert any("norm" in feature or "rank" in feature or "pressure" in feature for feature in symbolic.features)
+    assert any(
+        "norm" in feature or "rank" in feature or "pressure" in feature for feature in symbolic.features
+    )
 
 
 def test_llm_program_prior_adds_validated_macros_without_changing_budget_shape() -> None:
     program = build_prior_spec("pfsp", "llm_program_prior", seed=0, feature_budget=6, interaction_budget=4)
-    model_free = build_prior_spec("pfsp", "model_free_program_prior", seed=0, feature_budget=6, interaction_budget=4)
-    symbolic = build_prior_spec("pfsp", "same_catalog_symbolic_program_prior", seed=0, feature_budget=6, interaction_budget=4)
+    model_free = build_prior_spec(
+        "pfsp", "model_free_program_prior", seed=0, feature_budget=6, interaction_budget=4
+    )
+    symbolic = build_prior_spec(
+        "pfsp", "same_catalog_symbolic_program_prior", seed=0, feature_budget=6, interaction_budget=4
+    )
     plain = build_prior_spec("pfsp", "llm_prior", seed=0, feature_budget=6, interaction_budget=4)
     assert program.llm_call_count == 1
     assert model_free.llm_call_count == symbolic.llm_call_count == 0
@@ -178,7 +192,9 @@ def test_llm_program_prior_adds_validated_macros_without_changing_budget_shape()
     assert program.macro_expressions
     assert plain.macro_expressions == ()
     assert "completion_increase / (early_work + eps)" in instantiate_prior_expressions(program)
-    assert expression_priority_score(program.macro_expressions[0], program) > expression_priority_score(program.features[0], program)
+    assert expression_priority_score(program.macro_expressions[0], program) > expression_priority_score(
+        program.features[0], program
+    )
 
 
 def test_jssp_llm_prior_can_be_sparse_and_directional() -> None:

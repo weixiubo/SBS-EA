@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pairwise_bpp_poc.graphprize import (
+from sbs_ea.graphprize import (
     build_graphprize_dataset,
     evaluate_graphprize_policy,
     graphprize_ready_options,

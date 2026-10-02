@@ -1,0 +1,6 @@
+{
+  "revision": "d2b171e61569f8de4e7dc620bebc8c15f8d8e7a0",
+  "archive": "sbs-ea-d2b171e.tar.gz",
+  "sha256": "b4fd911f0fbff363ca1c9a30a33bd1b040971f6f2c4bc9f136d1231dc2758cd2",
+  "purpose": "Exact public baseline including every original test, script, scientific protocol and evidence file."
+}

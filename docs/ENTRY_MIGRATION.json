@@ -1,0 +1,8 @@
+[
+  {
+    "old": "运行.py",
+    "original_sha256": "8f8d7fc5b9c309d2c781066bf7cd27449e17583e19e66bef56fe7204f0e0fe9b",
+    "replacement": "sbs-ea doctor/demo/run --config/reproduce",
+    "reason": "Old launch menu targets archived workflows; original retained in baseline archive."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "from": "prior_catalog.py",
+    "owner": "priors/catalog_features.py",
+    "symbols": [
+      "DOMAIN_FEATURE_CATALOG",
+      "FeatureSpec"
+    ],
+    "responsibility": "Typed domain feature descriptors, independent of source-specific preference tables."
+  },
+  {
+    "from": "semantic_prior.py",
+    "owner": "priors/parsing.py",
+    "symbols": [
+      "_dedup",
+      "_dedup_pairs",
+      "_default_priorities",
+      "_interaction_key",
+      "_json_candidates",
+      "_macro_allowed_names",
+      "_macro_tree_is_safe",
+      "_ordered_pair",
+      "_parse_priority_map",
+      "_strip_markdown_fences",
+      "_validated_macro_expressions",
+      "feature_catalog",
+      "feature_names",
+      "parse_prior_proposal",
+      "prompt_for_semantic_prior"
+    ],
+    "responsibility": "Parse and validate semantic source proposals without executing a search or using a model."
+  },
+  {
+    "from": "semantic_prior.py",
+    "owner": "priors/budgets.py",
+    "symbols": [
+      "_expr_mentions_feature",
+      "normalize_prior_budget"
+    ],
+    "responsibility": "Priority-ordered source capacity restriction, applied before expression construction."
+  },
+  {
+    "from": "semantic_prior.py",
+    "owner": "priors/observation_features.py",
+    "symbols": [
+      "_normalized_lookup",
+      "_rank_lookup",
+      "augment_jssp_ready_options",
+      "bpp_ready_options"
+    ],
+    "responsibility": "Diagnostic domain feature construction; does not choose a policy or run a search."
+  },
+  {
+    "from": "pfsp_source_ea.py",
+    "owner": "pfsp_source_ea.SearchState/_rank_generation",
+    "responsibility": "Explicit candidate accounting and generation evaluation, separate from variation and final held-out evaluation."
+  }
+]

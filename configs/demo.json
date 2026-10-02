@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "run_id": "pfsp-demo-001",
+  "seeds": [
+    77
+  ],
+  "sources": [
+    {
+      "kind": "all_feature_prior"
+    }
+  ],
+  "pool_limit": 12,
+  "search": {
+    "population_size": 12,
+    "generations": 4,
+    "elite_count": 2,
+    "mutation_count": 6,
+    "crossover_count": 3,
+    "random_count": 1,
+    "max_candidate_evaluations": 32
+  }
+}

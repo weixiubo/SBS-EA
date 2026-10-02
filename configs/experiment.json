@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "run_id": "pfsp-study-001",
+  "seeds": [
+    901,
+    902
+  ],
+  "sources": [
+    {
+      "name": "cached-model",
+      "kind": "llm_prior",
+      "proposal": {
+        "path": "{data}/proposals/source.json",
+        "sha256": "REPLACE_WITH_THE_PROPOSAL_SHA256"
+      }
+    },
+    {
+      "kind": "model_free_beam_prior"
+    },
+    {
+      "kind": "same_catalog_symbolic_prior"
+    },
+    {
+      "kind": "all_feature_prior"
+    }
+  ],
+  "pool_limit": 36,
+  "search": {},
+  "dataset": {
+    "path": "{data}/pfsp/dataset.json",
+    "sha256": "REPLACE_WITH_THE_DATASET_SHA256"
+  }
+}

@@ -1,0 +1,833 @@
+{
+  "baseline": "d2b171e61569f8de4e7dc620bebc8c15f8d8e7a0",
+  "archive": "reproduce/maintainer-baseline/SOURCE.json",
+  "retained_atomic_helpers": [
+    "AtomicSelection",
+    "_expression_weights",
+    "_select_atomic_exprs"
+  ],
+  "modules": [
+    {
+      "old": "src/pairwise_bpp_poc/registry.py",
+      "sha256": "f4f79f0b10a8246e326c3ed36f9000601a1a748d637ca6537231070a9d2f4a43",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/candidate.py",
+      "sha256": "2688d2e603ddd86010f5903a91761d96d5a916f381e41e75b777f37e5ca91424",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/maxcover.py",
+      "sha256": "14e94d4e2be2bec74e6dfdb3bdb0d4c07248b5a9962ef0c5b7cae9088d2ceafd",
+      "current": "src/sbs_ea/maxcover.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_pfsp.py",
+      "sha256": "3e8f4b8a5be583353982e760b9ae6366f3f1e8468ed755e4639e8d02bb431be9",
+      "current": "src/sbs_ea/public_pfsp.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jssp_symbolic_gp.py",
+      "sha256": "748a404b6d4a20cbe75a78af25a09740af355b287b7b48418ab65abd4a19af0a",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/local_editor.py",
+      "sha256": "02511770c5bb0b66b30ed391e34bc5bc518851f659a78876b6f805997b51a294",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/windows_paramiko_tunnel.py",
+      "sha256": "8a5bc9429a995c03659db0a3f5cd48fa4ea95d71205766edf49a597add4dd1d8",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jssp_heuristics.py",
+      "sha256": "e8e669bceed8ad0bc967517fab9e303921a4909de9f8fbce2a248075d868a12e",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jssp_stage_a.py",
+      "sha256": "c169b08ec8c99d03f5467ea958028e88bb1e63d7fb14a8e91c6f3e659735d601",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/bpp.py",
+      "sha256": "60828ef60436919121950c80dc4ce0db130f9f090dfbc663f3e8902aeb4acbcf",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/paper_assets.py",
+      "sha256": "013848990df5291bbb45b2789252427f6cd014a83e0aea5c2ecc359d72f71b4f",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/generated_jssp.py",
+      "sha256": "a729a1ffae1f05895e694e2eb648676df2f6d276344a7de96f04c6dc65fe8c4d",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sole_schema_attribution.py",
+      "sha256": "3b8427bed570b53dea2537a6ec307e5779021d4d40bc6dee7ab26f410bc0be6b",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_orlib_scp.py",
+      "sha256": "05f4814244f0883264d4691c765bd97bf643dbcd3e55123f6cb3ea6f511b8b51",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/entities.py",
+      "sha256": "cf4425e11010f42ecc1f3451caa7820c4632c2a8221c3c9887cf0d0dcc0ea60f",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/heuragenix_bridge.py",
+      "sha256": "4381afddc5fdab6bb7b114ed9fa6236f882e5730ec61b948b7f9fd9d2e37b7d1",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/windows_paramiko_bridge.py",
+      "sha256": "8acbc518d5713b8c0551bd19710b726ebefc5d59d05ee8af5dd86f2a3f17d5bc",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/heuristics.py",
+      "sha256": "74a903a4e6f6d25b52beb55f22496bf568cb391a619b0959661384a4dbb41883",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sygus_preview.py",
+      "sha256": "94cbb979ad93a850f3eecb3946df361a8c610f43a154f57f3ffb3aaa2f50c09a",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/baseline_audit.py",
+      "sha256": "b0cca5edde6043a7d36908b46e7e16c4008673ba1400e0e76ea6f8e861885fb2",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_orlib_mkp.py",
+      "sha256": "aef86431a164ab66b3ba71b0059a391d000199eeb470b62a100bcfcebe88e029",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jsplib_llm4ad.py",
+      "sha256": "53c44ba9ee2d1a2e108c3029b70f77da72b1a58ace3bc77c9a65f7461b722813",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/backends.py",
+      "sha256": "3aad7af3a2d872e47f74a2178f0bf9165bf3e1c8e7210687f25ea33dc8371bef",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/ranking.py",
+      "sha256": "41d6945c7755562a3ac50f2bfa173a4850cc4ee1a3ef352774968c60522578cb",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_jsplib.py",
+      "sha256": "d4dc10012ee147fb6e0254f496a743bcdb700030846e65e5cb8399e0cbd4a491",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_graphcover.py",
+      "sha256": "cfd2d2320a230019e9000376e78281fbd4f79bb748b4078ccbd67b61d0cfb3af",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/semantic_prior.py",
+      "sha256": "5641830bacd6429dcba3e86abbcb031a96b50cbec3e3322b497c526ed56b26e8",
+      "current": "src/sbs_ea/semantic_prior.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/order_conflict_replay.py",
+      "sha256": "e1f18623ea82e8f732e8ba417d4e896170049e25a9e239ae5c10c0c5dd3a9d7b",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jssp.py",
+      "sha256": "4a4d05279a845c2244cb6b64d4481ca0fc1d0b419122c85d9e4a4626e93aeaf2",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/grammar.py",
+      "sha256": "5bcd25dda5438de6581a82a30829bd348758d7e65d9e6c7cd7e1882b367e0674",
+      "current": "src/sbs_ea/grammar.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/experiment_stats.py",
+      "sha256": "afe6d7f59d9a5ff18a4f9ec2ae5ffd1220c5a0860e930af92e0243bfbacd249f",
+      "current": "src/sbs_ea/experiment_stats.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_bpplib.py",
+      "sha256": "7093262d04b834f50f958d73c87cef62009a2a6b8a4b788f82d43cb391bb48a3",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/remote.py",
+      "sha256": "27486655bff14b9d5e9a858095c77f1a8ace002be1350b2394b4c54c1a0f84f7",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sole_prior_attribution.py",
+      "sha256": "9f918dd7913a49a14f15f66ef43a50863c62ecabbe9c872c147da993097edc18",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/mocking.py",
+      "sha256": "d1a9a302d548bb8d08b0dd16f5904e40ce1d98cee79957498403f1f7e20cdfb1",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/stage_b.py",
+      "sha256": "80ff2c96510ae94bf8aad1fd874218cb4e3ba313e544dfb0ce3f72ae2c1876ce",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/cli.py",
+      "sha256": "b6cdb90c5ea6904b0816569ba33129c65e27f43cae6b5d0485cd2cef29d1b0ef",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_smtwt.py",
+      "sha256": "9418e6a28fe5d2ba2cf179d40fd2164d100e7c8e0d4bff27eb97ffcdc8feaea7",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/selector_v2.py",
+      "sha256": "acbf92547c8f277a0b061b60b5b4fc3e6c37a86fcce9d442926d608d7dd502cf",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/download_utils.py",
+      "sha256": "070abb6af64162495c9fe7096445217eec379e40ca48bc71272c8127438a7a27",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/freeze_audit.py",
+      "sha256": "3f8440bdef18013d93c3441484a835dcdb911c7f3fcad6cb2bee3578dc5faf9c",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/profiling.py",
+      "sha256": "322f9ab9620bf93aaa91ca0fb32a99d3823539b18ce6e205e7613d7ff7b82b1a",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_benchmarks.py",
+      "sha256": "0f4ec6dbca63fc210ba5e8bb840e4079110469c99ff717088f77cd75700cbbf5",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/public_sygus.py",
+      "sha256": "a57bb498cd125e05e475fc2de6a361cac4d6dbc838587673836ffeffc6c7abdd",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/__main__.py",
+      "sha256": "c2ee4ddb093c9af060cafaf68219907f8a6b7b301ed3f8bea75db7555adec987",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/io_utils.py",
+      "sha256": "9820ab12175c06151cf60341e2788fcdf3119d0b011e8788903f89abe0c3d1f5",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/pfsp_source_ea.py",
+      "sha256": "217a9a1aaed29a297e5387160677387847b5f04b2595937c890db40ffadb1a82",
+      "current": "src/sbs_ea/pfsp_source_ea.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sole_jsplib.py",
+      "sha256": "8ec0f54ac758c855692dbc411612ee99d511737a8131e7edd9f8a7afc9d1a024",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/benchmark_audit.py",
+      "sha256": "7d892540c835e0978f11953d2698c561f655615b757449f53d6109e60523a662",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/stage_b_cache.py",
+      "sha256": "b26c299e2de0e58f546ea0efcb00e8ccdac2de3ef6a3778f076ee4c5248c5fbf",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/config.py",
+      "sha256": "a0a08aeed4f0fd31fed4affb22e195bcaaddef2a2a70f72a9424307a77e4ec25",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/__init__.py",
+      "sha256": "6e708f17cce59d420c07a08feb855a7d8d12db0dee1f90211e34e54410e13569",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/remote_model_server.py",
+      "sha256": "944f8a45dfa1f458b954b83e6ba93d687c129a4aef2efe6145fba0ef8dd8ef11",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/pfsp_symbolic_gp.py",
+      "sha256": "7184c303fc90dd7b35166eec94cfb53ed61a91a68c5f690196f357731fe2c9aa",
+      "current": "src/sbs_ea/pfsp_symbolic_gp.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/judging.py",
+      "sha256": "ca05fb5b939aa003fde882b8b5df94fd00ccccd62b94f57e4682f4b5794b5894",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/jssp_stage_b.py",
+      "sha256": "cf3bb09a4198e94f6327c449dea1e2615ec60b7516639733954a4c062d7f4699",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sole2_prototype.py",
+      "sha256": "a38584c9a4e50192370a5ec175907223cc4ddd09003a0a23ef81f0433140c30e",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/sole_guided_ea.py",
+      "sha256": "392cb52e6f6231bb86c16f804161f4ce32cde6e5e70d86598b30b4894a291d49",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/generation.py",
+      "sha256": "f15b4903a5adf415555a3afd834f1d76b102c380b81336ef4a7217d83ff7551c",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/stage_a.py",
+      "sha256": "e139d6b9cd3cecb372f7ef3769c9301884028fe3663f936dd9ca21b805772043",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/prior_catalog.py",
+      "sha256": "4b64d7ca4ad2b02bd9870c9e28c1fb32edee4148e469bea94286c1b83172c3b6",
+      "current": "src/sbs_ea/prior_catalog.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/pfsp.py",
+      "sha256": "5a90d8f23a984c730d03648b7f91d620d888a967267c6e2a5e8b1793316a5d28",
+      "current": "src/sbs_ea/pfsp.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/smtwt.py",
+      "sha256": "ff945cdd6234acbe9e54642b697208d9d356e596e7d9250386fbb0cfbde20d67",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/graphprize.py",
+      "sha256": "9de688d2c7247136029092e5395ba764532ebb7302ad84ae35662e48c2315ba6",
+      "current": "src/sbs_ea/graphprize.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/source_ea/variation.py",
+      "sha256": "2cde3da15a871b9cb48f86197d99f4d57b4eecbb5ff69b1afc2921e757fce7d3",
+      "current": "src/sbs_ea/source_ea/variation.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/source_ea/scoring.py",
+      "sha256": "dfd26922fc6ea92a615f3d7e7064675325f7666ae7a8a782c4309cab8bd42055",
+      "current": "src/sbs_ea/source_ea/scoring.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/source_ea/__init__.py",
+      "sha256": "f2a75f31fddf66bf6779e663586dc0d9987ecaa02db603ca8dd0ff8e8c0f0645",
+      "current": "src/sbs_ea/source_ea/__init__.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/source_ea/models.py",
+      "sha256": "35027a8981607583182d0e975dc0cb3f4bc0e55a9cca4c23a3698771845583bd",
+      "current": "src/sbs_ea/source_ea/models.py",
+      "disposition": "maintained dependency of PFSP source-EA, its matched controls, grammar/catalog or validation"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/llm_mutation_action.py",
+      "sha256": "177e15b68aaae4a7bce7e7a22cde1653e62c28af1a34474a7c279caa2948a068",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/ir.py",
+      "sha256": "fd74d6bd1c56fc292557ab2695d2cafa4b30a92f336e8d28621bf6607ee27a51",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/llm_mutation.py",
+      "sha256": "817a36ccf7cf639e0ecb506e87f66922922a217d4acd1f26630ca157fe3341c7",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/runner.py",
+      "sha256": "9606542ea5ade0d10c8890618e27a47592e093ffcfce62991205317dc740eed4",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/adapters.py",
+      "sha256": "dc0452d73492294a8dc6c87e7bec535ff59a8dcebacb3d36d1190ba1bb7eb52e",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/__init__.py",
+      "sha256": "888f42f540e85f84656374ebbed492c84ca0eea8e28b9fad6a417cf3a833ec7e",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    },
+    {
+      "old": "src/pairwise_bpp_poc/kernel_v2/selector.py",
+      "sha256": "af9f63bee7e9281d649bd039e9b2ba3b8a087d271b82c3608514662080292fe5",
+      "current": null,
+      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+    }
+  ],
+  "tests": [
+    {
+      "file": "tests/test_remote_selector.py",
+      "sha256": "de8b54e40fb2c8c94819bacaae8dfd1b1e15d739dd8e99d3813e9c4cd136d2d9",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_behavior_mutation_action.py",
+      "sha256": "8c879dd0648abea9a588f762c651fd5e8b8fae76d1302add569574348c33142f",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_sole_prior_tables.py",
+      "sha256": "436c7259a18787a53609974cf6b62ccfc96cea69e14efccdfb41c3fa1dbfae6d",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_local_editor.py",
+      "sha256": "a0dae86036ffc9ade533375b4c54672eaa6184f3e63f9d1b8aaf56e80898d5a8",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jssp_stage_a.py",
+      "sha256": "0945f4fabe9dec9742c4534166847bc90cf18d60da031b2fbd28cd0eb84fe616",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_sole_schema_attribution.py",
+      "sha256": "37b3ea2625ed869a7ee4ad40342e109cce6379933e8a403edf58947a07f773d1",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_source_ea_validation.py",
+      "sha256": "ccecb48d4274e593f10777cf754d6de42bc5a2001235faac3e65c480b198a7bf",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_stage_a_mock.py",
+      "sha256": "f547e1f270ca1c2d1667ba1cc120a31651b04727ff76cc22cb9284ce716d0870",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_heuragenix_bridge.py",
+      "sha256": "af9474b41d1434567141c44fbe951be1a9ad3fb4fb93dcf367f6fdf9623a8a08",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jssp.py",
+      "sha256": "72b193dbf6f0d651471b151ff9c1723296795d1d69ce13816f6f6b77317d340e",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_semantic_prior.py",
+      "sha256": "37a2e138f31f62b51aa40205647888ef0e01556782770eec51ab7b6477111be5",
+      "current": "tests/test_semantic_prior.py"
+    },
+    {
+      "file": "tests/test_jsplib_expanded_replay.py",
+      "sha256": "92a6429858f45cca34ba3016cb390c9a695a3446e53262d5f55c29a1c6ce2717",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_enlarged_random_robustness.py",
+      "sha256": "c29b82ce85158e9b3035db6dea2df6e0cfcf7d47fda03e048844e7ed82fe2826",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_ranking.py",
+      "sha256": "769605fdb12eaa9eb5c2a40a8c8aba29ef28fdfb4b1088e0d27a58517a6af636",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_mutation.py",
+      "sha256": "6d3a9133c0506605e0b2c4d35ef5946dd34f2d75a101b8257b82d9b731c687e0",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_public_benchmarks.py",
+      "sha256": "277afe466e37c07414a35ae0825339a1d36ba8a4bb0338f8c11f403d8b004887",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pfsp.py",
+      "sha256": "16dbd18b5034a1d386add4d6c86946e4ef025a6d4e14f5d07584381a9c102868",
+      "current": "tests/test_pfsp.py"
+    },
+    {
+      "file": "tests/test_public_smtwt.py",
+      "sha256": "4e6c945c961dfb9492d34708a89c95ed4818878a3cabd012716f75c9bd39ceea",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_public_orlib_scp.py",
+      "sha256": "b21421764340f2378cfcc49d4a3268e728b44e8a9e320c7e97b2a1c2131f8c67",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_judging.py",
+      "sha256": "acc84bc6999f181f20de309f0a9e1398a095bd84d344199b6ec9dfa64a6b4305",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_run_pfsp_final_capacity_controls.py",
+      "sha256": "7db13af1093a3620234d32cfcc9f1d93ef9699ae09b32d21b798dda09bbacbfe",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pre_v3_candidate_b_external_confirmation.py",
+      "sha256": "202be91543ed204784d08dc0f4ce222987560b8a654a8666f93096ce483d3764",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_selector_v2.py",
+      "sha256": "0492d3051c9e45f57b074a5a060bbaa2f5940353435a9d45923d16ea9c16c6dd",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_cli.py",
+      "sha256": "33e86f50478ed95434b36b34045146440e90de6ec1ca6650db46276005e080a1",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_bpp_objective_mutation.py",
+      "sha256": "2c11c487791d5cf476b3825478cb844908bd9e962c61ccedadb75e034bf8e072",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_normalize_semantic_prior_manifest.py",
+      "sha256": "f214884647ca04a062c51003684aeaf7df18b7182497238766be00f435bb9c07",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jsplib_llm4ad.py",
+      "sha256": "660c8fd69840ff2870da75aca1263f695e331ebe4bd225e30ea4aad5e2bbab76",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_parent_budget.py",
+      "sha256": "4a49553b653bc7e2e420ffc9d4cd33911003e73e5b0d4cca055f94e36f4c4ba4",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_experiment_stats.py",
+      "sha256": "63852be741e4453f6a3840db16ac78df95b1712191c54797dba8524e8f32b18e",
+      "current": "tests/test_experiment_stats.py"
+    },
+    {
+      "file": "tests/test_bpp.py",
+      "sha256": "869911a04ee40c191316cc18ba8204b9c6b78a83f7bb4dfd96aaa92c69b4c181",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2.py",
+      "sha256": "ec2a48934cbd9a1961be1eaeb86ef980b99eb70adb3206651ed5c80941782f88",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_final_robustness.py",
+      "sha256": "d33318c4007ad8f66758c7776949d3d70682873b9783125f2aef909d38132217",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_final_crossed_confirmation.py",
+      "sha256": "4930c57be886e542dff9464850fb7fab6eee512592f7ed81736452e19d65eaaf",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_generated_jssp.py",
+      "sha256": "707629caaef4bbbccbe58ffef95dba42916c6e3cf31bd90109788b514f3de9e7",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_candidate.py",
+      "sha256": "fa0f26f29b1f48eb297d0fd341a0eb75b318a9729208e127065aa7cb7064adde",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_untouched_vfr_confirmation.py",
+      "sha256": "d23859812010fbdb88dfa27b659cefc55c63a699d581767145b0f1803f5bbc35",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_stage_b.py",
+      "sha256": "4577606208e357ce2cde1d852c30ce1cf2f2a72bba8e2bdab85b0370a647660b",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_config.py",
+      "sha256": "a39d89fc116a38f7679429a9abbc9cb86e968ca79995a4465e2babac71bfa2e0",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_smtwt.py",
+      "sha256": "032f16a26e4286ba695a515f4d49223b66e15b07a82c84d10edd0b1f1c65a1db",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_sole2_prototype.py",
+      "sha256": "5b76d10e7c9b1a91ff4ed2b4dcfacdbb91bcc3192f4f286e8a62bb2ae420b875",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jssp_stage_b.py",
+      "sha256": "830cb8820da3aa41dbd52494908c721415b43500ac2348aeafd09e351c831370",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_source_ea_confirmation.py",
+      "sha256": "37d692c746c4b4360ecd208a46878921d0cc4cccd796ea2c84803dff430ed055",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_source_ea_development.py",
+      "sha256": "a2bb88c9164da37d690c3a5180ab4049d192fc535e7e3ce330bcaafe4d2f5295",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pre_v3_candidate_b.py",
+      "sha256": "5ce340b9a944b9dc9f2639d49b936716eee088cedcc130ccdeaf28807fedc1ab",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_public_pfsp.py",
+      "sha256": "0bae648f79c0b5ee0530a805620e3f2b9dc171665c0240126af55b897aa3297f",
+      "current": "tests/test_public_pfsp.py"
+    },
+    {
+      "file": "tests/test_sole_guided_ea.py",
+      "sha256": "3e929d36862e3cd1e44d268f429316452205667d0a09efad224f957dd88d576a",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_refactor_characterization.py",
+      "sha256": "8ba9548d21b555c4ac13d682ee206bab1e16cba3c1ee498f18e0ff8d602f8520",
+      "current": "tests/test_refactor_characterization.py"
+    },
+    {
+      "file": "tests/test_baseline_audit.py",
+      "sha256": "dd9fbe7bdaeb37fb6c3921b3c1ccde83b43cc6522299b55f9364d871f70304f9",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jssp_symbolic_gp.py",
+      "sha256": "093ff1d97f922e0438e7853837f4872a849785ed3db30d7b7c7c072ee92c5912",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_freeze_audit.py",
+      "sha256": "0234efac5a8e7bc1c36be2fe77efcd306225ba3d85cc7bc9006590f96f24a848",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_matched_random_control.py",
+      "sha256": "0a9bf49c076baabc9750815c154ee2936d1e29a1c264df11d1f3c0557fadf69c",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pfsp_source_ea.py",
+      "sha256": "3ec10ded92f38e61abf04a1e3ae046d501d227d19a16f50a4b6e029a39d9a5b0",
+      "current": "tests/test_pfsp_source_ea.py"
+    },
+    {
+      "file": "tests/test_jsplib_runner_common.py",
+      "sha256": "0d4199d96d22fec95d8aefbf3adc8e8d371b31bddfc6cbf08043ea568ccc998c",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_budget_gate.py",
+      "sha256": "bbc091b12ea89104f379cc951d69f270fbe30a8cd67cbe1c9976bd547f215564",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_download_utils.py",
+      "sha256": "6e37652a62e99ca59ba88247ce997473d36bcf738dfd1ee99d84d4902845353f",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_profiling.py",
+      "sha256": "974ed08c1168f1f40cc61b1aa325ad4c11575d8527615cdd14217c7593eebae8",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pfsp_source_ea_confirmation.py",
+      "sha256": "53465012c2395dfbe1b1b4c256501997e012318798d3f546cee5cf869389ff72",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_graphprize.py",
+      "sha256": "6b4666057203dda1dea0f4eeb7fee6fb06f6d241f9829f759b3bc9b8c25735cd",
+      "current": "tests/test_graphprize.py"
+    },
+    {
+      "file": "tests/test_maxcover.py",
+      "sha256": "22d3b2c94d1ef4a2ca0f94d795c06fa5fee29d8f1a67795c3cd85630e07559ad",
+      "current": "tests/test_maxcover.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_neighbor_rerank.py",
+      "sha256": "a9333ebdc1ad7a945d9b4892ae77d4fdef321f94459d30908b0c6ed911d0228c",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pre_v3_no_variation_audit.py",
+      "sha256": "ee326ccac2057fe162ee7d590324daadd3e725880797a42bff55c3a84c7fd4ae",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_full_catalog_robustness.py",
+      "sha256": "044ac1b57f85439968bedab00c43574f6d331763fc785d175f2d34b4f41b3da1",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jsplib_weighted_ea_baseline.py",
+      "sha256": "3bbd83fcfc3d18e7b6422474c22c841db5bdbd51b961c172dd4f481424b468d7",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_sole_prior_attribution.py",
+      "sha256": "e5678a38219e6788af5d495daaf8d87eb5deb152ce5f3d886fc4d8e1df7c4128",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_registry.py",
+      "sha256": "fa89f03abde89519638346920f64965b346580cb2b7438c274d4730cdaa198ef",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_sole_jsplib.py",
+      "sha256": "672b3c21569866e699f9614d6b91dbff2dabf9dd771daa80c05e5a109632d77e",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_mutation_action.py",
+      "sha256": "f20973f58db100c451d1aa80224c77b0b551c23e93fdcc4dcdd69f2c9823b0f8",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_order_conflict_replay.py",
+      "sha256": "79a26b5657ffd63050b92fccbacf0110d2df1857115b5a25dbfecfa655851c1d",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_pfsp_symbolic_gp.py",
+      "sha256": "87e01d6f307f7956efb7de8ce748e52be165839f59f5ab572b01ce6352b8436f",
+      "current": "tests/test_pfsp_symbolic_gp.py"
+    },
+    {
+      "file": "tests/test_kernel_v2_llm_region_budget.py",
+      "sha256": "6ac86587aa66b55cede796dcf40231aa3d6acb4d51ee7314ffd16d5a73de12a1",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_public_jsplib_rotation.py",
+      "sha256": "b99daf8c3e0bee1af11347a434067de27694ba3df06487aa2dfa10b40b0233b3",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_realized_capacity_random_control.py",
+      "sha256": "63a74cd674e8beb80345f2b6f6d2c440a12efdf52f536ff43468c5ac89829ae0",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_jsplib_external_fidelity_suite.py",
+      "sha256": "4c9b0f5ac845a9258d6c210948c3f8ed151aa564b11d410d932ff3c1c3af6e7a",
+      "current": "baseline archive; scripts/check_historical.py"
+    },
+    {
+      "file": "tests/test_analyze_pfsp_direct_atomic_control.py",
+      "sha256": "7dd2c2f94292ccb775c7cdf68732bffb8f41496e365bc2b11a1aaaa8697dbfe2",
+      "current": "baseline archive; scripts/check_historical.py"
+    }
+  ]
+}

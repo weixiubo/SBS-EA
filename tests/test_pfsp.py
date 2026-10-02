@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pairwise_bpp_poc.pfsp import (
+from sbs_ea.pfsp import (
     build_pfsp_dataset,
     evaluate_pfsp_policy,
     neh_makespan,
@@ -10,7 +10,9 @@ from pairwise_bpp_poc.pfsp import (
 
 
 def test_pfsp_rollout_and_neh_reference_are_executable() -> None:
-    dataset = build_pfsp_dataset(seed=0, jobs=5, machines=3, smoke_per_family=1, val_per_family=1, test_per_family=1)
+    dataset = build_pfsp_dataset(
+        seed=0, jobs=5, machines=3, smoke_per_family=1, val_per_family=1, test_per_family=1
+    )
     instance = dataset["test"][0]
 
     def shortest_completion(options: list[dict[str, float]]) -> int:

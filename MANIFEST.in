@@ -1,0 +1,10 @@
+include README.md LICENSE THIRD_PARTY.md PUBLIC_MANIFEST.json SOURCE_PROVENANCE.json uv.lock .python-version
+recursive-include LICENSES *
+recursive-include docs *.md *.json
+recursive-include configs *.json
+recursive-include tests *.py *.json
+recursive-include examples *.py
+recursive-include scripts *.py
+graft reproduce
+recursive-include src/sbs_ea *.py *.json *.gz py.typed
+global-exclude *.pyc

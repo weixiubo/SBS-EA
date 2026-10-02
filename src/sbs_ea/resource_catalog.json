@@ -1,0 +1,70 @@
+{
+  "project": "SBS-EA",
+  "resources": [
+    {
+      "id": "pfsp-dataset",
+      "root": "data",
+      "path": "pfsp/dataset.json",
+      "kind": "file",
+      "purpose": "Explicit train/validation/test matrices and references",
+      "version": "user-prepared schema 1",
+      "source": "Taillard/VFR archives and recorded reference manifests",
+      "license": "Check upstream dataset terms before redistribution",
+      "sha256": null,
+      "status": "not_restored",
+      "how_to_get": "See docs/RESOURCES.md; restore the exact version and declare its SHA256 in the run config"
+    },
+    {
+      "id": "cached-proposal",
+      "root": "data",
+      "path": "proposals/source.json",
+      "kind": "file",
+      "purpose": "One hash-bound raw model response",
+      "version": "record model revision and decoding in companion manifest",
+      "source": "Original author model run or frozen cached response",
+      "license": "Model/output terms depend on chosen provider",
+      "sha256": null,
+      "status": "not_restored",
+      "how_to_get": "See docs/RESOURCES.md; restore the exact version and declare its SHA256 in the run config"
+    },
+    {
+      "id": "taillard-vfr",
+      "root": "data",
+      "path": "benchmarks/pfsp/taillard_zenodo_4542886",
+      "kind": "directory",
+      "purpose": "Original raw benchmark adapter input",
+      "version": "Zenodo 4542886; selected VFR families",
+      "source": "https://zenodo.org/records/4542886",
+      "license": "Review source record; not assumed from project code license",
+      "sha256": null,
+      "status": "not_restored",
+      "how_to_get": "See docs/RESOURCES.md; restore the exact version and declare its SHA256 in the run config"
+    },
+    {
+      "id": "reference-bounds",
+      "root": "data",
+      "path": "references/manifest.json",
+      "kind": "file",
+      "purpose": "Exact original best-known reference identities",
+      "version": "the frozen study reference manifest",
+      "source": "Restore from original research archive",
+      "license": "Research provenance required",
+      "sha256": null,
+      "status": "not_restored",
+      "how_to_get": "See docs/RESOURCES.md; restore the exact version and declare its SHA256 in the run config"
+    },
+    {
+      "id": "local-model",
+      "root": "models",
+      "path": "SBS-EA/model",
+      "kind": "directory",
+      "purpose": "Optional future local generation of raw proposals",
+      "version": "Select model and revision explicitly",
+      "source": "Model publisher",
+      "license": "Check selected model card",
+      "sha256": null,
+      "status": "not_restored",
+      "how_to_get": "Install inference extras only when restoring a selected checkpoint; ordinary run consumes a hash-bound cached proposal"
+    }
+  ]
+}

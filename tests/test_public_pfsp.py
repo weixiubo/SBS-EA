@@ -2,8 +2,9 @@ from __future__ import annotations
 
 import zipfile
 
-from pairwise_bpp_poc.pfsp import PFSPInstance
-from pairwise_bpp_poc.public_pfsp import (
+from sbs_ea.adapters import _parse_vfr_families
+from sbs_ea.pfsp import PFSPInstance
+from sbs_ea.public_pfsp import (
     _parse_vfr_dat,
     build_taillard_mixed72_dataset,
     build_taillard_mixed96_dataset,
@@ -11,7 +12,6 @@ from pairwise_bpp_poc.public_pfsp import (
     load_vfr_best_known,
     load_vfr_instances,
 )
-from scripts.run_pfsp_vfr_transfer_audit import _parse_vfr_families
 
 
 def test_public_taillard_loader_parses_machine_rows(tmp_path) -> None:
@@ -50,10 +50,10 @@ def test_taillard_mixed96_split_uses_public_family_holdouts(monkeypatch, tmp_pat
                 )
             )
 
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.TAILLARD_MIXED_FAMILIES", ((20, 5), (20, 10)))
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.ensure_taillard_public_files", lambda _root: tmp_path)
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp._load_taillard_upper_bounds", lambda _path: {})
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.load_taillard_instances", lambda _path, best_known: instances)
+    monkeypatch.setattr("sbs_ea.public_pfsp.TAILLARD_MIXED_FAMILIES", ((20, 5), (20, 10)))
+    monkeypatch.setattr("sbs_ea.public_pfsp.ensure_taillard_public_files", lambda _root: tmp_path)
+    monkeypatch.setattr("sbs_ea.public_pfsp._load_taillard_upper_bounds", lambda _path: {})
+    monkeypatch.setattr("sbs_ea.public_pfsp.load_taillard_instances", lambda _path, best_known: instances)
 
     dataset = build_taillard_mixed96_dataset(tmp_path)
 
@@ -79,10 +79,10 @@ def test_taillard_mixed72_uses_larger_development_split(monkeypatch, tmp_path) -
                 )
             )
 
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.TAILLARD_MIXED_FAMILIES", ((20, 5), (20, 10)))
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.ensure_taillard_public_files", lambda _root: tmp_path)
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp._load_taillard_upper_bounds", lambda _path: {})
-    monkeypatch.setattr("pairwise_bpp_poc.public_pfsp.load_taillard_instances", lambda _path, best_known: instances)
+    monkeypatch.setattr("sbs_ea.public_pfsp.TAILLARD_MIXED_FAMILIES", ((20, 5), (20, 10)))
+    monkeypatch.setattr("sbs_ea.public_pfsp.ensure_taillard_public_files", lambda _root: tmp_path)
+    monkeypatch.setattr("sbs_ea.public_pfsp._load_taillard_upper_bounds", lambda _path: {})
+    monkeypatch.setattr("sbs_ea.public_pfsp.load_taillard_instances", lambda _path, best_known: instances)
 
     dataset = build_taillard_mixed72_dataset(tmp_path)
 
@@ -93,11 +93,7 @@ def test_taillard_mixed72_uses_larger_development_split(monkeypatch, tmp_path) -
 
 
 def test_vfr_parser_uses_machine_job_pairs() -> None:
-    jobs, machines, rows = _parse_vfr_dat(
-        "2 3\n"
-        "0 5 1 7 2 11\n"
-        "2 13 0 17 1 19\n"
-    )
+    jobs, machines, rows = _parse_vfr_dat("2 3\n0 5 1 7 2 11\n2 13 0 17 1 19\n")
 
     assert jobs == 2
     assert machines == 3
@@ -105,7 +101,7 @@ def test_vfr_parser_uses_machine_job_pairs() -> None:
 
 
 def test_vfr_loader_filters_transfer_families(monkeypatch, tmp_path) -> None:
-    import pairwise_bpp_poc.public_pfsp as public_pfsp
+    import sbs_ea.public_pfsp as public_pfsp
 
     payloads = {
         "TestSolutions/vrf/VFR2_2_1_Gap.txt": b"2 2\n0 1 1 2\n1 3 0 4\n",
@@ -127,8 +123,7 @@ def test_vfr_loader_filters_transfer_families(monkeypatch, tmp_path) -> None:
 def test_vfr_best_known_loader_parses_semicolon_csv(tmp_path) -> None:
     path = tmp_path / "VFRsmall.csv"
     path.write_text(
-        "Name;n;m;LB;UB;Optimal;UBFoundBy;Permutation\n"
-        "VFR10_5_1;10;5;;695;1;0; 1 2 3 4 5 6 7 8 9 10\n",
+        "Name;n;m;LB;UB;Optimal;UBFoundBy;Permutation\nVFR10_5_1;10;5;;695;1;0; 1 2 3 4 5 6 7 8 9 10\n",
         encoding="utf-8",
     )
     assert load_vfr_best_known((path,)) == {"VFR10_5_1": 695}

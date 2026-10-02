@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from pairwise_bpp_poc.experiment_stats import (
+from sbs_ea.experiment_stats import (
     jsplib_family_id,
     paired_bootstrap_ci,
     paired_comparison_summary,
