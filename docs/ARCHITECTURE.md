@@ -31,9 +31,10 @@ prepared pools, seeds, modes and budgets. Publication uses exclusive atomic
 records. A completed result can be reused after checksum validation. An
 interrupted population is not guessed or silently reconstructed.
 
-The dependency-selected scope and archived source hashes are in
+The dependency-selected scope and original source hashes are in
 SCOPE_MIGRATION.json. Earlier selector/kernel/remote launch/paper-production paths
-do not supply the PFSP source-EA or its retained baseline once the three actual
-atomic-selection helpers are extracted. Their original tests still run against
-their original implementation through scripts/check_historical.py. They are
-historical research code, not alternative current CLI implementations.
+do not supply the PFSP source-EA or its retained baseline once the three required
+atomic-selection helpers are extracted. Those unused paths and the standalone
+all-domain test runner were removed. The current 75 differential cases read only
+the original implementations listed in `tests/reference/MANIFEST.json`. Scientific
+evidence is independently verified by `sbs-ea reproduce`.

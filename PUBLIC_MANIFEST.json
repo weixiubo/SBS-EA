@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "sha256": "38a4bc90a545354e3f56f234c4361c3950a826108378e010380f5a2b70d1f9af",
-      "bytes": 493
+      "sha256": "fa48ea8cb3feae34d3948e3adda3e9a1f5ed2a8c1ff567222d0253f1e3961afd",
+      "bytes": 553
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "49e6eb81c1ce903aa53c844e175e883f848ec77ad141fbc804b3dce40103bb24",
-      "bytes": 551
+      "sha256": "809cf74a7a70bb534401bb8f6fafb68d15e94f55d72008b2feef44d4062ebb15",
+      "bytes": 1049
     },
     {
       "path": "LICENSE",
@@ -38,8 +38,8 @@
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "46d62d5c6ed0b8e1015a23390b2b1ba9d6fe437b070c923e0889c910048b7ef2",
-      "bytes": 491
+      "sha256": "e0b64dfa57ccb6a855e05c94ed17a42141b278469fb0814221ad19577321bb29",
+      "bytes": 389
     },
     {
       "path": "README.md",
@@ -53,8 +53,8 @@
     },
     {
       "path": "THIRD_PARTY.md",
-      "sha256": "21c7d2f7368d4cb17a2d4f34037600892670a424ac842f9e5cd20ed4c6dbd812",
-      "bytes": 1098
+      "sha256": "419046f03270789d0862dae334c7438eadda736c8c46cd106ba8f72f782cb820",
+      "bytes": 1254
     },
     {
       "path": "configs/demo.json",
@@ -68,8 +68,8 @@
     },
     {
       "path": "docs/ARCHITECTURE.md",
-      "sha256": "a8c258c9e481dfb944db8d02dac479987ba514950da48e3baf9975e530d77fd0",
-      "bytes": 2581
+      "sha256": "e43d209321ae94a677f14bc4ca9c76fe912004c1e96cd3e8df9d7db1db2cbae4",
+      "bytes": 2657
     },
     {
       "path": "docs/DEVELOPMENT.md",
@@ -118,8 +118,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "d724aa17c5f379a76c4c512ca3fb5328a37e5bdbc8136c3f8e667eb68fae0822",
-      "bytes": 1678
+      "sha256": "4a23151260d469e76f157901be9d36ea28fb4ababa3b7917a87634a4e9b0557c",
+      "bytes": 2572
     },
     {
       "path": "examples/make_inputs.py",
@@ -9200,6 +9200,11 @@
       "path": "scripts/check_release.py",
       "sha256": "46422ccb262b7086a21ef705ae5f6ef309f6ad3c9c38c7aee9907e25b7063f7e",
       "bytes": 5395
+    },
+    {
+      "path": "scripts/check_sdist.py",
+      "sha256": "585eb6e898939c6b5d31548d0707f2ce84e41fe006d330fb80a67a033a1a304f",
+      "bytes": 3372
     },
     {
       "path": "scripts/check_structure.py",
