@@ -5,7 +5,7 @@ retain their upstream terms. Benchmark files and model weights are not bundled;
 RESOURCE documentation records their separate sources and license status.
 
 The original `scripts/run_reevo_bpplib_baseline.py`, now preserved byte-for-byte
-inside `reproduce/maintainer-baseline/sbs-ea-d2b171e.tar.gz`, embeds an adapted
+inside `tests/reference/MANIFEST.json`, embeds an adapted
 ReEvo bin-packing seed heuristic. Source:
 [ReEvo seed_func.txt](https://github.com/ai4co/reevo/blob/main/prompts/bpp_online/seed_func.txt).
 It is MIT licensed, Copyright (c) 2023 Haoran Ye. The complete notice is included

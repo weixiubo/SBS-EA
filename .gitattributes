@@ -1,3 +1,6 @@
 * text=auto eol=lf
 *.zip binary
 reproduce/frozen/** -text
+
+# Test reference identities include original whitespace and line endings.
+tests/reference/source/** -text -whitespace

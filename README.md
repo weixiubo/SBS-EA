@@ -59,9 +59,11 @@ always have a new source identity and historical_evidence=false.
 `reproduce` verifies 1,802 original evidence files, call records, policy results,
 and reconstructs mean gaps. It verifies the recorded confidence intervals; it
 does not recompute their bootstrap draws. Historical source, tests and negative
-studies remain byte-preserved in the maintainer baseline archive.
+studies are removed from the current working tree; the supported scope is PFSP source-EA.
 
 See [architecture](docs/ARCHITECTURE.md), [resources](docs/RESOURCES.md),
 [migration](docs/MIGRATION.md), [development](docs/DEVELOPMENT.md),
 [validation](docs/VALIDATION.md), and [third-party notices](THIRD_PARTY.md).
 No repository or research material is published automatically.
+
+Material ownership and deletion rules: [docs/MATERIALS.md](docs/MATERIALS.md).

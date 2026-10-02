@@ -2,7 +2,7 @@
   "project": "SBS-EA",
   "maintained_version": "0.2.0",
   "baseline": "d2b171e61569f8de4e7dc620bebc8c15f8d8e7a0",
-  "baseline_archive": "reproduce/maintainer-baseline/SOURCE.json",
+  "baseline_archive": "tests/reference/MANIFEST.json",
   "earlier_provenance": {
     "project": "SBS-EA",
     "baseline_commit": "c3c7d3edb23d09599b02c8772f9cc4cb2e963c2f",

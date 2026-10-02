@@ -8,3 +8,6 @@ recursive-include scripts *.py
 graft reproduce
 recursive-include src/sbs_ea *.py *.json *.gz py.typed
 global-exclude *.pyc
+graft tests/reference
+include tests/reference_support.py
+global-exclude __pycache__ *.py[cod]

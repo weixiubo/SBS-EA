@@ -26,7 +26,7 @@ def parser() -> argparse.ArgumentParser:
     experiment.add_argument("--resume", action="store_true")
     commands.add_parser("reproduce", help="verify original frozen evidence")
     for command in (doctor, experiment):
-        for kind in ("data", "models", "runs", "archives"):
+        for kind in ("data", "models", "runs", "evidence"):
             command.add_argument(f"--{kind}-dir")
     return root
 
@@ -38,7 +38,7 @@ def dispatch(args: argparse.Namespace) -> dict[str, Any]:
         from .reproduction import reproduce
 
         return reproduce()
-    overrides = {kind: getattr(args, f"{kind}_dir") for kind in ("data", "models", "runs", "archives")}
+    overrides = {kind: getattr(args, f"{kind}_dir") for kind in ("data", "models", "runs", "evidence")}
     if args.command == "run":
         return run(read_config(args.config, overrides), resume=args.resume)
     paths = resolve_paths(overrides)

@@ -2,16 +2,16 @@
 
 Code and its .venv live in `~/project/SBS-EA`. Data defaults to
 `~/research/data/SBS-EA`, models to `~/research/models`, new runs to
-`~/research/runs/SBS-EA/<run_id>`, and historical backups to `~/research/archives`.
+`~/research/runs/SBS-EA/<run_id>`, and historical backups to `~/research/data/<project>/evidence`.
 Importing the package does not create any of these directories.
 
-Precedence: CLI `--data-dir/--models-dir/--runs-dir/--archives-dir`, run JSON paths,
-SBS_EA_DATA_DIR/MODELS_DIR/RUNS_DIR/ARCHIVES_DIR, per-user JSON paths, defaults.
+Precedence: CLI `--data-dir/--models-dir/--runs-dir/--evidence-dir`, run JSON paths,
+SBS_EA_DATA_DIR/MODELS_DIR/RUNS_DIR/EVIDENCE_DIR, per-user JSON paths, defaults.
 The user file is `$XDG_CONFIG_HOME/research/SBS-EA.json` (normally
 `~/.config/research/SBS-EA.json`); SBS_EA_LOCAL_CONFIG selects another file.
 Example: `{"paths":{"data":"/path/to/data","runs":"/path/to/runs"}}`.
 Run-relative files resolve beside the configuration; placeholders {data},
-{models}, {runs}, {archives} are supported. Individual doctor catalog locations
+{models}, {runs}, {evidence} are supported. Individual doctor catalog locations
 can use the user JSON resources object or SBS_EA_RESOURCE_<ID>.
 
 The machine-readable resource_catalog.json records purpose, source, version,

@@ -12,7 +12,6 @@ jobs:
       - run: uv run mypy
       - run: uv run python scripts/check_structure.py
       - run: uv run pytest -q
-      - run: uv run python scripts/check_historical.py
       - run: uv run sbs-ea reproduce
       - run: uv build
       - run: uv run python scripts/check_release.py

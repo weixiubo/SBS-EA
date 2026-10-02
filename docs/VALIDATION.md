@@ -20,3 +20,7 @@ Not verified here: live model generation, GPU numerical equivalence, full Tailla
 VFR experiments, additional independent construction trials or private earlier
 domain workflows against restored external data. CPU fixtures do not establish
 those claims. No new research conclusions are inferred from refactoring tests.
+
+The material-cleanup checks and current retained source list are documented in
+MATERIALS.md and tests/reference/MANIFEST.json. Whole-source bundles are no longer
+part of the current distribution. Scientific evidence identities are unchanged.

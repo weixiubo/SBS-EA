@@ -1,6 +1,5 @@
 {
   "baseline": "d2b171e61569f8de4e7dc620bebc8c15f8d8e7a0",
-  "archive": "reproduce/maintainer-baseline/SOURCE.json",
   "retained_atomic_helpers": [
     "AtomicSelection",
     "_expression_weights",
@@ -11,13 +10,13 @@
       "old": "src/pairwise_bpp_poc/registry.py",
       "sha256": "f4f79f0b10a8246e326c3ed36f9000601a1a748d637ca6537231070a9d2f4a43",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/candidate.py",
       "sha256": "2688d2e603ddd86010f5903a91761d96d5a916f381e41e75b777f37e5ca91424",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/maxcover.py",
@@ -35,133 +34,133 @@
       "old": "src/pairwise_bpp_poc/jssp_symbolic_gp.py",
       "sha256": "748a404b6d4a20cbe75a78af25a09740af355b287b7b48418ab65abd4a19af0a",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/local_editor.py",
       "sha256": "02511770c5bb0b66b30ed391e34bc5bc518851f659a78876b6f805997b51a294",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/windows_paramiko_tunnel.py",
       "sha256": "8a5bc9429a995c03659db0a3f5cd48fa4ea95d71205766edf49a597add4dd1d8",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/jssp_heuristics.py",
       "sha256": "e8e669bceed8ad0bc967517fab9e303921a4909de9f8fbce2a248075d868a12e",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/jssp_stage_a.py",
       "sha256": "c169b08ec8c99d03f5467ea958028e88bb1e63d7fb14a8e91c6f3e659735d601",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/bpp.py",
       "sha256": "60828ef60436919121950c80dc4ce0db130f9f090dfbc663f3e8902aeb4acbcf",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/paper_assets.py",
       "sha256": "013848990df5291bbb45b2789252427f6cd014a83e0aea5c2ecc359d72f71b4f",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/generated_jssp.py",
       "sha256": "a729a1ffae1f05895e694e2eb648676df2f6d276344a7de96f04c6dc65fe8c4d",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/sole_schema_attribution.py",
       "sha256": "3b8427bed570b53dea2537a6ec307e5779021d4d40bc6dee7ab26f410bc0be6b",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/public_orlib_scp.py",
       "sha256": "05f4814244f0883264d4691c765bd97bf643dbcd3e55123f6cb3ea6f511b8b51",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/entities.py",
       "sha256": "cf4425e11010f42ecc1f3451caa7820c4632c2a8221c3c9887cf0d0dcc0ea60f",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/heuragenix_bridge.py",
       "sha256": "4381afddc5fdab6bb7b114ed9fa6236f882e5730ec61b948b7f9fd9d2e37b7d1",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/windows_paramiko_bridge.py",
       "sha256": "8acbc518d5713b8c0551bd19710b726ebefc5d59d05ee8af5dd86f2a3f17d5bc",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/heuristics.py",
       "sha256": "74a903a4e6f6d25b52beb55f22496bf568cb391a619b0959661384a4dbb41883",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/sygus_preview.py",
       "sha256": "94cbb979ad93a850f3eecb3946df361a8c610f43a154f57f3ffb3aaa2f50c09a",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/baseline_audit.py",
       "sha256": "b0cca5edde6043a7d36908b46e7e16c4008673ba1400e0e76ea6f8e861885fb2",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/public_orlib_mkp.py",
       "sha256": "aef86431a164ab66b3ba71b0059a391d000199eeb470b62a100bcfcebe88e029",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/jsplib_llm4ad.py",
       "sha256": "53c44ba9ee2d1a2e108c3029b70f77da72b1a58ace3bc77c9a65f7461b722813",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/backends.py",
       "sha256": "3aad7af3a2d872e47f74a2178f0bf9165bf3e1c8e7210687f25ea33dc8371bef",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/ranking.py",
       "sha256": "41d6945c7755562a3ac50f2bfa173a4850cc4ee1a3ef352774968c60522578cb",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/public_jsplib.py",
       "sha256": "d4dc10012ee147fb6e0254f496a743bcdb700030846e65e5cb8399e0cbd4a491",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/public_graphcover.py",
       "sha256": "cfd2d2320a230019e9000376e78281fbd4f79bb748b4078ccbd67b61d0cfb3af",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/semantic_prior.py",
@@ -173,13 +172,13 @@
       "old": "src/pairwise_bpp_poc/order_conflict_replay.py",
       "sha256": "e1f18623ea82e8f732e8ba417d4e896170049e25a9e239ae5c10c0c5dd3a9d7b",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/jssp.py",
       "sha256": "4a4d05279a845c2244cb6b64d4481ca0fc1d0b419122c85d9e4a4626e93aeaf2",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/grammar.py",
@@ -197,91 +196,91 @@
       "old": "src/pairwise_bpp_poc/public_bpplib.py",
       "sha256": "7093262d04b834f50f958d73c87cef62009a2a6b8a4b788f82d43cb391bb48a3",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/remote.py",
       "sha256": "27486655bff14b9d5e9a858095c77f1a8ace002be1350b2394b4c54c1a0f84f7",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/sole_prior_attribution.py",
       "sha256": "9f918dd7913a49a14f15f66ef43a50863c62ecabbe9c872c147da993097edc18",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/mocking.py",
       "sha256": "d1a9a302d548bb8d08b0dd16f5904e40ce1d98cee79957498403f1f7e20cdfb1",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/stage_b.py",
       "sha256": "80ff2c96510ae94bf8aad1fd874218cb4e3ba313e544dfb0ce3f72ae2c1876ce",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/cli.py",
       "sha256": "b6cdb90c5ea6904b0816569ba33129c65e27f43cae6b5d0485cd2cef29d1b0ef",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/public_smtwt.py",
       "sha256": "9418e6a28fe5d2ba2cf179d40fd2164d100e7c8e0d4bff27eb97ffcdc8feaea7",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/selector_v2.py",
       "sha256": "acbf92547c8f277a0b061b60b5b4fc3e6c37a86fcce9d442926d608d7dd502cf",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/download_utils.py",
       "sha256": "070abb6af64162495c9fe7096445217eec379e40ca48bc71272c8127438a7a27",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/freeze_audit.py",
       "sha256": "3f8440bdef18013d93c3441484a835dcdb911c7f3fcad6cb2bee3578dc5faf9c",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/profiling.py",
       "sha256": "322f9ab9620bf93aaa91ca0fb32a99d3823539b18ce6e205e7613d7ff7b82b1a",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/public_benchmarks.py",
       "sha256": "0f4ec6dbca63fc210ba5e8bb840e4079110469c99ff717088f77cd75700cbbf5",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/public_sygus.py",
       "sha256": "a57bb498cd125e05e475fc2de6a361cac4d6dbc838587673836ffeffc6c7abdd",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/__main__.py",
       "sha256": "c2ee4ddb093c9af060cafaf68219907f8a6b7b301ed3f8bea75db7555adec987",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/io_utils.py",
       "sha256": "9820ab12175c06151cf60341e2788fcdf3119d0b011e8788903f89abe0c3d1f5",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/pfsp_source_ea.py",
@@ -293,37 +292,37 @@
       "old": "src/pairwise_bpp_poc/sole_jsplib.py",
       "sha256": "8ec0f54ac758c855692dbc411612ee99d511737a8131e7edd9f8a7afc9d1a024",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/benchmark_audit.py",
       "sha256": "7d892540c835e0978f11953d2698c561f655615b757449f53d6109e60523a662",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/stage_b_cache.py",
       "sha256": "b26c299e2de0e58f546ea0efcb00e8ccdac2de3ef6a3778f076ee4c5248c5fbf",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/config.py",
       "sha256": "a0a08aeed4f0fd31fed4affb22e195bcaaddef2a2a70f72a9424307a77e4ec25",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/__init__.py",
       "sha256": "6e708f17cce59d420c07a08feb855a7d8d12db0dee1f90211e34e54410e13569",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/remote_model_server.py",
       "sha256": "944f8a45dfa1f458b954b83e6ba93d687c129a4aef2efe6145fba0ef8dd8ef11",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/pfsp_symbolic_gp.py",
@@ -335,37 +334,37 @@
       "old": "src/pairwise_bpp_poc/judging.py",
       "sha256": "ca05fb5b939aa003fde882b8b5df94fd00ccccd62b94f57e4682f4b5794b5894",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/jssp_stage_b.py",
       "sha256": "cf3bb09a4198e94f6327c449dea1e2615ec60b7516639733954a4c062d7f4699",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/sole2_prototype.py",
       "sha256": "a38584c9a4e50192370a5ec175907223cc4ddd09003a0a23ef81f0433140c30e",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/sole_guided_ea.py",
       "sha256": "392cb52e6f6231bb86c16f804161f4ce32cde6e5e70d86598b30b4894a291d49",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/generation.py",
       "sha256": "f15b4903a5adf415555a3afd834f1d76b102c380b81336ef4a7217d83ff7551c",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/stage_a.py",
       "sha256": "e139d6b9cd3cecb372f7ef3769c9301884028fe3663f936dd9ca21b805772043",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/prior_catalog.py",
@@ -383,7 +382,7 @@
       "old": "src/pairwise_bpp_poc/smtwt.py",
       "sha256": "ff945cdd6234acbe9e54642b697208d9d356e596e7d9250386fbb0cfbde20d67",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Retained only as a hash-checked regression reference input"
     },
     {
       "old": "src/pairwise_bpp_poc/graphprize.py",
@@ -419,43 +418,43 @@
       "old": "src/pairwise_bpp_poc/kernel_v2/llm_mutation_action.py",
       "sha256": "177e15b68aaae4a7bce7e7a22cde1653e62c28af1a34474a7c279caa2948a068",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/ir.py",
       "sha256": "fd74d6bd1c56fc292557ab2695d2cafa4b30a92f336e8d28621bf6607ee27a51",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/llm_mutation.py",
       "sha256": "817a36ccf7cf639e0ecb506e87f66922922a217d4acd1f26630ca157fe3341c7",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/runner.py",
       "sha256": "9606542ea5ade0d10c8890618e27a47592e093ffcfce62991205317dc740eed4",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/adapters.py",
       "sha256": "dc0452d73492294a8dc6c87e7bec535ff59a8dcebacb3d36d1190ba1bb7eb52e",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/__init__.py",
       "sha256": "888f42f540e85f84656374ebbed492c84ca0eea8e28b9fad6a417cf3a833ec7e",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     },
     {
       "old": "src/pairwise_bpp_poc/kernel_v2/selector.py",
       "sha256": "af9f63bee7e9281d649bd039e9b2ba3b8a087d271b82c3608514662080292fe5",
       "current": null,
-      "disposition": "frozen historical workflow; no dependency from maintained PFSP search/controls after retained atomic helpers are extracted"
+      "disposition": "Removed from the working tree: no dependency of the supported current workflow or its regression reference closure"
     }
   ],
   "tests": [
@@ -829,5 +828,6 @@
       "sha256": "7dd2c2f94292ccb775c7cdf68732bffb8f41496e365bc2b11a1aaaa8697dbfe2",
       "current": "baseline archive; scripts/check_historical.py"
     }
-  ]
+  ],
+  "reference_manifest": "tests/reference/MANIFEST.json"
 }

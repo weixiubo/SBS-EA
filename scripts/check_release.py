@@ -46,7 +46,7 @@ def inspect_distributions():
         for suffix in (
             "/LICENSE",
             "/uv.lock",
-            "/reproduce/maintainer-baseline/SOURCE.json",
+            "/tests/reference/MANIFEST.json",
             "/tests/test_original_equivalence.py",
         ):
             assert any(n.endswith(suffix) for n in names), suffix

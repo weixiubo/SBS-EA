@@ -16,7 +16,7 @@ from typing import Any
 
 PROJECT = "SBS-EA"
 ENV_PREFIX = "SBS_EA"
-KINDS = ("data", "models", "runs", "archives")
+KINDS = ("data", "models", "runs", "evidence")
 
 
 @dataclass(frozen=True)
@@ -24,7 +24,7 @@ class ResourcePaths:
     data: Path
     models: Path
     runs: Path
-    archives: Path
+    evidence: Path
 
     def expand(self, value: str, *, base: Path) -> Path:
         """Expand only documented resource placeholders, then config-relative paths."""
@@ -84,7 +84,7 @@ def resolve_paths(
         "data": root / "data" / PROJECT,
         "models": root / "models",
         "runs": root / "runs" / PROJECT,
-        "archives": root / "archives",
+        "evidence": root / "data" / PROJECT / "evidence",
     }
     resolved = {}
     for kind in KINDS:
