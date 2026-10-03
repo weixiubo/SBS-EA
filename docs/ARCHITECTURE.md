@@ -1,40 +1,36 @@
-# Maintained architecture
+# Architecture
 
-The dependency direction is CLI → settings/preflight → source preparation →
-pure experiment/search → task evaluator. Filesystem publication lives in
-execution/artifacts; the search and grammar never read local configuration.
+Execution follows CLI configuration, preflight checks, source preparation,
+search and task evaluation. Filesystem recording belongs to `execution` and
+`artifacts`; search and grammar components receive explicit inputs.
 
-- `settings`, `resources`, `datasets`: strict configuration, resource precedence,
-  hash-bound inputs and explicit PFSP split membership.
-- `priors/catalog_features`, `prior_catalog`: typed feature descriptions and fixed
-  source preference tables. Diagnostic domain features are retained to test the
-  shared catalog/grammar; the public experiment backend is PFSP.
-- `priors/parsing`, `priors/budgets`, `semantic_prior`: proposal decoding,
-  validation, priority-ordered capacity restriction and expression construction.
-  No model response is executed as arbitrary Python.
-- `probes`, `atomic_selection`, `source_preparation`: selection-only trajectories,
-  behavioral deduplication and matched source-pool preparation.
-- `source_ea/models`, `variation`, `scoring`: explicit candidate/result contracts,
-  seeded stochastic operators and family-balanced robust selection scores.
-- `pfsp_source_ea`: SearchState owns candidate scores, invalidity, first-generation
-  identities and logs; generation evaluation is separate from variation and
-  final held-out evaluation. Both search/control retain their original order.
-- `pfsp_symbolic_gp`: independent comparison implementation with separate
-  population ranking. It counts valid and invalid candidate attempts according
-  to its original protocol; do not call that identical to the source-EA valid
-  evaluation budget without an explicitly matched study design.
-- `experiment_stats`: paired estimates, exact signed-rank tails and bootstrap
-  utilities. `reproduction` invokes the original verifier in an isolated process.
+| Component | Responsibility |
+| --- | --- |
+| `settings`, `resources`, `datasets` | Configuration, path resolution, input hashes and PFSP split membership |
+| `priors/catalog_features`, `prior_catalog` | Typed feature descriptions and source preference tables |
+| `priors/parsing`, `priors/budgets`, `semantic_prior` | Proposal decoding, validation, capacity restriction and expression construction |
+| `probes`, `atomic_selection`, `source_preparation` | Selection trajectories, behavioral deduplication and matched source pools |
+| `source_ea/models`, `variation`, `scoring` | Candidate/result contracts, seeded operators and family-balanced selection scores |
+| `pfsp_source_ea` | Population state, evaluation, variation and held-out evaluation |
+| `pfsp_symbolic_gp` | Symbolic GP search and its population ranking |
+| `experiment_stats` | Paired estimates, signed-rank tails and bootstrap utilities |
+| `reproduction` | Original evidence verification in an isolated process |
 
-New runs record source file hashes, package versions, dataset/proposal hashes,
-prepared pools, seeds, modes and budgets. Publication uses exclusive atomic
-records. A completed result can be reused after checksum validation. An
-interrupted population is not guessed or silently reconstructed.
+`SearchState` owns candidate scores, invalidity, initial-generation identities
+and logs. Search and no-operator control share valid-evaluation accounting.
+Symbolic GP counts valid and invalid candidate attempts according to its own
+protocol; comparisons specify the selected budget convention explicitly.
 
-The dependency-selected scope and original source hashes are in
-SCOPE_MIGRATION.json. Earlier selector/kernel/remote launch/paper-production paths
-do not supply the PFSP source-EA or its retained baseline once the three required
-atomic-selection helpers are extracted. Those unused paths and the standalone
-all-domain test runner were removed. The current 75 differential cases read only
-the original implementations listed in `tests/reference/MANIFEST.json`. Scientific
-evidence is independently verified by `sbs-ea reproduce`.
+Proposals are parsed into supported expressions. Diagnostic domain features
+support shared catalog and grammar tests; the configured experiment backend
+is PFSP. Smoke and validation inputs determine source pools and selection;
+held-out test instances are evaluated after policy selection.
+
+Run records bind source hashes, package versions, dataset and proposal hashes,
+prepared pools, seeds, modes and budgets. Atomic writes produce complete
+result records. Resume verifies a completed result; interrupted searches
+start a new run.
+
+`SCOPE_MIGRATION.json` maps module ownership. The 75 differential cases use
+original inputs identified in `tests/reference/MANIFEST.json`. Scientific
+evidence has a separate identity and verification path.

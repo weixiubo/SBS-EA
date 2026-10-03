@@ -10,7 +10,7 @@ from sbs_ea.prior_catalog import (
 
 
 def normalize_prior_budget(prior: PriorSpec, *, feature_budget: int, interaction_budget: int) -> PriorSpec:
-    """Apply the archived priority_ordered_budget_cap_v1 source contract."""
+    """Apply the priority_ordered_budget_cap_v1 source contract."""
     if feature_budget <= 0 or interaction_budget < 0:
         raise ValueError(f"invalid_prior_budget:{feature_budget}:{interaction_budget}")
     feature_order = {feature: index for index, feature in enumerate(prior.features)}

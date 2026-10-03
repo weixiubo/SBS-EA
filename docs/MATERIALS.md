@@ -1,22 +1,25 @@
-# Material ownership and deletion policy
+# Repository contents and resource locations
 
-There is no general-purpose archive in the maintained project layout.
+| Location | Contents |
+| --- | --- |
+| `src/` | Installable implementation and package resources |
+| `tests/` | Unit, integration-boundary and regression tests |
+| `tests/reference/` | Original implementation inputs for deterministic comparisons, with per-file SHA-256 identities |
+| `configs/` and `examples/` | Experiment configurations and small runnable examples |
+| `reproduce/` | Scientific evidence verification and associated provenance |
+| `docs/` | Architecture, configuration, migration and validation documentation |
 
-- Supported algorithms and workflows belong to the installed package, with a
-  documented configuration and ordinary tests.
-- `tests/reference/` contains only the original implementation dependencies used
-  by regression tests. Its manifest checks every file before use. The original
-  whole-repository source bundles were removed; their unused files are not a
-  second installation or a future-work queue.
-- `reproduce/` contains immutable scientific evidence and its verification tools.
-  It proves recorded results; it is not a place to put unreviewed code. Signed
-  evidence keeps its original bytes and source identities.
-- External evidence belongs to `~/research/data/<project>/evidence`, and actual
-  run records to `~/research/runs/<project>`. Both are explicit resource inputs.
-- Duplicate source, obsolete wrappers and reconstructible environment residue
-  are deleted after their replacements or lack of consumers are verified.
-  Normal Git history records code changes; new source backup bundles are not made.
+Each checkout uses its own `.venv`, reconstructed from `uv.lock`.
+External resources use the following configurable defaults:
 
-Unique private research results, manuscripts and uncommitted experimental code
-are not declared useless from a directory name. Their research value must be
-decided separately from whether the current package imports them.
+```text
+~/research/data/SBS-EA/           datasets and task resources
+~/research/data/SBS-EA/evidence/  external evidence packages
+~/research/models/                  model checkpoints
+~/research/runs/SBS-EA/           experiment outputs
+```
+
+`PUBLIC_MANIFEST.json` defines the source export by path, size and SHA-256.
+Package manifests define the wheel and source-distribution contents.
+Scientific evidence and regression references retain their producer
+identities; each new experiment records the source and inputs it uses.

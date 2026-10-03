@@ -1,18 +1,17 @@
 # Contributing
 
-State the research role and input/output contract before adding a workflow. Keep
-source preparation, search, held-out evaluation and evidence publication separate.
-Add tests that exercise behavior and failure boundaries; preserve deterministic
-event order and budget accounting. Do not claim frozen evidence supports altered
-algorithms or silently repair a failed construction. Run the development and
-release checks in docs/DEVELOPMENT.md. Keep model weights, private manuscripts,
-credentials and full experiment outputs outside Git.
+Define the study role and input/output contract of each workflow. Keep source
+preparation, search, held-out evaluation and evidence recording separate.
+Tests should cover deterministic event order, budget accounting, selection
+boundaries and failure handling.
 
-## Source distribution validation
+Changes to algorithms or experiment designs receive distinct source and run
+identities. Preserve construction outcomes, original evidence and protocol
+checksums. Keep model weights, credentials and complete experiment outputs
+in the configured resource locations.
 
-After `uv build`, run `uv run --no-sync python scripts/check_sdist.py`.
-It checks that the source distribution contains every declared test, fixture,
-helper and example, creates a fresh environment from its own lock, runs the full
-suite, and verifies that rebuilding its wheel preserves the distribution payload.
-Dependencies must already be cached by the normal locked development setup;
-this check runs offline and removes its temporary environment afterward.
+Run the development, reproduction and distribution checks in
+[DEVELOPMENT.md](docs/DEVELOPMENT.md). Review the public file set before updating
+`PUBLIC_MANIFEST.json`. The source-distribution check uses cached dependencies
+to create a fresh locked environment, run the full suite and compare rebuilt
+wheel contents.

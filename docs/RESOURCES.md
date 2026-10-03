@@ -1,55 +1,50 @@
-# Resource and environment recovery
+# Resources and configuration
 
-Code and its .venv live in `~/project/SBS-EA`. Data defaults to
-`~/research/data/SBS-EA`, models to `~/research/models`, new runs to
-`~/research/runs/SBS-EA/<run_id>`, and historical backups to `~/research/data/<project>/evidence`.
-Importing the package does not create any of these directories.
+Data defaults to `~/research/data/SBS-EA`, models to `~/research/models`,
+outputs to `~/research/runs/SBS-EA/<run_id>` and external evidence to
+`~/research/data/SBS-EA/evidence`. The checkout contains source and `.venv`.
 
-Precedence: CLI `--data-dir/--models-dir/--runs-dir/--evidence-dir`, run JSON paths,
-SBS_EA_DATA_DIR/MODELS_DIR/RUNS_DIR/EVIDENCE_DIR, per-user JSON paths, defaults.
-The user file is `$XDG_CONFIG_HOME/research/SBS-EA.json` (normally
-`~/.config/research/SBS-EA.json`); SBS_EA_LOCAL_CONFIG selects another file.
-Example: `{"paths":{"data":"/path/to/data","runs":"/path/to/runs"}}`.
-Run-relative files resolve beside the configuration; placeholders {data},
-{models}, {runs}, {evidence} are supported. Individual doctor catalog locations
-can use the user JSON resources object or SBS_EA_RESOURCE_<ID>.
+Path precedence is CLI options, run-config `paths`, `SBS_EA_*_DIR` environment
+variables, user JSON, then defaults. User configuration is
+`$XDG_CONFIG_HOME/research/SBS-EA.json`, normally
+`~/.config/research/SBS-EA.json`; `SBS_EA_LOCAL_CONFIG` selects another file.
 
-The machine-readable resource_catalog.json records purpose, source, version,
-license status, target and recovery instructions. An unknown original digest is
-null; presence is reported as unverified until a run binds a concrete hash. The
-configuration requires an exact SHA256 for every external dataset or proposal.
-Never substitute a newly downloaded benchmark/reference for an old sealed study
-without assigning a new experiment identity.
+```json
+{"paths": {"data": "/path/to/data", "runs": "/path/to/runs"}}
+```
+
+Relative files resolve beside the configuration. Supported placeholders are
+`{data}`, `{models}`, `{runs}` and `{evidence}`. Catalog locations also accept
+a user `resources` map or `SBS_EA_RESOURCE_<ID>` override. Catalog entries
+record sources, versions, license references and acquisition steps. Each
+configured dataset and proposal requires an exact SHA-256 binding.
 
 ## Dataset schema
 
-A schema-1 JSON file contains `splits` with nonempty smoke, val and test lists.
-Each instance has exactly family, instance_id, processing_times (positive integer
-job × machine matrix), best_known_makespan (positive finite reference), and
-reference_source (citation or reference manifest identity). IDs must be unique
-across all splits. The reference is not assumed to be an optimum.
-`examples/make_inputs.py --directory /chosen/path` writes a small complete example.
+Schema 1 provides nonempty `smoke`, `val` and `test` split lists. Each instance
+contains `family`, `instance_id`, `processing_times`, `best_known_makespan`
+and `reference_source`. Processing times form a positive-integer job-by-machine
+matrix. The reference makespan is positive and finite; its source identifies
+the bound or schedule used. Instance IDs are unique across splits.
 
-Original raw adapters read Taillard/VFR files under
-`<data>/benchmarks/pfsp/taillard_zenodo_4542886`. Their sources are
-[Zenodo 4542886](https://zenodo.org/records/4542886) and the reference schedules
-identified in the original manifests. Read the source terms before downloading
-or redistributing. The adapters now diagnose missing files instead of downloading
-them. The new dataset JSON interface preserves explicit splits and references.
+```sh
+uv run python examples/make_inputs.py --directory /path/to/inputs
+```
 
-## Proposals and model dependencies
+Raw Taillard/VFR adapters read
+`<data>/benchmarks/pfsp/taillard_zenodo_4542886`. Their sources include
+[Zenodo 4542886](https://zenodo.org/records/4542886) and the schedules identified
+by the original manifests. Obtain these inputs under their source terms and
+preserve explicit split and reference identities when preparing dataset JSON.
 
-Supply the raw JSON/literal response expected by parse_prior_proposal in a
-hash-bound proposal file. Record model identity, revision, decoding parameters,
-license and generation seed in your research provenance. A cached response is
-reused for the configured EA seeds; it is not counted as a new API call.
-`uv sync --extra inference` installs the separately locked local inference
-dependencies; `--extra service` is available for HTTP integration development.
-They are not needed for CPU tests, demo, cached-proposal studies or reproduction.
-Live generation is not performed by the maintained search command. GPU numerical
-equivalence and a new independent construction study remain unverified until
-the matching model/resources are restored.
+## Proposal inputs
 
-Old environments are investigation material only. Restore needed external
-resources from the archive inventory; do not copy an old .venv or handwritten
-site-packages patch over the locked environment.
+Supply the JSON or literal response accepted by `parse_prior_proposal` in a
+hash-bound file. Record the model revision, decoding parameters, generation
+seed and license in the experiment provenance. A cached proposal supplies all
+configured EA seeds; separate construction trials use distinct proposals.
+
+`uv sync --locked --extra inference` provides optional local-inference
+dependencies, and `--extra service` provides HTTP integration dependencies.
+The search command consumes supplied proposals. CPU examples, tests and
+evidence reproduction use the base environment.

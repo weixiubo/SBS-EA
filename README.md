@@ -1,13 +1,13 @@
 # SBS-EA
 
-One-call semantic guidance for evolutionary heuristic design. The maintained
-implementation is PFSP source-conditioned population EA, its exact-budget
-no-operator control, semantic source construction and the symbolic GP comparison.
-The installed package is `sbs_ea`; the command is `sbs-ea`.
+SBS-EA studies one-call semantic guidance for evolutionary heuristic design.
+The `sbs_ea` package implements PFSP source-conditioned population search,
+semantic source construction, an exact-budget no-operator control and a
+symbolic genetic-programming comparison.
 
-## Install and try
+## Installation and examples
 
-Python 3.11 and NumPy 2.0.0 preserve the verified numerical environment.
+The locked environment uses Python 3.11 and NumPy 2.0.0:
 
 ```sh
 uv sync --locked
@@ -18,52 +18,49 @@ uv run sbs-ea run --config configs/demo.json --resume
 uv run sbs-ea reproduce
 ```
 
-The demo executes actual search on generated seven-job problems. Its NEH reference
-is a fixture upper bound, not a claim of optimality or a replacement for benchmark
-results. The configured run writes under `~/research/runs/SBS-EA/<run_id>/`.
-Choose a new run_id for another experiment. Resume accepts a complete result only
-after verifying its source/input identity and result checksum.
+The demo searches generated seven-job PFSP instances using an NEH upper-bound
+reference. Configured runs write to `~/research/runs/SBS-EA/<run_id>/`.
+Assign a distinct run ID to each experiment; resume verifies completed
+results against their source, input identities and checksums.
 
-## Run a study
+## Research workloads
 
-Copy `configs/experiment.json`, restore your dataset and cached model proposal,
-and fill in their SHA256 values. `sbs-ea doctor --config your-study.json` validates
-the resources and prepares source pools before any run directory is created.
-`sbs-ea run --config your-study.json` then executes the explicitly selected searches.
-No command silently downloads benchmarks or model weights, calls a paid model,
-starts a server, or discovers another checkout.
+Copy `configs/experiment.json`, supply a dataset and cached model proposal,
+and record each input's SHA-256:
 
-`sources` control prior construction; `modes` select population_ea/no_operator.
-The same source pool and exact valid-evaluation budget are used for both modes.
-The first source sets realized pool capacity when match_pool_size is true; other
-sources must match it. The smoke and validation splits alone build probes and
-select policies. The held-out test split is evaluated only after selection.
-The symbolic GP baseline is exposed separately through
-`sbs_ea.pfsp_symbolic_gp.run_pfsp_symbolic_gp_search`; its evaluation semantics are
-documented in ARCHITECTURE and are not relabelled as the same source-EA budget.
+```sh
+uv run sbs-ea doctor --config /path/to/study.json
+uv run sbs-ea run --config /path/to/study.json
+```
 
-Cached model proposals are explicit inputs. Repeating EA seeds with one proposal
-does not constitute independent model calls. Use distinct hash-bound proposals
-and run IDs for independent construction trials. Live model generation and full
-GPU experiments remain resource-dependent; this release supports supplied model
-outputs, source-EA execution and the original evidence verifier.
+`sources` controls prior construction; `modes` selects `population_ea` and
+`no_operator`. Both modes use the same source pool and valid-evaluation
+budget. With `match_pool_size`, the first source determines realized pool
+capacity and subsequent sources must match it.
 
-## Evidence and scope
+Smoke and validation splits supply probes and policy selection. The test
+split is evaluated after selection. The symbolic GP comparison is available
+through `sbs_ea.pfsp_symbolic_gp.run_pfsp_symbolic_gp_search`, with its own
+candidate-attempt accounting described in [architecture](docs/ARCHITECTURE.md).
 
-The frozen VFR220 confirmation supports a **secondary**, failure-aware claim:
-127 of 128 calls were executable. The strict 128-of-128 endpoint remains No-Go;
-the failed call was not repaired or replaced. Qwen transfer, macro-free v3 and
-selected JSSP diagnostics retain their original negative labels. New experiments
-always have a new source identity and historical_evidence=false.
+A cached proposal is reused across configured EA seeds. Independent model
+construction trials require distinct proposal records and run identities.
+[Resources](docs/RESOURCES.md) specifies dataset schemas, proposal inputs
+and model provenance.
 
-`reproduce` verifies 1,802 original evidence files, call records, policy results,
-and reconstructs mean gaps. It verifies the recorded confidence intervals; it
-does not recompute their bootstrap draws. Historical source, tests and negative
-studies are removed from the current working tree; the supported scope is PFSP source-EA.
+## Evidence reproduction
 
-See [architecture](docs/ARCHITECTURE.md), [resources](docs/RESOURCES.md),
-[migration](docs/MIGRATION.md), [development](docs/DEVELOPMENT.md),
-[validation](docs/VALIDATION.md), and [third-party notices](THIRD_PARTY.md).
-No repository or research material is published automatically.
+`reproduce` verifies 1,802 original evidence files and reconstructs VFR220
+mean gaps from 170 stored policy outcomes. The construction panel contains
+128 calls, of which 127 were executable; its supported analysis is the
+failure-aware secondary analysis. See the [reproduction guide](reproduce/README.md)
+for the strict endpoint, recorded confidence intervals and study identities.
 
-Material ownership and deletion rules: [docs/MATERIALS.md](docs/MATERIALS.md).
+## Documentation
+
+- [Architecture](docs/ARCHITECTURE.md) and [repository layout](docs/MATERIALS.md)
+- [Development](docs/DEVELOPMENT.md) and [contributing](CONTRIBUTING.md)
+- [Migration](docs/MIGRATION.md), [validation](docs/VALIDATION.md) and [third-party notices](THIRD_PARTY.md)
+
+Project-owned code is licensed under Apache-2.0. ReEvo attribution and its
+MIT notice are included in the third-party documentation.
