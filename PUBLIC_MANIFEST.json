@@ -9198,8 +9198,8 @@
     },
     {
       "path": "scripts/check_release.py",
-      "sha256": "46422ccb262b7086a21ef705ae5f6ef309f6ad3c9c38c7aee9907e25b7063f7e",
-      "bytes": 5395
+      "sha256": "3e3af4a6812adf5027b2255e3a3f99181ae6c39f084ad7d5727bd86b4094d728",
+      "bytes": 5679
     },
     {
       "path": "scripts/check_sdist.py",

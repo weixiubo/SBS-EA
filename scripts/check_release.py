@@ -56,16 +56,24 @@ def inspect_distributions():
 def check_install(wheel, temporary):
     uv = shutil.which("uv") or str(Path.home() / ".local/bin/uv")
     environment = temporary / "environment"
-    command([uv, "venv", "--python", sys.executable, environment], cwd=temporary)
-    constraints = temporary / "constraints.txt"
-    constraints.write_text(
-        command([uv, "export", "--locked", "--no-dev", "--no-emit-project", "--no-hashes"], cwd=ROOT)
+    install_env = {
+        key: value
+        for key, value in os.environ.items()
+        if key not in {"PYTHONPATH", "VIRTUAL_ENV", "UV_PROJECT", "UV_PROJECT_ENVIRONMENT"}
+    }
+    install_env["UV_PROJECT_ENVIRONMENT"] = str(environment)
+    # A locked sync needs cached wheels, not a previously queried package index.
+    command(
+        [uv, "sync", "--locked", "--offline", "--no-dev", "--no-install-project", "--python", sys.executable],
+        cwd=ROOT,
+        env=install_env,
     )
     python = environment / "bin/python"
     command(
-        [uv, "pip", "install", "--offline", "--python", python, "--constraint", constraints, wheel],
+        [uv, "pip", "install", "--offline", "--no-deps", "--python", python, wheel],
         cwd=temporary,
     )
+    command([uv, "pip", "check", "--python", python], cwd=temporary)
     outside = temporary / "unrelated"
     outside.mkdir()
     env = {k: v for k, v in os.environ.items() if k != "PYTHONPATH" and not k.startswith("SBS_EA_")}
