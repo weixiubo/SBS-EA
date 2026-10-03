@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+build/
+dist/
+outputs/
+.env
+.env.*
+!.env.example
+.release-ready.json
+.DS_Store
+
+# External benchmark downloads (their licenses remain upstream).
+benchmarks/

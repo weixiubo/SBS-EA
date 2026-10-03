@@ -1,0 +1,29 @@
+{
+  "schema_version": "pre_v3_sbs_ea_candidate_b_reassessment_v1",
+  "frozen_at_utc": "2026-07-19T09:10:00Z",
+  "purpose": "Retrospective dependence-aware reassessment of the complete pre-v3 SBS-EA pipeline under the final whole-method objective.",
+  "historical_implementation_commit": "81dd8fdb70865adec53debbc846ca5af1aa6b197",
+  "inputs": {
+    "matched_source_manifest_sha256": "272913bb95527afd9360ef17ae3870eacc912b36afcb00bb33c3a746f2bca20a",
+    "equal_budget_no_operator_result_sha256": "24df5853f27532886662caf8605a7d69daaba1f69d3d13b26446fd0fc5a36185"
+  },
+  "estimand": "Comparator minus LLM-source mean relative gap for the complete fixed downstream path.",
+  "inference": {
+    "unit": "physical instance",
+    "repeated_seed_rule": "Average repeated seed/rotation observations within each physical instance before inference.",
+    "bootstrap_replicates": 50000,
+    "interval": "percentile 95% bootstrap over physical instances"
+  },
+  "decision_rule": {
+    "required_blocks": ["held_out_rotations_21", "public_replay_151"],
+    "required_comparators": ["model_free_beam_prior", "same_catalog_symbolic_prior", "all_feature_prior"],
+    "pass": "Every required comparator has a strictly positive physical-instance bootstrap lower bound.",
+    "component_policy": "The equal-budget no-operator result is a mechanism limitation and mandatory disclosure, not a veto on whole-method effectiveness."
+  },
+  "mandatory_disclosures": [
+    "Ten temperature-zero calls yielded one unique source payload.",
+    "The LLM payload contains executable expressions admitted by the validator.",
+    "The historical source/deployment gate is not used as evidence that EA operators independently cause the gain.",
+    "The no-operator audit found a mean full-EA advantage of only 0.0004004 on 21 physical instances."
+  ]
+}

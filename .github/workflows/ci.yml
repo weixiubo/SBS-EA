@@ -1,0 +1,18 @@
+name: offline-release
+on: [push, pull_request]
+jobs:
+  cpu:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy
+      - run: uv run python scripts/check_structure.py
+      - run: uv run pytest -q
+      - run: uv run sbs-ea reproduce
+      - run: uv build
+      - run: uv run python scripts/check_release.py
+      - run: uv run --no-sync python scripts/check_sdist.py

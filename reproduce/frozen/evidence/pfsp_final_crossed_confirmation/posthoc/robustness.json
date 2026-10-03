@@ -1,0 +1,414 @@
+{
+  "analysis_label": "post_hoc_robustness_not_part_of_frozen_gate",
+  "data_status": "observed",
+  "family_cluster": {
+    "comparisons": {
+      "model_free_capacity_matched": {
+        "family_count": 22,
+        "family_mean_deltas": {
+          "10x10": 0.016987378733996705,
+          "10x15": 0.0031615391989878645,
+          "10x20": -0.005132381406061834,
+          "10x5": 0.012659877015753197,
+          "20x15": 0.016965163815332474,
+          "20x20": 0.016317425831142828,
+          "20x5": 0.019324692488558465,
+          "30x10": 0.023479163431198026,
+          "30x15": 0.018520615049881273,
+          "30x20": 0.022516020429290056,
+          "30x5": 0.02854972084730511,
+          "40x10": 0.02956044563785993,
+          "40x15": 0.02120530857958817,
+          "40x20": 0.016438855729607696,
+          "40x5": 0.031430376756371975,
+          "50x10": 0.035482261784066445,
+          "50x15": 0.02601801786903119,
+          "50x5": 0.027042431721643997,
+          "60x10": 0.03321168530266927,
+          "60x15": 0.029187096458711443,
+          "60x20": 0.018318715033518534,
+          "60x5": 0.036629048393561264
+        },
+        "mean_delta": 0.02172152085009155,
+        "positive_family_count": 21,
+        "source_by_family_cluster_bootstrap_ci": [
+          0.01633067450352633,
+          0.027100009969521065
+        ]
+      },
+      "model_free_full_budget": {
+        "family_count": 22,
+        "family_mean_deltas": {
+          "10x10": 0.011523317377795866,
+          "10x15": 0.00012366455806834715,
+          "10x20": -0.011916794910262726,
+          "10x5": -0.0005583518995939278,
+          "20x15": 0.009842557302978304,
+          "20x20": 0.005630578837117826,
+          "20x5": 0.015714067527704243,
+          "30x10": 0.011692416528308032,
+          "30x15": 0.004244637338344237,
+          "30x20": 0.01942407689348921,
+          "30x5": 0.012474625773872788,
+          "40x10": 0.015274310949878684,
+          "40x15": 0.013284533048990053,
+          "40x20": 0.009984484320072533,
+          "40x5": 0.01847929318101207,
+          "50x10": 0.020952507757498202,
+          "50x15": 0.019124105322593593,
+          "50x5": 0.015649981744947857,
+          "60x10": 0.021794228873285186,
+          "60x15": 0.029387795001983207,
+          "60x20": 0.006573755678546331,
+          "60x5": 0.019238250005537874
+        },
+        "mean_delta": 0.012179001873280354,
+        "positive_family_count": 20,
+        "source_by_family_cluster_bootstrap_ci": [
+          0.007169240988357595,
+          0.01710694470202871
+        ]
+      },
+      "random_capacity_matched": {
+        "family_count": 22,
+        "family_mean_deltas": {
+          "10x10": 0.013746687202603863,
+          "10x15": 0.004057395991813389,
+          "10x20": 0.009755684189680253,
+          "10x5": 0.005433366300654563,
+          "20x15": 0.016008646854684835,
+          "20x20": 0.012497971316956697,
+          "20x5": 0.013176931126538154,
+          "30x10": 0.01172636764672846,
+          "30x15": 0.009533482853478253,
+          "30x20": 0.015754559323261363,
+          "30x5": 0.01714994451109655,
+          "40x10": 0.02169973396606485,
+          "40x15": 0.014505892131896769,
+          "40x20": 0.01807640499976058,
+          "40x5": 0.016785622044170043,
+          "50x10": 0.01741880187513269,
+          "50x15": 0.020662783641919025,
+          "50x5": 0.013690839922710425,
+          "60x10": 0.02218072847180387,
+          "60x15": 0.01654372350161239,
+          "60x20": 0.01190137842387283,
+          "60x5": 0.017003672232968513
+        },
+        "mean_delta": 0.014514119024064017,
+        "positive_family_count": 22,
+        "source_by_family_cluster_bootstrap_ci": [
+          0.01089453800283868,
+          0.018204806220400136
+        ]
+      }
+    },
+    "estimand": "control_gap_minus_llm_gap",
+    "family_names": [
+      "10x5",
+      "10x10",
+      "10x15",
+      "10x20",
+      "20x5",
+      "20x15",
+      "20x20",
+      "30x5",
+      "30x10",
+      "30x15",
+      "30x20",
+      "40x5",
+      "40x10",
+      "40x15",
+      "40x20",
+      "50x5",
+      "50x10",
+      "50x15",
+      "60x5",
+      "60x10",
+      "60x15",
+      "60x20"
+    ],
+    "procedure": "independently resample source calls and 22 size-family blocks; retain all ten physical instances within each sampled family",
+    "resamples": 10000,
+    "seed": 20260720
+  },
+  "inputs": {
+    "analysis_sha256": "e614d91a3415b298641933ff1259168e007d420658e6e1ffb3c0808334dc0c2a",
+    "policy_evaluations_sha256": "3f437c0b534478936e3afc449ecf26b645de5c178ce2266058d1ac66bfe12270"
+  },
+  "macro_usage": {
+    "matching_rule": "whitespace, redundant outer parentheses, and EA sign flips are ignored; the remaining selected atomic must equal a macro from the same source record",
+    "policy_classes_ever_realized_with_direct_macro": 3,
+    "policy_classes_never_realized_with_direct_macro": 13,
+    "policy_summary": [
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "ac4c874af5ac9b020920ff0009b6dfea28cf1181ce49eb9b2d05c0da35823d6e",
+        "selected_expressions": [
+          "-((early_work + mean_early_work) / (late_work + eps))",
+          "-(completion_if_next / (completion_increase + eps))"
+        ],
+        "source_count": 47
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "26541f3ac1e7c41f6b65e1b291b2ea5c82ff569796438e0fea077190bc762a6f",
+        "selected_expressions": [
+          "-(early_work / (late_work + eps))",
+          "-(first_machine_time)"
+        ],
+        "source_count": 30
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "63506154a976e829e10bcd466c4fccb4d18e418cf0d6a7a2773df702fbe5616c",
+        "selected_expressions": [
+          "-((first_machine_time + mean_first_machine_time) / (last_machine_time + eps))",
+          "last_machine_time - first_machine_time"
+        ],
+        "source_count": 8
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "67ae6faa303aac313d3159b6618ed75e099a1e587b9821e6727cfbfc226f45e2",
+        "selected_expressions": [
+          "-(completion_if_next / (completion_increase + eps))",
+          "-((early_work + mean_early_work) / (late_work + eps))"
+        ],
+        "source_count": 5
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "7e6e3865fb56d2027dfb73af9d9ffe471669fda284e996be82c6d2dd11bd0e89",
+        "selected_expressions": [
+          "-(front_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_count": 5
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "acabb4086f661125fbac0d53e197186f94fb851812fb2331623ce1d23da8caba",
+        "selected_expressions": [
+          "late_work / (early_work + eps)",
+          "completion_rank"
+        ],
+        "source_count": 5
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "cfb7df456fb296af904fcdb85f41d6d8cc6831838d2bda9ee8c3f5c0b4e574b0",
+        "selected_expressions": [
+          "-((head_tail_balance + mean_head_tail_balance) / (front_load_ratio + eps))",
+          "completion_if_next"
+        ],
+        "source_count": 5
+      },
+      {
+        "direct_macro_source_count": 4,
+        "ever_directly_selected_macro": true,
+        "policy_sha256": "c7ad7d755adb4f9bc9d624a613d19fee422054836c253f8c824fe84d6194deeb",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_count": 4
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "e9b5cd2857d9807cc3a63a8891e20b7f8a81d392bd4feddbeebfadedfdf9ac83",
+        "selected_expressions": [
+          "-(early_work / (late_work + eps))",
+          "completion_if_next"
+        ],
+        "source_count": 4
+      },
+      {
+        "direct_macro_source_count": 4,
+        "ever_directly_selected_macro": true,
+        "policy_sha256": "f6a4ef737b5a0293a4078e9aca9480fc20c68c88bbc1b57a6c27d9cd0aa32f9e",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-( total_work / (mean_total_work + eps) )"
+        ],
+        "source_count": 4
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "6fc6e405ce4cd25c30045af1c5c22f7fa544c1b1dbe7de4d95d16292c8f61001",
+        "selected_expressions": [
+          "-(early_work / (late_work + eps))",
+          "-( first_machine_time / (mean_first_machine_time + eps) )"
+        ],
+        "source_count": 3
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "cd3512af8a47a11b8fe57a545dd559c6bf5c31e49f8fe52d9c06d8a3ddda7350",
+        "selected_expressions": [
+          "-((early_work + mean_early_work) / (late_work + eps))",
+          "-(first_machine_time)"
+        ],
+        "source_count": 3
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "604ef63355071a8496af6a4efa30dce74db1769ad21d3a65128d82e048e53422",
+        "selected_expressions": [
+          "-(total_work)",
+          "-(front_load_ratio)"
+        ],
+        "source_count": 1
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "89c0ab2f3e5ad2a5cada9e9f622348beb8b0a34b10b75799e073652fffc6af8f",
+        "selected_expressions": [
+          "-(early_work / (late_work + eps))",
+          "last_machine_time / (first_machine_time + eps)"
+        ],
+        "source_count": 1
+      },
+      {
+        "direct_macro_source_count": 1,
+        "ever_directly_selected_macro": true,
+        "policy_sha256": "90b0a5fdb6cf6617949a76e2d59202fccb3da122504e2dc7fba7d7ef5eb5765e",
+        "selected_expressions": [
+          "-(first_machine_time - last_machine_time)",
+          "-((first_machine_time + mean_first_machine_time) / (last_machine_time + eps))"
+        ],
+        "source_count": 1
+      },
+      {
+        "direct_macro_source_count": 0,
+        "ever_directly_selected_macro": false,
+        "policy_sha256": "d5bf6eec2c8507496a607690d6ea5af45367c3dd3bb4b54aee92e22b360f5a2f",
+        "selected_expressions": [
+          "-(early_work / (late_work + eps))",
+          "-(-( completion_if_next / (mean_completion_if_next + eps) ))"
+        ],
+        "source_count": 1
+      }
+    ],
+    "source_count": 127,
+    "source_fraction_with_directly_selected_macro": 0.07086614173228346,
+    "source_records_with_direct_macro": [
+      {
+        "direct_macro_expressions": [
+          "-(first_machine_time - last_machine_time)"
+        ],
+        "policy_sha256": "90b0a5fdb6cf6617949a76e2d59202fccb3da122504e2dc7fba7d7ef5eb5765e",
+        "selected_expressions": [
+          "-(first_machine_time - last_machine_time)",
+          "-((first_machine_time + mean_first_machine_time) / (last_machine_time + eps))"
+        ],
+        "source_seed": 11031
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "c7ad7d755adb4f9bc9d624a613d19fee422054836c253f8c824fe84d6194deeb",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_seed": 11035
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "f6a4ef737b5a0293a4078e9aca9480fc20c68c88bbc1b57a6c27d9cd0aa32f9e",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-( total_work / (mean_total_work + eps) )"
+        ],
+        "source_seed": 11036
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "c7ad7d755adb4f9bc9d624a613d19fee422054836c253f8c824fe84d6194deeb",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_seed": 11037
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "f6a4ef737b5a0293a4078e9aca9480fc20c68c88bbc1b57a6c27d9cd0aa32f9e",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-( total_work / (mean_total_work + eps) )"
+        ],
+        "source_seed": 11077
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "f6a4ef737b5a0293a4078e9aca9480fc20c68c88bbc1b57a6c27d9cd0aa32f9e",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-( total_work / (mean_total_work + eps) )"
+        ],
+        "source_seed": 11088
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "c7ad7d755adb4f9bc9d624a613d19fee422054836c253f8c824fe84d6194deeb",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_seed": 11090
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "f6a4ef737b5a0293a4078e9aca9480fc20c68c88bbc1b57a6c27d9cd0aa32f9e",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-( total_work / (mean_total_work + eps) )"
+        ],
+        "source_seed": 11118
+      },
+      {
+        "direct_macro_expressions": [
+          "-(front_load_ratio - tail_load_ratio)"
+        ],
+        "policy_sha256": "c7ad7d755adb4f9bc9d624a613d19fee422054836c253f8c824fe84d6194deeb",
+        "selected_expressions": [
+          "-(front_load_ratio - tail_load_ratio)",
+          "-(total_work)"
+        ],
+        "source_seed": 11121
+      }
+    ],
+    "sources_with_directly_selected_macro": 9,
+    "sources_without_directly_selected_macro": 118,
+    "unique_policy_count": 16
+  },
+  "schema_version": "pfsp_final_posthoc_robustness_v1",
+  "status": "completed"
+}

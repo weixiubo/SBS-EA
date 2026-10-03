@@ -1,0 +1,81 @@
+{
+  "protocol_version": "sole_prior_semantic_prior_v1",
+  "domain": "pfsp",
+  "source": "llm_prior",
+  "features": [
+    "total_work",
+    "early_work",
+    "late_work",
+    "front_load_ratio",
+    "tail_load_ratio",
+    "completion_if_next",
+    "completion_increase",
+    "mean_processing_time"
+  ],
+  "interactions": [
+    [
+      "early_work",
+      "late_work"
+    ],
+    [
+      "front_load_ratio",
+      "tail_load_ratio"
+    ],
+    [
+      "completion_if_next",
+      "completion_increase"
+    ],
+    [
+      "total_work",
+      "mean_processing_time"
+    ]
+  ],
+  "templates": [
+    "signed",
+    "centered",
+    "range",
+    "difference",
+    "ratio",
+    "pressure_ratio"
+  ],
+  "feature_priorities": {
+    "total_work": 5,
+    "early_work": 5,
+    "late_work": 5,
+    "front_load_ratio": 5,
+    "tail_load_ratio": 5,
+    "completion_if_next": 5,
+    "completion_increase": 5,
+    "mean_processing_time": 4
+  },
+  "interaction_priorities": {
+    "early_work|late_work": 5,
+    "front_load_ratio|tail_load_ratio": 5,
+    "completion_if_next|completion_increase": 5,
+    "mean_processing_time|total_work": 1
+  },
+  "template_priorities": {
+    "ratio": 5,
+    "pressure_ratio": 5
+  },
+  "macro_expressions": [
+    "early_work - late_work",
+    "front_load_ratio - tail_load_ratio",
+    "completion_if_next + completion_increase"
+  ],
+  "macro_priorities": {
+    "early_work - late_work": 5,
+    "front_load_ratio - tail_load_ratio": 5,
+    "completion_if_next + completion_increase": 5
+  },
+  "llm_call_count": 1,
+  "metadata": {
+    "parser": "json_or_literal",
+    "raw_feature_count": 20,
+    "raw_macro_count": 8,
+    "normalization": "priority_ordered_budget_cap_v1",
+    "raw_interaction_count": 10,
+    "feature_budget": 8,
+    "interaction_budget": 12
+  }
+}

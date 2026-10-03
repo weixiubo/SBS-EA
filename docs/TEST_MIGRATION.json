@@ -1,0 +1,1938 @@
+{
+  "baseline_tests": 313,
+  "baseline_skips": 2,
+  "functions": [
+    {
+      "baseline": "tests/test_analyze_pfsp_direct_atomic_control.py::test_positive_direct_atomic_control",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_direct_atomic_control.py::test_positive_direct_atomic_control",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_direct_atomic_control.py::test_rejects_changed_source_payload",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_direct_atomic_control.py::test_rejects_changed_source_payload",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_enlarged_random_robustness.py::test_expected_seeds_excludes_invalid_llm_source",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_enlarged_random_robustness.py::test_expected_seeds_excludes_invalid_llm_source",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_enlarged_random_robustness.py::test_validate_enlarged_random_selection_accepts_exact_panel",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_enlarged_random_robustness.py::test_validate_enlarged_random_selection_accepts_exact_panel",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_enlarged_random_robustness.py::test_validate_enlarged_random_selection_rejects_budget_drift",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_enlarged_random_robustness.py::test_validate_enlarged_random_selection_rejects_budget_drift",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_crossed_confirmation.py::test_crossed_summary_supports_uniform_positive_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_crossed_confirmation.py::test_crossed_summary_supports_uniform_positive_effect",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_crossed_confirmation.py::test_source_check_rejects_half_wins_half_losses",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_crossed_confirmation.py::test_source_check_rejects_half_wins_half_losses",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_crossed_confirmation.py::test_crossed_summary_accepts_failure_aware_127_source_panel",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_crossed_confirmation.py::test_crossed_summary_accepts_failure_aware_127_source_panel",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_crossed_confirmation.py::test_gate_requires_strong_matched_controls_and_full_budget_efficiency",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_crossed_confirmation.py::test_gate_requires_strong_matched_controls_and_full_budget_efficiency",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_robustness.py::test_expression_core_ignores_outer_sign_and_parentheses",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_robustness.py::test_expression_core_ignores_outer_sign_and_parentheses",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_robustness.py::test_family_cluster_analysis_resamples_family_blocks",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_robustness.py::test_family_cluster_analysis_resamples_family_blocks",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_final_robustness.py::test_macro_usage_matches_only_same_source_macros",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_final_robustness.py::test_macro_usage_matches_only_same_source_macros",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_full_catalog_robustness.py::test_validate_full_catalog_selection_accepts_exact_manifest",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_full_catalog_robustness.py::test_validate_full_catalog_selection_accepts_exact_manifest",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_full_catalog_robustness.py::test_validate_full_catalog_selection_rejects_missing_feature",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_full_catalog_robustness.py::test_validate_full_catalog_selection_rejects_missing_feature",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_full_catalog_robustness.py::test_family_block_summary_retains_complete_family_blocks",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_full_catalog_robustness.py::test_family_block_summary_retains_complete_family_blocks",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_matched_random_control.py::test_positive_matched_random_control",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_matched_random_control.py::test_positive_matched_random_control",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_matched_random_control.py::test_rejects_nonzero_control_model_calls",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_matched_random_control.py::test_rejects_nonzero_control_model_calls",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_realized_capacity_random_control.py::test_positive_realized_capacity_control",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_realized_capacity_random_control.py::test_positive_realized_capacity_control",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_realized_capacity_random_control.py::test_positive_model_free_realized_capacity_control",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_realized_capacity_random_control.py::test_positive_model_free_realized_capacity_control",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_realized_capacity_random_control.py::test_rejects_realized_evaluation_mismatch",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_realized_capacity_random_control.py::test_rejects_realized_evaluation_mismatch",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_accepts_robust_capacity_matched_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_accepts_robust_capacity_matched_effect",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_accepts_60_source_seed_shards",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_accepts_60_source_seed_shards",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_source_unstable_model_free_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_source_unstable_model_free_effect",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_weak_operator_attribution",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_weak_operator_attribution",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_operator_pool_mismatch",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_confirmation.py::test_confirmation_analysis_rejects_operator_pool_mismatch",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_development.py::test_development_analysis_accepts_exact_paired_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_development.py::test_development_analysis_accepts_exact_paired_effect",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_development.py::test_development_choice_uses_wins_effect_then_weight_one",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_development.py::test_development_choice_uses_wins_effect_then_weight_one",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_development.py::test_development_analysis_rejects_capacity_mismatch",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_development.py::test_development_analysis_rejects_capacity_mismatch",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_accepts_source_and_operator_effects",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_accepts_source_and_operator_effects",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_rejects_weak_operator_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_rejects_weak_operator_effect",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_rejects_operator_pool_mismatch",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_source_ea_validation.py::test_macro_free_validation_rejects_operator_pool_mismatch",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_untouched_vfr_confirmation.py::test_untouched_vfr_analysis_passes_frozen_positive_panel",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_untouched_vfr_confirmation.py::test_untouched_vfr_analysis_passes_frozen_positive_panel",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pfsp_untouched_vfr_confirmation.py::test_untouched_vfr_analysis_rejects_source_unstable_model_free_effect",
+      "current": "exact baseline archive: tests/test_analyze_pfsp_untouched_vfr_confirmation.py::test_untouched_vfr_analysis_rejects_source_unstable_model_free_effect",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_analyze_pre_v3_candidate_b.py::test_physical_instance_aggregation_prevents_seed_pseudoreplication",
+      "current": "exact baseline archive: tests/test_analyze_pre_v3_candidate_b.py::test_physical_instance_aggregation_prevents_seed_pseudoreplication",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_baseline_audit.py::test_initialize_baseline_layout_writes_manifests",
+      "current": "exact baseline archive: tests/test_baseline_audit.py::test_initialize_baseline_layout_writes_manifests",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_baseline_audit.py::test_aggregate_bpp_performance_vs_cost_filters_and_writes_outputs",
+      "current": "exact baseline archive: tests/test_baseline_audit.py::test_aggregate_bpp_performance_vs_cost_filters_and_writes_outputs",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_bpp.py::test_dataset_layout",
+      "current": "exact baseline archive: tests/test_bpp.py::test_dataset_layout",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_bpp.py::test_best_fit_rollout_is_valid",
+      "current": "exact baseline archive: tests/test_bpp.py::test_best_fit_rollout_is_valid",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_candidate.py::test_reject_imports",
+      "current": "exact baseline archive: tests/test_candidate.py::test_reject_imports",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_candidate.py::test_seed_candidate_executes",
+      "current": "exact baseline archive: tests/test_candidate.py::test_seed_candidate_executes",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_single_gpu_neighbor_rerank_to_one",
+      "current": "exact baseline archive: tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_single_gpu_neighbor_rerank_to_one",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_other_kernels_unchanged",
+      "current": "exact baseline archive: tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_other_kernels_unchanged",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_dual_hotswap_unchanged",
+      "current": "exact baseline archive: tests/test_cli.py::test_stabilize_kernel_stage_b_remote_judges_keeps_dual_hotswap_unchanged",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_config.py::test_default_config_falls_back_to_repo_root",
+      "current": "exact baseline archive: tests/test_config.py::test_default_config_falls_back_to_repo_root",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_download_utils.py::test_download_file_uses_powershell_fallback",
+      "current": "exact baseline archive: tests/test_download_utils.py::test_download_file_uses_powershell_fallback",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_paired_win_tie_loss_lower_is_better",
+      "current": "tests/test_experiment_stats.py::test_paired_win_tie_loss_lower_is_better",
+      "assertion_count": 1,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_wilcoxon_and_bootstrap_are_deterministic",
+      "current": "tests/test_experiment_stats.py::test_wilcoxon_and_bootstrap_are_deterministic",
+      "assertion_count": 2,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_paired_comparison_summary_reports_positive_delta",
+      "current": "tests/test_experiment_stats.py::test_paired_comparison_summary_reports_positive_delta",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_jsplib_family_id_handles_prefixed_instance_ids",
+      "current": "tests/test_experiment_stats.py::test_jsplib_family_id_handles_prefixed_instance_ids",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_paired_group_rows_average_instances_and_families",
+      "current": "tests/test_experiment_stats.py::test_paired_group_rows_average_instances_and_families",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_experiment_stats.py::test_paired_conservative_summaries_include_three_units",
+      "current": "tests/test_experiment_stats.py::test_paired_conservative_summaries_include_three_units",
+      "assertion_count": 2,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_freeze_audit.py::test_run_freeze_audit_marks_kernel_frozen",
+      "current": "exact baseline archive: tests/test_freeze_audit.py::test_run_freeze_audit_marks_kernel_frozen",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_freeze_audit.py::test_run_freeze_audit_flags_repeat_reversal",
+      "current": "exact baseline archive: tests/test_freeze_audit.py::test_run_freeze_audit_flags_repeat_reversal",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_generated_jssp.py::test_generated_jssp_holdout_is_deterministic_and_bounded",
+      "current": "exact baseline archive: tests/test_generated_jssp.py::test_generated_jssp_holdout_is_deterministic_and_bounded",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_generated_jssp.py::test_generated_jssp_instances_roll_out_with_classical_policy",
+      "current": "exact baseline archive: tests/test_generated_jssp.py::test_generated_jssp_instances_roll_out_with_classical_policy",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_graphprize.py::test_graphprize_ready_options_and_rollout_are_executable",
+      "current": "tests/test_graphprize.py::test_graphprize_ready_options_and_rollout_are_executable",
+      "assertion_count": 5,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_heuragenix_bridge.py::test_single_heuragenix_heuristic_runs_to_completion",
+      "current": "exact baseline archive: tests/test_heuragenix_bridge.py::test_single_heuragenix_heuristic_runs_to_completion",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_heuragenix_bridge.py::test_random_heuragenix_heuristic_is_seeded",
+      "current": "exact baseline archive: tests/test_heuragenix_bridge.py::test_random_heuragenix_heuristic_is_seeded",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_heuragenix_bridge.py::test_heuragenix_candidate_summary_covers_evolved_pool",
+      "current": "exact baseline archive: tests/test_heuragenix_bridge.py::test_heuragenix_candidate_summary_covers_evolved_pool",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_large_holdout_split_excludes_selection_instances",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_large_holdout_split_excludes_selection_instances",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_all_public_split_keeps_referenced_selection_instances",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_all_public_split_keeps_referenced_selection_instances",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_expanded_replay_excludes_symbolic_gp_rows_not_in_frozen_expanded_outputs",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_expanded_replay_excludes_symbolic_gp_rows_not_in_frozen_expanded_outputs",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_expanded_replay_keeps_all_external_budget_tiers",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_expanded_replay_keeps_all_external_budget_tiers",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_expanded_replay_output_budget_mode_preserves_source_metadata",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_expanded_replay_output_budget_mode_preserves_source_metadata",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_expanded_replay.py::test_expanded_replay_output_budget_mode_uses_medium_and_large_tiers",
+      "current": "exact baseline archive: tests/test_jsplib_expanded_replay.py::test_expanded_replay_output_budget_mode_uses_medium_and_large_tiers",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_external_fidelity_suite.py::test_normalize_budget_payload_preserves_real_tier_for_legacy_rows",
+      "current": "exact baseline archive: tests/test_jsplib_external_fidelity_suite.py::test_normalize_budget_payload_preserves_real_tier_for_legacy_rows",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_external_fidelity_suite.py::test_candidate_existing_result_paths_include_rotation_and_legacy_main_names",
+      "current": "exact baseline archive: tests/test_jsplib_external_fidelity_suite.py::test_candidate_existing_result_paths_include_rotation_and_legacy_main_names",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_jsplib_template_program_execs",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_jsplib_template_program_execs",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_operation_view_supports_completion_time",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_operation_view_supports_completion_time",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_current_status_view_exposes_common_aliases",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_current_status_view_exposes_common_aliases",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_dispatch_falls_back_to_job_machine_pair",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_dispatch_falls_back_to_job_machine_pair",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_dispatch_accepts_operation_view_result",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_dispatch_accepts_operation_view_result",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_resolve_eval_split_names_supports_multi_split_aliases",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_resolve_eval_split_names_supports_multi_split_aliases",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_python_source_fingerprint_collapses_equivalent_layout",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_python_source_fingerprint_collapses_equivalent_layout",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_candidate_compile_source_prefers_full_program_when_available",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_candidate_compile_source_prefers_full_program_when_available",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_build_candidate_fidelity_audit_skips_candidates_that_fail_at_evaluation",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_build_candidate_fidelity_audit_skips_candidates_that_fail_at_evaluation",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_llm4ad.py::test_jsplib_construct_evaluation_behaves_like_llm4ad_evaluation",
+      "current": "exact baseline archive: tests/test_jsplib_llm4ad.py::test_jsplib_construct_evaluation_behaves_like_llm4ad_evaluation",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_eoh_sampler_recovers_function_from_json_then_code",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_eoh_sampler_recovers_function_from_json_then_code",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_undefined_bare_helper",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_undefined_bare_helper",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_allows_template_completion_helper",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_allows_template_completion_helper",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_unsupported_operation_attr",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_unsupported_operation_attr",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_nested_current_status_chain",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_jsplib_function_contract_errors_flags_nested_current_status_chain",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_jsplib_task_description_adds_code_only_contract",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_jsplib_task_description_adds_code_only_contract",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_compatible_openai_api_propagates_sampling_seed_and_temperature",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_compatible_openai_api_propagates_sampling_seed_and_temperature",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_mcts_sampler_repairs_invalid_helper_response_before_refine",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_mcts_sampler_repairs_invalid_helper_response_before_refine",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_partevo_sampler_repairs_invalid_helper_response",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_partevo_sampler_repairs_invalid_helper_response",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_mcts_sampler_returns_countable_failure_function_when_repair_cannot_fix_response",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_mcts_sampler_returns_countable_failure_function_when_repair_cannot_fix_response",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_runner_common.py::test_mcts_sampler_supplies_fallback_thought_when_invalid_response_has_no_braces",
+      "current": "exact baseline archive: tests/test_jsplib_runner_common.py::test_mcts_sampler_supplies_fallback_thought_when_invalid_response_has_no_braces",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jsplib_weighted_ea_baseline.py::test_pick_final_candidate_uses_smoke_and_val_only",
+      "current": "exact baseline archive: tests/test_jsplib_weighted_ea_baseline.py::test_pick_final_candidate_uses_smoke_and_val_only",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp.py::test_parse_jsplib_operations_handles_comments_and_zero_based_machines",
+      "current": "exact baseline archive: tests/test_jssp.py::test_parse_jsplib_operations_handles_comments_and_zero_based_machines",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp.py::test_parse_jsplib_operations_allows_official_zero_durations_only_when_requested",
+      "current": "exact baseline archive: tests/test_jssp.py::test_parse_jsplib_operations_allows_official_zero_durations_only_when_requested",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp.py::test_rollout_dispatch_policy_returns_feasible_makespan",
+      "current": "exact baseline archive: tests/test_jssp.py::test_rollout_dispatch_policy_returns_feasible_makespan",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_a.py::test_jsplib_stage_a_mock_runs",
+      "current": "exact baseline archive: tests/test_jssp_stage_a.py::test_jsplib_stage_a_mock_runs",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_b.py::test_jsplib_stage_b_mock_calibration_runs",
+      "current": "exact baseline archive: tests/test_jssp_stage_b.py::test_jsplib_stage_b_mock_calibration_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_b.py::test_weighted_candidate_lineage_and_tie_break_generation",
+      "current": "exact baseline archive: tests/test_jssp_stage_b.py::test_weighted_candidate_lineage_and_tie_break_generation",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_b.py::test_pick_elites_caps_same_root_seed_family_lock_in",
+      "current": "exact baseline archive: tests/test_jssp_stage_b.py::test_pick_elites_caps_same_root_seed_family_lock_in",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_b.py::test_grow_population_retries_fresh_twice_before_clone",
+      "current": "exact baseline archive: tests/test_jssp_stage_b.py::test_grow_population_retries_fresh_twice_before_clone",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_stage_b.py::test_jsplib_stage_b_mock_official_runs",
+      "current": "exact baseline archive: tests/test_jssp_stage_b.py::test_jsplib_stage_b_mock_official_runs",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_jssp_symbolic_gp.py::test_symbolic_gp_search_returns_executable_combo",
+      "current": "exact baseline archive: tests/test_jssp_symbolic_gp.py::test_symbolic_gp_search_returns_executable_combo",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_pointwise_score_uses_code_side_weights",
+      "current": "exact baseline archive: tests/test_judging.py::test_pointwise_score_uses_code_side_weights",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_resolve_match_order_conflict_zeroes_judge_contribution",
+      "current": "exact baseline archive: tests/test_judging.py::test_resolve_match_order_conflict_zeroes_judge_contribution",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_run_rejudge_requires_two_judges_to_agree",
+      "current": "exact baseline archive: tests/test_judging.py::test_run_rejudge_requires_two_judges_to_agree",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_run_rejudge_disagreement_keeps_original_winner",
+      "current": "exact baseline archive: tests/test_judging.py::test_run_rejudge_disagreement_keeps_original_winner",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_select_rejudge_indices_prioritizes_order_conflict",
+      "current": "exact baseline archive: tests/test_judging.py::test_select_rejudge_indices_prioritizes_order_conflict",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_pairwise_prompt_contains_comparison_summary",
+      "current": "exact baseline archive: tests/test_judging.py::test_pairwise_prompt_contains_comparison_summary",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_judging.py::test_rejudge_prompt_uses_structured_summary_without_old_reason_text",
+      "current": "exact baseline archive: tests/test_judging.py::test_rejudge_prompt_uses_structured_summary_without_old_reason_text",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2.py::test_strategy_ir_roundtrip_and_adapter_edits_stay_valid",
+      "current": "exact baseline archive: tests/test_kernel_v2.py::test_strategy_ir_roundtrip_and_adapter_edits_stay_valid",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2.py::test_pick_hybrid_elites_respects_root_cap_and_exploration_slots",
+      "current": "exact baseline archive: tests/test_kernel_v2.py::test_pick_hybrid_elites_respects_root_cap_and_exploration_slots",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2.py::test_kernel_stage_a_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2.py::test_kernel_stage_a_jsplib_mock_runs",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2.py::test_kernel_stage_b_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2.py::test_kernel_stage_b_jsplib_mock_runs",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2.py::test_kernel_stage_a_bpp_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2.py::test_kernel_stage_a_bpp_mock_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_bpp_objective_mutation.py::test_run_kernel_stage_b_llm_mutation_action_supports_bpp_bpplib",
+      "current": "exact baseline archive: tests/test_kernel_v2_bpp_objective_mutation.py::test_run_kernel_stage_b_llm_mutation_action_supports_bpp_bpplib",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_region_priority_weight_prefers_better_and_underexplored_regions",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_region_priority_weight_prefers_better_and_underexplored_regions",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_behavior_prompt_includes_region_context_without_changing_action_schema",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_behavior_prompt_includes_region_context_without_changing_action_schema",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_v2_transfer_prompt_uses_target_exemplar_not_region_center",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_v2_transfer_prompt_uses_target_exemplar_not_region_center",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_behavior_distance_supports_move_toward_target_calculation",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_behavior_distance_supports_move_toward_target_calculation",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_transfer_region_filter_excludes_overly_weak_regions",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_transfer_region_filter_excludes_overly_weak_regions",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_transfer_region_selection_can_exclude_parent_region_and_return_none",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_transfer_region_selection_can_exclude_parent_region_and_return_none",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_mock_generator_returns_valid_child",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_v2_retries_on_non_strict_json",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_v2_retries_on_non_strict_json",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_v2_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_llm_behavior_mutation_action_v2_mock_generator_returns_valid_child",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_jsplib_mock_runs",
+      "assertion_count": 19,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_v2_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_v2_jsplib_mock_runs",
+      "assertion_count": 18,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_rejects_bpp",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_rejects_bpp",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_v2_rejects_bpp",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_behavior_mutation_action.py::test_kernel_stage_b_llm_behavior_mutation_action_v2_rejects_bpp",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_budget_gate_blind_prompt_hides_val_fields",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_budget_gate_blind_prompt_hides_val_fields",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_budget_gate_only_reorders_prescreen",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_budget_gate_only_reorders_prescreen",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_only_promoted_children_run_val",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_only_promoted_children_run_val",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_calibration_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_calibration_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_official_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_official_jsplib_mock_runs",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_official_skips_calibration",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_budget_gate.py::test_kernel_stage_b_llm_budget_gate_official_skips_calibration",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_mock_generator_returns_valid_strategy_ir",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_mock_generator_returns_valid_strategy_ir",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_invalid_json_retries_then_falls_back",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_invalid_json_retries_then_falls_back",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_alias_and_clamp_normalization_stays_llm_mutation",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_alias_and_clamp_normalization_stays_llm_mutation",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_duplicate_ir_repairs_before_fallback",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_llm_mutation_duplicate_ir_repairs_before_fallback",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_objective_parent_pool_and_rank_biased_sampling_are_reproducible",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_objective_parent_pool_and_rank_biased_sampling_are_reproducible",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation.py::test_kernel_stage_b_llm_mutation_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation.py::test_kernel_stage_b_llm_mutation_jsplib_mock_runs",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_apply_mutation_action_supports_all_action_types",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_apply_mutation_action_supports_all_action_types",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_mock_generator_returns_valid_child",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_noop_retries_then_falls_back",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_noop_retries_then_falls_back",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_duplicate_repairs_before_fallback",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_duplicate_repairs_before_fallback",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_enumerate_local_mutation_actions_returns_non_empty_menu",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_enumerate_local_mutation_actions_returns_non_empty_menu",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_bank_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_bank_mock_generator_returns_valid_child",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_bank_invalid_choice_falls_back",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_mutation_action_bank_invalid_choice_falls_back",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_exemplar_mutation_action_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_exemplar_mutation_action_mock_generator_returns_valid_child",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_rank_local_mutation_actions_with_history_prefers_supported_actions",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_rank_local_mutation_actions_with_history_prefers_supported_actions",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_llm_retrieved_mutation_action_bank_mock_generator_returns_valid_child",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_llm_retrieved_mutation_action_bank_mock_generator_returns_valid_child",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_mutation_action_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_mutation_action_jsplib_mock_runs",
+      "assertion_count": 12,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_mutation_action_bank_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_mutation_action_bank_jsplib_mock_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_exemplar_mutation_action_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_exemplar_mutation_action_jsplib_mock_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_retrieved_mutation_action_bank_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_mutation_action.py::test_kernel_stage_b_llm_retrieved_mutation_action_bank_jsplib_mock_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_neighbor_rerank_only_reorders_shortlist",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_neighbor_rerank_only_reorders_shortlist",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_blind_pairwise_prompt_hides_objective_scores",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_blind_pairwise_prompt_hides_objective_scores",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_compare_pairwise_retries_and_repairs_invalid_escape",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_compare_pairwise_retries_and_repairs_invalid_escape",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_calibration_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_calibration_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_official_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_official_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_official_skips_calibration",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_neighbor_rerank.py::test_kernel_stage_b_llm_neighbor_rerank_official_skips_calibration",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_parent_budget.py::test_parent_budget_prompt_hides_test",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_parent_budget.py::test_parent_budget_prompt_hides_test",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_parent_budget.py::test_parent_budget_retry_then_fallback",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_parent_budget.py::test_parent_budget_retry_then_fallback",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_calibration_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_calibration_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_official_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_official_jsplib_mock_runs",
+      "assertion_count": 12,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_official_skips_calibration",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_parent_budget.py::test_kernel_stage_b_llm_parent_budget_official_skips_calibration",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_region_cards_split_high_dispersion_root",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_region_cards_split_high_dispersion_root",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_region_budget_prompt_hides_test",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_region_budget_prompt_hides_test",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_region_budget_retry_then_fallback",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_region_budget_retry_then_fallback",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_calibration_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_calibration_jsplib_mock_runs",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_official_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_official_jsplib_mock_runs",
+      "assertion_count": 11,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_official_skips_calibration",
+      "current": "exact baseline archive: tests/test_kernel_v2_llm_region_budget.py::test_kernel_stage_b_llm_region_budget_official_skips_calibration",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_extract_parent_strategy_ir_from_prompt_roundtrip",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_extract_parent_strategy_ir_from_prompt_roundtrip",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_select_training_samples_adds_clean_ties_only_up_to_cap",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_select_training_samples_adds_clean_ties_only_up_to_cap",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_build_local_editor_dataset_extracts_llm_mutation_action_samples",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_build_local_editor_dataset_extracts_llm_mutation_action_samples",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_replay_variant_detects_bad_json_and_semantic_noop",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_replay_variant_detects_bad_json_and_semantic_noop",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_train_local_editor_uses_runtime_root_paths_with_fake_remote",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_train_local_editor_uses_runtime_root_paths_with_fake_remote",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_local_editor.py::test_run_kernel_stage_b_llm_mutation_action_supports_run_tag_and_generator_metadata",
+      "current": "exact baseline archive: tests/test_local_editor.py::test_run_kernel_stage_b_llm_mutation_action_supports_run_tag_and_generator_metadata",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_maxcover.py::test_maxcover_ready_options_and_rollout_are_executable",
+      "current": "tests/test_maxcover.py::test_maxcover_ready_options_and_rollout_are_executable",
+      "assertion_count": 5,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_normalize_semantic_prior_manifest.py::test_failure_aware_normalization_retains_invalid_call",
+      "current": "exact baseline archive: tests/test_normalize_semantic_prior_manifest.py::test_failure_aware_normalization_retains_invalid_call",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_order_conflict_replay.py::test_run_replay_suite_replays_existing_candidates",
+      "current": "exact baseline archive: tests/test_order_conflict_replay.py::test_run_replay_suite_replays_existing_candidates",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pfsp.py::test_pfsp_rollout_and_neh_reference_are_executable",
+      "current": "tests/test_pfsp.py::test_pfsp_rollout_and_neh_reference_are_executable",
+      "assertion_count": 6,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_source_ea_is_deterministic_and_uses_exact_budget",
+      "current": "tests/test_pfsp_source_ea.py::test_source_ea_is_deterministic_and_uses_exact_budget",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_source_ea_rejects_an_unmet_unique_candidate_budget",
+      "current": "tests/test_pfsp_source_ea.py::test_source_ea_rejects_an_unmet_unique_candidate_budget",
+      "assertion_count": 0,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_source_ea_rejects_population_accounting_mismatch",
+      "current": "tests/test_pfsp_source_ea.py::test_source_ea_rejects_population_accounting_mismatch",
+      "assertion_count": 0,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_no_operator_control_is_deterministic_and_uses_exact_budget",
+      "current": "tests/test_pfsp_source_ea.py::test_no_operator_control_is_deterministic_and_uses_exact_budget",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_development_prior_can_exclude_model_generated_macros",
+      "current": "tests/test_pfsp_source_ea.py::test_development_prior_can_exclude_model_generated_macros",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea.py::test_development_summary_supports_independent_source_shards",
+      "current": "tests/test_pfsp_source_ea.py::test_development_summary_supports_independent_source_shards",
+      "assertion_count": 1,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea_confirmation.py::test_confirmation_contract_is_macro_free_and_requires_frozen_sources",
+      "current": "exact baseline archive: tests/test_pfsp_source_ea_confirmation.py::test_confirmation_contract_is_macro_free_and_requires_frozen_sources",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pfsp_source_ea_confirmation.py::test_confirmation_attaches_exact_hashed_best_known_references",
+      "current": "exact baseline archive: tests/test_pfsp_source_ea_confirmation.py::test_confirmation_attaches_exact_hashed_best_known_references",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pfsp_symbolic_gp.py::test_pfsp_symbolic_gp_search_returns_executable_combo",
+      "current": "tests/test_pfsp_symbolic_gp.py::test_pfsp_symbolic_gp_search_returns_executable_combo",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_pre_v3_candidate_b_external_confirmation.py::test_external_metadata_skips_first_three_per_family",
+      "current": "exact baseline archive: tests/test_pre_v3_candidate_b_external_confirmation.py::test_external_metadata_skips_first_three_per_family",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pre_v3_candidate_b_external_confirmation.py::test_external_inference_bootstraps_physical_instances",
+      "current": "exact baseline archive: tests/test_pre_v3_candidate_b_external_confirmation.py::test_external_inference_bootstraps_physical_instances",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pre_v3_no_variation_audit.py::test_equal_budget_configs_remove_only_variation_operators",
+      "current": "exact baseline archive: tests/test_pre_v3_no_variation_audit.py::test_equal_budget_configs_remove_only_variation_operators",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_pre_v3_no_variation_audit.py::test_bootstrap_summary_uses_physical_instances",
+      "current": "exact baseline archive: tests/test_pre_v3_no_variation_audit.py::test_bootstrap_summary_uses_physical_instances",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_profiling.py::test_build_candidate_card_uses_six_representative_runs_and_short_traces",
+      "current": "exact baseline archive: tests/test_profiling.py::test_build_candidate_card_uses_six_representative_runs_and_short_traces",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_bpplib_loader_and_dataset_builder",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_bpplib_loader_and_dataset_builder",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_bpplib_summary_reports_missing_corpus",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_bpplib_summary_reports_missing_corpus",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_bpplib_summary_reports_download_failure",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_bpplib_summary_reports_download_failure",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_sygus_summary_uses_preview_when_public_corpus_missing",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_sygus_summary_uses_preview_when_public_corpus_missing",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_sygus_summary_reports_public_files_when_present",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_sygus_summary_reports_public_files_when_present",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_jsplib_summary_reports_missing_corpus",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_jsplib_summary_reports_missing_corpus",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_jsplib_summary_reports_download_failure",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_jsplib_summary_reports_download_failure",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_jsplib_summary_reports_metadata_when_present",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_jsplib_summary_reports_metadata_when_present",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_jsplib_summary_reports_stage_a_proxy_when_valid_dataset_present",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_jsplib_summary_reports_stage_a_proxy_when_valid_dataset_present",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_benchmarks.py::test_public_gate_summaries",
+      "current": "exact baseline archive: tests/test_public_benchmarks.py::test_public_gate_summaries",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_jsplib_rotation.py::test_build_jsplib_dataset_supports_family_rotation",
+      "current": "exact baseline archive: tests/test_public_jsplib_rotation.py::test_build_jsplib_dataset_supports_family_rotation",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_jsplib_rotation.py::test_build_jsplib_rotation_datasets_uses_min_family_capacity",
+      "current": "exact baseline archive: tests/test_public_jsplib_rotation.py::test_build_jsplib_rotation_datasets_uses_min_family_capacity",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_orlib_scp.py::test_orlib_scp_parser_and_maxcover_adapter",
+      "current": "exact baseline archive: tests/test_public_orlib_scp.py::test_orlib_scp_parser_and_maxcover_adapter",
+      "assertion_count": 10,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_orlib_scp.py::test_orlib_scp_dataset_can_drive_semantic_prior_ea",
+      "current": "exact baseline archive: tests/test_public_orlib_scp.py::test_orlib_scp_dataset_can_drive_semantic_prior_ea",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_orlib_scp.py::test_orlib_scp_summary_reports_missing_corpus",
+      "current": "exact baseline archive: tests/test_public_orlib_scp.py::test_orlib_scp_summary_reports_missing_corpus",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_public_taillard_loader_parses_machine_rows",
+      "current": "tests/test_public_pfsp.py::test_public_taillard_loader_parses_machine_rows",
+      "assertion_count": 6,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_taillard_mixed96_split_uses_public_family_holdouts",
+      "current": "tests/test_public_pfsp.py::test_taillard_mixed96_split_uses_public_family_holdouts",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_taillard_mixed72_uses_larger_development_split",
+      "current": "tests/test_public_pfsp.py::test_taillard_mixed72_uses_larger_development_split",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_vfr_parser_uses_machine_job_pairs",
+      "current": "tests/test_public_pfsp.py::test_vfr_parser_uses_machine_job_pairs",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_vfr_loader_filters_transfer_families",
+      "current": "tests/test_public_pfsp.py::test_vfr_loader_filters_transfer_families",
+      "assertion_count": 2,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_vfr_best_known_loader_parses_semicolon_csv",
+      "current": "tests/test_public_pfsp.py::test_vfr_best_known_loader_parses_semicolon_csv",
+      "assertion_count": 1,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_pfsp.py::test_vfr_transfer_family_parser_accepts_cli_tokens",
+      "current": "tests/test_public_pfsp.py::test_vfr_transfer_family_parser_accepts_cli_tokens",
+      "assertion_count": 1,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_public_smtwt.py::test_wt40_parser_reads_three_vectors",
+      "current": "exact baseline archive: tests/test_public_smtwt.py::test_wt40_parser_reads_three_vectors",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_public_smtwt.py::test_wt40_loader_and_split_are_deterministic",
+      "current": "exact baseline archive: tests/test_public_smtwt.py::test_wt40_loader_and_split_are_deterministic",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_ranking.py::test_rank_metrics_are_consistent",
+      "current": "exact baseline archive: tests/test_ranking.py::test_rank_metrics_are_consistent",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_ranking.py::test_elo_update_changes_ratings",
+      "current": "exact baseline archive: tests/test_ranking.py::test_elo_update_changes_ratings",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_refactor_characterization.py::test_search_matches_pre_refactor_baseline",
+      "current": "tests/test_refactor_characterization.py::test_search_matches_pre_refactor_baseline",
+      "assertion_count": 1,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_refactor_characterization.py::test_compiler_rejects_unsafe_or_unprotected_expressions",
+      "current": "tests/test_refactor_characterization.py::test_compiler_rejects_unsafe_or_unprotected_expressions",
+      "assertion_count": 0,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_registry.py::test_registry_hash_changes_when_stage_a_config_changes",
+      "current": "exact baseline archive: tests/test_registry.py::test_registry_hash_changes_when_stage_a_config_changes",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_remote_selector.py::test_choose_transport_mode_prefers_direct_http",
+      "current": "exact baseline archive: tests/test_remote_selector.py::test_choose_transport_mode_prefers_direct_http",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_remote_selector.py::test_choose_transport_mode_falls_back_to_ssh_tunnel",
+      "current": "exact baseline archive: tests/test_remote_selector.py::test_choose_transport_mode_falls_back_to_ssh_tunnel",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_remote_selector.py::test_selector_remote_session_jsplib_skips_generator",
+      "current": "exact baseline archive: tests/test_remote_selector.py::test_selector_remote_session_jsplib_skips_generator",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_remote_selector.py::test_bridge_http_backend_retries_once_on_timeout",
+      "current": "exact baseline archive: tests/test_remote_selector.py::test_bridge_http_backend_retries_once_on_timeout",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_run_pfsp_final_capacity_controls.py::test_main_selection_yields_per_seed_realized_capacity",
+      "current": "exact baseline archive: tests/test_run_pfsp_final_capacity_controls.py::test_main_selection_yields_per_seed_realized_capacity",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_run_pfsp_final_capacity_controls.py::test_control_validation_rejects_evaluation_mismatch",
+      "current": "exact baseline archive: tests/test_run_pfsp_final_capacity_controls.py::test_control_validation_rejects_evaluation_mismatch",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_run_pfsp_final_capacity_controls.py::test_main_selection_accepts_failure_aware_seed_subset",
+      "current": "exact baseline archive: tests/test_run_pfsp_final_capacity_controls.py::test_main_selection_accepts_failure_aware_seed_subset",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_evidence_bundle_contains_comparison_fields",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_evidence_bundle_contains_comparison_fields",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_uncertain_pair_selection_respects_close_gap",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_uncertain_pair_selection_respects_close_gap",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_compare_pool_prioritizes_top_threatening_challengers",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_compare_pool_prioritizes_top_threatening_challengers",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_uncertain_pair_plan_is_sparse_and_budgeted",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_uncertain_pair_plan_is_sparse_and_budgeted",
+      "assertion_count": 12,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_rejudge_priority_only_selects_critical_ties",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_rejudge_priority_only_selects_critical_ties",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_blocks_low_confidence_override",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_blocks_low_confidence_override",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_allows_weak_prior_high_confidence_override",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_allows_weak_prior_high_confidence_override",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_requires_consensus_to_override_strong_prior",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_requires_consensus_to_override_strong_prior",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_weak_prior_far_override",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_weak_prior_far_override",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_frontier_only_override",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_frontier_only_override",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_near_frontier_adjacent_override",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_prior_guard_soft_blocks_low_confidence_near_frontier_adjacent_override",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_root_cap_is_only_guardrail",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_root_cap_is_only_guardrail",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_pointwise_json_retry_and_repair",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_pointwise_json_retry_and_repair",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_pairwise_non_json_soft_fails_to_tie",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_pairwise_non_json_soft_fails_to_tie",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_run_selector_stack_can_skip_unused_pairwise_paths",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_run_selector_stack_can_skip_unused_pairwise_paths",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_a_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_a_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_b_jsplib_mock_runs",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_b_jsplib_mock_runs",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_b_official_resume_skips_completed_subruns",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_b_official_resume_skips_completed_subruns",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_b_budget_s_cost_and_oracle_audit",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_b_budget_s_cost_and_oracle_audit",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_b_auto_budget_reuses_calibration",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_b_auto_budget_reuses_calibration",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_selector_v2.py::test_selector_stage_a_bpp_mock_runs",
+      "current": "exact baseline archive: tests/test_selector_v2.py::test_selector_stage_a_bpp_mock_runs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_semantic_prior_parser_and_instantiation_are_domain_typed",
+      "current": "tests/test_semantic_prior.py::test_semantic_prior_parser_and_instantiation_are_domain_typed",
+      "assertion_count": 9,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_jssp_ready_augmentation_and_safe_eval_support_derived_features",
+      "current": "tests/test_semantic_prior.py::test_jssp_ready_augmentation_and_safe_eval_support_derived_features",
+      "assertion_count": 7,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_large_feature_catalog_can_be_restricted_to_primitive_features",
+      "current": "tests/test_semantic_prior.py::test_large_feature_catalog_can_be_restricted_to_primitive_features",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_bpp_ready_options_include_fit_and_waste_pressure_features",
+      "current": "tests/test_semantic_prior.py::test_bpp_ready_options_include_fit_and_waste_pressure_features",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_maxcover_prior_uses_budgeted_coverage_features",
+      "current": "tests/test_semantic_prior.py::test_maxcover_prior_uses_budgeted_coverage_features",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_graphprize_prior_uses_bridge_frontier_features",
+      "current": "tests/test_semantic_prior.py::test_graphprize_prior_uses_bridge_frontier_features",
+      "assertion_count": 3,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_safe_eval_rejects_unsafe_division_without_eps",
+      "current": "tests/test_semantic_prior.py::test_safe_eval_rejects_unsafe_division_without_eps",
+      "assertion_count": 0,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_deterministic_prior_sources_use_same_budgeted_shape",
+      "current": "tests/test_semantic_prior.py::test_deterministic_prior_sources_use_same_budgeted_shape",
+      "assertion_count": 4,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_stronger_non_llm_prior_sources_are_model_free_and_budgeted",
+      "current": "tests/test_semantic_prior.py::test_stronger_non_llm_prior_sources_are_model_free_and_budgeted",
+      "assertion_count": 6,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_llm_program_prior_adds_validated_macros_without_changing_budget_shape",
+      "current": "tests/test_semantic_prior.py::test_llm_program_prior_adds_validated_macros_without_changing_budget_shape",
+      "assertion_count": 8,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_jssp_llm_prior_can_be_sparse_and_directional",
+      "current": "tests/test_semantic_prior.py::test_jssp_llm_prior_can_be_sparse_and_directional",
+      "assertion_count": 7,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_prior_spec_priorities_are_backward_compatible",
+      "current": "tests/test_semantic_prior.py::test_prior_spec_priorities_are_backward_compatible",
+      "assertion_count": 2,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_old_prior_json_gets_default_priorities",
+      "current": "tests/test_semantic_prior.py::test_old_prior_json_gets_default_priorities",
+      "assertion_count": 2,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_semantic_prior.py::test_priority_ordered_budget_cap_reproduces_archived_contract",
+      "current": "tests/test_semantic_prior.py::test_priority_ordered_budget_cap_reproduces_archived_contract",
+      "assertion_count": 5,
+      "suite": "maintained"
+    },
+    {
+      "baseline": "tests/test_smtwt.py::test_smtwt_ready_options_and_rollout_are_executable",
+      "current": "exact baseline archive: tests/test_smtwt.py::test_smtwt_ready_options_and_rollout_are_executable",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_smtwt.py::test_smtwt_llm_prior_uses_tardiness_specific_features",
+      "current": "exact baseline archive: tests/test_smtwt.py::test_smtwt_llm_prior_uses_tardiness_specific_features",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_generic_eval_supports_dynamic_feature_statistics",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_generic_eval_supports_dynamic_feature_statistics",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_generic_eval_rejects_unstabilized_denominator",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_generic_eval_rejects_unstabilized_denominator",
+      "assertion_count": 0,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_behavioral_schema_search_has_no_fixed_role_fields_and_rolls_out",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_behavioral_schema_search_has_no_fixed_role_fields_and_rolls_out",
+      "assertion_count": 7,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_expression_pool_is_generated_from_discovered_features",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_expression_pool_is_generated_from_discovered_features",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_sole2_prompt_and_parser_are_role_free",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_sole2_prompt_and_parser_are_role_free",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_schema_prompt_parser_and_instantiation_are_role_free",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_schema_prompt_parser_and_instantiation_are_role_free",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole2_prototype.py::test_composition_selection_prefers_split_consistency_over_validation_spike",
+      "current": "exact baseline archive: tests/test_sole2_prototype.py::test_composition_selection_prefers_split_consistency_over_validation_spike",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_guided_ea.py::test_sole_guided_ea_keeps_seed_rule_in_evolutionary_population",
+      "current": "exact baseline archive: tests/test_sole_guided_ea.py::test_sole_guided_ea_keeps_seed_rule_in_evolutionary_population",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_parse_structured_role_proposal_accepts_json_object",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_parse_structured_role_proposal_accepts_json_object",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_structured_probe_payload_accepts_role_complete_proposal",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_structured_probe_payload_accepts_role_complete_proposal",
+      "assertion_count": 8,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_direct_control_sources_produce_accepted_structured_payloads",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_direct_control_sources_produce_accepted_structured_payloads",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_control_sources_use_heldout_non_llm_protocol_without_posthoc_ratio_atom",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_control_sources_use_heldout_non_llm_protocol_without_posthoc_ratio_atom",
+      "assertion_count": 9,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_classical_control_source_uses_guarded_blind_ratio_pool",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_classical_control_source_uses_guarded_blind_ratio_pool",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_structured_probe_payload_rejects_remaining_work_collapse",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_structured_probe_payload_rejects_remaining_work_collapse",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_collect_candidates_from_probe_payload_supports_legacy_flat_artifact",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_collect_candidates_from_probe_payload_supports_legacy_flat_artifact",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_flat_probe_payload_accepts_role_guided_library_without_quotas",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_flat_probe_payload_accepts_role_guided_library_without_quotas",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_flat_probe_payload_accepts_role_guided_library_with_quotas",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_flat_probe_payload_accepts_role_guided_library_with_quotas",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_flat_probe_payload_rejects_free_form_remaining_work_collapse",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_flat_probe_payload_rejects_free_form_remaining_work_collapse",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_flat_probe_payload_from_exprs_accepts_direct_source_lists",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_flat_probe_payload_from_exprs_accepts_direct_source_lists",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_build_flat_probe_payload_can_disable_role_presence_requirements",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_build_flat_probe_payload_can_disable_role_presence_requirements",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_search_flat_lexicographic_candidates_handles_flat_library",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_search_flat_lexicographic_candidates_handles_flat_library",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_prompt_for_diverse_flat_jsplib_avoids_explicit_role_buckets",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_prompt_for_diverse_flat_jsplib_avoids_explicit_role_buckets",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_prompt_for_light_quota_flat_jsplib_mentions_numeric_targets",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_prompt_for_light_quota_flat_jsplib_mentions_numeric_targets",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_prompt_for_shuffled_role_constrained_jsplib_keeps_json_keys_but_swaps_hints",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_prompt_for_shuffled_role_constrained_jsplib_keeps_json_keys_but_swaps_hints",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_choose_atomic_refresh_target_roles_prioritizes_missing_roles",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_choose_atomic_refresh_target_roles_prioritizes_missing_roles",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_prompt_for_atomic_refresh_jsplib_mentions_targets_and_existing_library",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_prompt_for_atomic_refresh_jsplib_mentions_targets_and_existing_library",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_jsplib.py::test_merge_role_candidate_libraries_skips_base_duplicates_and_adds_new_exprs",
+      "current": "exact baseline archive: tests/test_sole_jsplib.py::test_merge_role_candidate_libraries_skips_base_duplicates_and_adds_new_exprs",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_three_domain_smoke",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_three_domain_smoke",
+      "assertion_count": 13,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_smtwt_smoke",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_smtwt_smoke",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_maxcover_smoke",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_maxcover_smoke",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_graphprize_smoke",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_queue_runs_graphprize_smoke",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_queue_writes_incremental_parallel_rows",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_queue_writes_incremental_parallel_rows",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_ablation_variants_are_explicit",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_ablation_variants_are_explicit",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_can_load_llm_prior_json",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_can_load_llm_prior_json",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_can_run_program_prior_source",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_can_run_program_prior_source",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_attribution.py::test_prior_attribution_can_add_free_form_and_anchor_controls",
+      "current": "exact baseline archive: tests/test_sole_prior_attribution.py::test_prior_attribution_can_add_free_form_and_anchor_controls",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_tables.py::test_build_sole_prior_tables_rejects_non_observed_manifest",
+      "current": "exact baseline archive: tests/test_sole_prior_tables.py::test_build_sole_prior_tables_rejects_non_observed_manifest",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_tables.py::test_build_sole_prior_tables_rejects_incomplete_manifest",
+      "current": "exact baseline archive: tests/test_sole_prior_tables.py::test_build_sole_prior_tables_rejects_incomplete_manifest",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_prior_tables.py::test_build_sole_prior_tables_writes_into_existing_asset_root",
+      "current": "exact baseline archive: tests/test_sole_prior_tables.py::test_build_sole_prior_tables_writes_into_existing_asset_root",
+      "assertion_count": 17,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_schema_attribution.py::test_schema_from_features_canonicalizes_and_adds_pairwise_interactions",
+      "current": "exact baseline archive: tests/test_sole_schema_attribution.py::test_schema_from_features_canonicalizes_and_adds_pairwise_interactions",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_schema_attribution.py::test_fixed_schema_specs_cover_reviewer_requested_deterministic_baselines",
+      "current": "exact baseline archive: tests/test_sole_schema_attribution.py::test_fixed_schema_specs_cover_reviewer_requested_deterministic_baselines",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_schema_attribution.py::test_exhaustive_4of7_schema_count_and_non_id_member",
+      "current": "exact baseline archive: tests/test_sole_schema_attribution.py::test_exhaustive_4of7_schema_count_and_non_id_member",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_sole_schema_attribution.py::test_row_selection_key_uses_dev_metrics_not_test_gap",
+      "current": "exact baseline archive: tests/test_sole_schema_attribution.py::test_row_selection_key_uses_dev_metrics_not_test_gap",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_stage_a_mock_runs",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_stage_a_mock_runs",
+      "assertion_count": 15,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_score_candidate_pool_creates_explicit_artifact_dir",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_score_candidate_pool_creates_explicit_artifact_dir",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_prefilter_uses_top_and_gap_rules_without_forcing_all_seeds",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_prefilter_uses_top_and_gap_rules_without_forcing_all_seeds",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_prefilter_rescues_cutoff_tie_plateau_with_new_candidates_first",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_prefilter_rescues_cutoff_tie_plateau_with_new_candidates_first",
+      "assertion_count": 6,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_prefilter_regret_metrics_counts_excluded_better_candidates",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_prefilter_regret_metrics_counts_excluded_better_candidates",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_stage_a_mock_freeze_summary_appears_after_two_seeds",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_stage_a_mock_freeze_summary_appears_after_two_seeds",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_a_mock.py::test_stage_a_mock_repeat_seed_does_not_override_freeze_line",
+      "current": "exact baseline archive: tests/test_stage_a_mock.py::test_stage_a_mock_repeat_seed_does_not_override_freeze_line",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_select_budget_prefers_larger_pairwise_advantage",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_select_budget_prefers_larger_pairwise_advantage",
+      "assertion_count": 1,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_aggregate_official_metrics_reports_ready_when_acceptance_is_met",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_aggregate_official_metrics_reports_ready_when_acceptance_is_met",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_run_final_pairwise_matches_uses_rejudge_path",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_run_final_pairwise_matches_uses_rejudge_path",
+      "assertion_count": 4,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_stage_b_mock_full_creates_expected_artifacts",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_stage_b_mock_full_creates_expected_artifacts",
+      "assertion_count": 5,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_pointwise_cache_hits_and_disable_toggle",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_pointwise_cache_hits_and_disable_toggle",
+      "assertion_count": 2,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_run_evolution_method_can_resume_from_checkpoint",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_run_evolution_method_can_resume_from_checkpoint",
+      "assertion_count": 3,
+      "suite": "historical"
+    },
+    {
+      "baseline": "tests/test_stage_b.py::test_stage_b_mock_calibration_reuses_completed_subruns",
+      "current": "exact baseline archive: tests/test_stage_b.py::test_stage_b_mock_calibration_reuses_completed_subruns",
+      "assertion_count": 2,
+      "suite": "historical"
+    }
+  ]
+}

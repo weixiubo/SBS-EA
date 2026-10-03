@@ -1,0 +1,44 @@
+{
+  "protocol_version": "pfsp_final_crossed_confirmation_feasibility_addendum_v1",
+  "status": "frozen_before_any_normalization_search_policy_evaluation_or_objective_inspection",
+  "frozen_at_beijing": "2026-07-20T18:37:23+08:00",
+  "parent_protocol": "protocols/pfsp_final_crossed_confirmation_v1.json",
+  "parent_protocol_sha256": "c367408547dbabffec2e016a79076fa08ef10ec1cd08fe121f5b9b69abe81157",
+  "reason_for_addendum": {
+    "generation_progress_when_frozen": 69,
+    "observed_feasibility_event": "seed_11068_reached_the_frozen_900_token_limit_with_truncated_JSON",
+    "policy_or_objective_outcomes_observed": false,
+    "original_primary_changed": false
+  },
+  "original_primary": {
+    "status": "no_go_if_any_of_128_calls_is_invalid",
+    "result_after_observed_event": "no_go",
+    "must_always_be_reported": true
+  },
+  "secondary_failure_aware_estimand": {
+    "purpose": "separate_one_call_construction_reliability_from_conditional_quality_without_replacement_or_repair",
+    "eligible_sources": "all_and_only_generator_records_with_status_valid_under_the_original_parser",
+    "invalid_sources": "retained_as_method_construction_failures_and_excluded_only_because_no_executable_source_exists",
+    "manual_repair": false,
+    "replacement_calls": false,
+    "retry_calls": false,
+    "minimum_valid_source_count": 120,
+    "validity_requirement": "two_sided_95_percent_Wilson_lower_bound_for_valid_calls_gt_0.90",
+    "quality_panel": "the_identical_frozen_VFR220_panel",
+    "controls": "the_identical_full_budget_and_per_valid_source_exact_capacity_controls",
+    "quality_inference": "the_identical_crossed_source_instance_bootstrap_source_t_interval_instance_bootstrap_and_source_win_Wilson_interval_applied_to_all_valid_sources",
+    "quality_go_rules": "identical_to_the_parent_protocol_except_source_count_is_the_observed_valid_count"
+  },
+  "overall_reporting": {
+    "original_strict_primary": "no_go",
+    "secondary_support": "requires_validity_and_every_parent_quality_rule",
+    "forbidden": [
+      "repairing_or_completing_seed_11068",
+      "dropping_any_other_valid_source",
+      "replacement_or_retry_calls",
+      "changing_the_VFR220_panel",
+      "changing_method_search_or_quality_gates",
+      "calling_the_original_strict_primary_a_go"
+    ]
+  }
+}

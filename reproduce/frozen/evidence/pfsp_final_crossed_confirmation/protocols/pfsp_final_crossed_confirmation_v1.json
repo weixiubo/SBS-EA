@@ -1,0 +1,92 @@
+{
+  "protocol_version": "pfsp_final_crossed_confirmation_v1",
+  "status": "frozen_before_new_model_calls_or_policy_evaluation",
+  "frozen_at_beijing": "2026-07-20T17:55:12+08:00",
+  "freeze_parent_commit": "cb4544ecd1184a8718eb67f8cd6a42edb3088805",
+  "scientific_role": "single_final_source_aware_confirmation_without_method_tuning",
+  "source_panel": {
+    "model_name": "openagora/internvl3-8b-hf",
+    "model_artifact_manifest_sha256": "1c23924aebf6ae0c27fd74aea49684186279a8a0917de439ec0563417c3d5d6d",
+    "prompt_sha256": "d21672c7c5f44341b7e5d346ea5549d95e42b189705658f02d75ef1a64798a39",
+    "prompt_source_manifest_sha256": "4135e07acbd76680cdb1b308e0211596a139e8236d5b8266be99164b3a6c5a62",
+    "seed_start": 11001,
+    "seed_end": 11128,
+    "expected_independent_calls": 128,
+    "calls_per_seed": 1,
+    "retry_count": 0,
+    "temperature": 0.2,
+    "top_p": 0.95,
+    "max_new_tokens": 900,
+    "feature_budget": 8,
+    "interaction_budget": 12,
+    "allow_macros": true,
+    "validity_rule": "exactly_128_of_128_calls_must_parse_without_replacement"
+  },
+  "selection": {
+    "development_dataset": "taillard_mixed96",
+    "development_test_values_are_not_a_confirmation_endpoint": true,
+    "prior_sources": ["llm_prior", "model_free_beam_prior"],
+    "top_atomic_pool": 36,
+    "max_layers": 2,
+    "beam_width": 8,
+    "composition_prescreen_per_split": 2,
+    "search_mode": "lexicographic_additive",
+    "prior_weighting": true,
+    "behavioral_deduplication": true,
+    "derived_features": true
+  },
+  "matched_controls": {
+    "sources": ["model_free_beam_prior", "random_prior"],
+    "per_seed_atomic_capacity": "accepted_expression_count_of_the_paired_llm_row",
+    "per_seed_genome_evaluations": "must_exactly_equal_the_paired_llm_row",
+    "model_calls": 0,
+    "all_other_selection_settings": "identical"
+  },
+  "final_panel": {
+    "selection_rule": "complete_VFR_family_universe_with_jobs_at_most_60_excluding_any_family_found_in_prior_policy_results",
+    "policy_outcomes_seen_before_freeze": false,
+    "families": [
+      "10x5", "10x10", "10x15", "10x20",
+      "20x5", "20x15", "20x20",
+      "30x5", "30x10", "30x15", "30x20",
+      "40x5", "40x10", "40x15", "40x20",
+      "50x5", "50x10", "50x15",
+      "60x5", "60x10", "60x15", "60x20"
+    ],
+    "instances_per_family": 10,
+    "expected_family_count": 22,
+    "expected_instance_count": 220,
+    "canonical_sorted_instance_ids_sha256": "110b66fcfaa90ef925a236c23bbd2fc6f0bdadf3bd5f2b581e566d1a809dc3c6",
+    "testsolutions_sha256": "102b6120c765a48360185a1397aaab8ee0eff1176e655e6155081c1f3ecd7f83",
+    "vfr_small_bks_sha256": "076f82feecb42dec6d6d7e10bedd75a69a9a54e0c6da82c0115d8a127f697df5",
+    "vfr_large_bks_sha256": "7e84da22edfda0b1629a56295ca0cf3195cfb9faf3045a6ef13fe0b89c2f06f1",
+    "reference": "public_VFR_v9_best_known_makespan"
+  },
+  "inference": {
+    "direction": "comparator_gap_minus_llm_gap_positive_favors_SBS_EA",
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20260721,
+    "primary": "independently_crossed_bootstrap_over_128_sources_and_220_instances",
+    "secondary": "source_t_interval_df127_and_instance_bootstrap_after_source_averaging",
+    "source_win_interval": "two_sided_95_percent_Wilson_interval_over_all_128_sources",
+    "noninferiority_margin": -0.002
+  },
+  "go_rule": {
+    "integrity": "all_frozen_hashes_and_counts_pass_and_every_task_completes",
+    "capacity_matched_model_free": "crossed_ci_low_gt_0_and_source_t_ci_low_gt_0_and_source_win_Wilson_low_gt_0.5",
+    "capacity_matched_random": "crossed_ci_low_gt_0_and_source_t_ci_low_gt_0_and_source_win_Wilson_low_gt_0.5",
+    "full_budget_model_free": "llm_genome_evaluation_ratio_lte_0.5_and_crossed_ci_low_gt_-0.002_and_source_t_ci_low_gt_-0.002",
+    "overall": "all_integrity_and_three_comparator_rules_pass"
+  },
+  "reporting_rule": {
+    "always_report_all_three_prespecified_comparators": true,
+    "if_no_go": "stop_experimental_branch_without_replacement_calls_or_gate_changes",
+    "forbidden": [
+      "method_or_hyperparameter_changes_after_outcomes",
+      "dropping_sources_families_or_instances",
+      "replacement_or_retry_model_calls",
+      "parallel_candidate_panels",
+      "gate_changes_after_outcome_inspection"
+    ]
+  }
+}

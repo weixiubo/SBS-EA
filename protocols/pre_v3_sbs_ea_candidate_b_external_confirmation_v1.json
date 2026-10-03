@@ -1,0 +1,72 @@
+{
+  "schema_version": "pre_v3_sbs_ea_candidate_b_external_confirmation_v1",
+  "frozen_at_utc": "2026-07-19T09:16:35Z",
+  "freeze_parent_commit": "432c5226dc1fd5c53f06eb66c1dcf59be5ef5f82",
+  "purpose": "One-shot external confirmation of the already-fixed pre-v3 SBS-EA whole-method outputs before locking the AAAI-27 route.",
+  "inputs": {
+    "matched_source_manifest_sha256": "272913bb95527afd9360ef17ae3870eacc912b36afcb00bb33c3a746f2bca20a",
+    "equal_budget_no_operator_result_sha256": "24df5853f27532886662caf8605a7d69daaba1f69d3d13b26446fd0fc5a36185",
+    "prior_external_manifest_sha256": "cc9a843501ed1c9aaa60f08f1a49eba7f512eed2285376badf8eba502752f5be"
+  },
+  "external_dataset": {
+    "families": ["abz", "ft", "la", "orb", "swv", "ta", "yn"],
+    "skip_per_family": 3,
+    "expected_instance_count": 141,
+    "expected_family_counts": {
+      "abz": 2,
+      "la": 37,
+      "orb": 7,
+      "swv": 17,
+      "ta": 77,
+      "yn": 1
+    },
+    "expected_dataset_sha256": "ec5d3a66e3ee7c25a766661d8af2c474cb68246eb93ea3fa9b7541b10c1dceea",
+    "duration_policy": "Preserve official nonnegative durations, including zero-duration operations.",
+    "reference_overrides": {
+      "ta71": 5464,
+      "ta72": 5181,
+      "ta73": 5568,
+      "ta74": 5339,
+      "ta75": 5392,
+      "ta76": 5342,
+      "ta77": 5436,
+      "ta78": 5394,
+      "ta79": 5358,
+      "ta80": 5183
+    }
+  },
+  "tasks": {
+    "matched_sources": {
+      "sources": ["llm_prior", "model_free_beam_prior", "same_catalog_symbolic_prior", "all_feature_prior"],
+      "expected_rows_per_source": 10
+    },
+    "operator_audit": {
+      "expected_pairs": 30,
+      "conditions": ["full_ea", "elitist_random_no_operator"]
+    }
+  },
+  "inference": {
+    "primary_estimand": "Comparator minus LLM-source external relative gap for the complete returned-rule pipeline.",
+    "unit": "physical external instance after averaging fixed returned rules within source",
+    "bootstrap_replicates": 50000,
+    "interval": "percentile 95% bootstrap over 141 physical instances",
+    "operator_estimand": "No-operator minus full-EA external relative gap, averaged over the 30 frozen pairs within physical instance."
+  },
+  "go_rule": {
+    "required_comparators": ["model_free_beam_prior", "same_catalog_symbolic_prior", "all_feature_prior"],
+    "pass": "Every primary external source comparison has a strictly positive 95% bootstrap lower bound.",
+    "no_operator_is_veto": false
+  },
+  "information_boundary": {
+    "candidate_b_rules_frozen_before_protocol": true,
+    "candidate_b_external_results_seen_before_protocol": false,
+    "cross_route_disclosure": "The same external instance panel was previously used for the separately frozen macro-free v3 route; no pre-v3 candidate-B rule was selected or modified from that result.",
+    "prohibited_after_freeze": [
+      "changing any returned rule",
+      "changing source membership or weights",
+      "changing external instance membership or references",
+      "changing the estimand, interval, or Go rule",
+      "suppressing any completed comparison"
+    ]
+  }
+}
