@@ -1,0 +1,19 @@
+{
+  "validations": {
+    "baseline": {
+      "passed": 336,
+      "failed": 1,
+      "skipped": 3,
+      "failure": "private paper build requires pdflatex"
+    },
+    "public_tests": {
+      "passed": 313,
+      "skipped": 2
+    },
+    "characterization": "six exact original outputs match",
+    "frozen_supplement_files": 3911,
+    "public_evidence_files": 1802
+  },
+  "public_files": 2067,
+  "public_manifest_sha256": "8f40415051f94f238b7bcedf8a423a9dfd583a679bcc30343482834aa19f5a04"
+}

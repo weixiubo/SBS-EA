@@ -1,5 +1,12 @@
 # SBS-EA
 
+## Project handoff
+
+Start with the [handoff guide](docs/HANDOFF.md) to recover the research records,
+paper sources, datasets and historical development versions. The
+[material release](https://github.com/weixiubo/SBS-EA/releases/tag/handoff-2026-10-15) is public;
+the restoration script downloads and verifies its contents without a GitHub login.
+
 SBS-EA studies one-call semantic guidance for evolutionary heuristic design.
 The `sbs_ea` package implements PFSP source-conditioned population search,
 semantic source construction, an exact-budget no-operator control and a

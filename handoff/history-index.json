@@ -1,0 +1,94 @@
+{
+  "reason": "User explicitly requested deletion of downloaded third-party full texts on 2026-10-15.",
+  "stores": [
+    {
+      "original_git_dir": "/home/weixiubo/research/archives/2026-10-02-open-source/SBS-EA/original/当前/.git",
+      "restored_git_dir": "snapshot/historical-git/git-01/repository.git",
+      "removed_blobs": [
+        "08117d571ce409df0ca717fba73c54471c3f6f77",
+        "65d4bf3bcc1a360a9166ef2795378294579a1d02",
+        "8cc9df7949601eab92247481cbf3a6b2c04cceb7",
+        "a76abcd8f76cb3fb64ec9a81a89dcbc400fa9b8f",
+        "c21d645222eeae333a06eb30d7fffba979bb16c7",
+        "cbdbbad1bbe1b492894248c3e13b2cd48544d5f3",
+        "d27a96bc0ae87535ab93c63c819f5d61613145d3",
+        "fed37ac06d3e468fafc3b6f8cd1db9cd83f18f1e"
+      ],
+      "named_fulltexts": [
+        {
+          "object": "fed37ac06d3e468fafc3b6f8cd1db9cd83f18f1e",
+          "path": "literature/aaai_exemplars/eohs_aaai26.pdf",
+          "sha256": "150a05379384fa0f5b1c2ed9f1f5708f815162c1a15ffdcb6bf73bca46720ca5",
+          "size": 443823
+        },
+        {
+          "object": "a76abcd8f76cb3fb64ec9a81a89dcbc400fa9b8f",
+          "path": "literature/aaai_exemplars/hsevo_aaai25.pdf",
+          "sha256": "3626e8626bd65cb0dd6fd5e9143e54c85d3c938b97b90d187866e67ae4f45158",
+          "size": 244953
+        },
+        {
+          "object": "8cc9df7949601eab92247481cbf3a6b2c04cceb7",
+          "path": "literature/aaai_exemplars/hydra_aaai10.pdf",
+          "sha256": "c812c5e852dc5bc4237510de0db1083bd188d1237f6b8fcded3fe09bb6ee1cbf",
+          "size": 373146
+        },
+        {
+          "object": "65d4bf3bcc1a360a9166ef2795378294579a1d02",
+          "path": "literature/aaai_exemplars/meoh_aaai25.pdf",
+          "sha256": "f0966f7610ea6e319fdb97cdeeb6d90368ae6134244798a3c12e04bb58ebf09a",
+          "size": 296832
+        },
+        {
+          "object": "08117d571ce409df0ca717fba73c54471c3f6f77",
+          "path": "literature/aaai_exemplars/mpage_aaai26.pdf",
+          "sha256": "41bbe13733b6f6d1cdaf6a0b1bb6ed91a27ba14e42b8aa98492e1ddc0b6bfe27",
+          "size": 382559
+        },
+        {
+          "object": "c21d645222eeae333a06eb30d7fffba979bb16c7",
+          "path": "literature/aaai_exemplars/saycanpay_aaai24.pdf",
+          "sha256": "5f4a4d972e9b52834558867ec115a4a13a11b9ab0732f5796f0c49788f82fea2",
+          "size": 502953
+        },
+        {
+          "object": "cbdbbad1bbe1b492894248c3e13b2cd48544d5f3",
+          "path": "literature/aaai_exemplars/llm_moea_aaai25.pdf",
+          "sha256": "635ef2a0f141896b8691c83af5836e0c52a2dccc3d108db922f938286c2119b7",
+          "size": 275482
+        },
+        {
+          "object": "d27a96bc0ae87535ab93c63c819f5d61613145d3",
+          "path": "literature/aaai_exemplars/trajevo_aaai26.pdf",
+          "sha256": "1d813ad7c728b42ed1865d5c5cf4a10325ea40f8dc36b107961672e87b5a31cc",
+          "size": 4774080
+        }
+      ],
+      "preserved_blob_count": 22252,
+      "original_commit_count": 4692,
+      "mapped_commit_count": 4692,
+      "unreferenced_blobs_preserved": 0,
+      "fsck_passed": true,
+      "commit_map_sha256": "d0b5dcea97e640d2e81ff720fa807160d18a0a032d757c89cc478c61616f3ebe"
+    }
+  ],
+  "deleted_fulltext_hashes": [
+    "1348834b7a7c403f8439657b8889bcb4cddfa0a20149eace8e05cc6dab64691f",
+    "143f021d0d4b04c10b51686f660088d1efbc722d8bc0cca98c1317c3d9471182",
+    "150a05379384fa0f5b1c2ed9f1f5708f815162c1a15ffdcb6bf73bca46720ca5",
+    "1ad0a5b97db4df172d46e696b813d264585e4d941bb77091c5c85f5921c306ca",
+    "1d813ad7c728b42ed1865d5c5cf4a10325ea40f8dc36b107961672e87b5a31cc",
+    "3626e8626bd65cb0dd6fd5e9143e54c85d3c938b97b90d187866e67ae4f45158",
+    "3afb28e0adcca8ca8e214e264b0de41a69c24e85fe8d1bb915820318467e28a1",
+    "41bbe13733b6f6d1cdaf6a0b1bb6ed91a27ba14e42b8aa98492e1ddc0b6bfe27",
+    "54ab283c13c63a8033058fc1c844e522e403c222b7d23ba7be29c0c650c6a44f",
+    "5f4a4d972e9b52834558867ec115a4a13a11b9ab0732f5796f0c49788f82fea2",
+    "635ef2a0f141896b8691c83af5836e0c52a2dccc3d108db922f938286c2119b7",
+    "7762b2503b0d48e2be700e0d3fd23af937588f51c9c2bfd5042205c549737c87",
+    "a3ddae4cee97529216408e3e08aa31fa7bc8d609fb500dab534520983f256086",
+    "c812c5e852dc5bc4237510de0db1083bd188d1237f6b8fcded3fe09bb6ee1cbf",
+    "d689c44fa24d454329c074f1a9cd2ba1a298e822d41307eec8f7a3c193913a64",
+    "f0966f7610ea6e319fdb97cdeeb6d90368ae6134244798a3c12e04bb58ebf09a",
+    "f7917d8ecb4a92270f31cf1c3ed305a1af2a677d64c5a1d1ac366556340b791d"
+  ]
+}

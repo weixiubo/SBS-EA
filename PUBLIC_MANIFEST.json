@@ -38,13 +38,13 @@
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "e0b64dfa57ccb6a855e05c94ed17a42141b278469fb0814221ad19577321bb29",
-      "bytes": 389
+      "sha256": "f9547bdf43f35d6bb3730c39898faa27af2e4d5f23ae86f6456094ce97a87029",
+      "bytes": 417
     },
     {
       "path": "README.md",
-      "sha256": "055ee86967de2fb52a9ed58720f4ed599beda0bd755d001ca9e00296f0c5e8b4",
-      "bytes": 2725
+      "sha256": "e19c9427c1300199cef0d1410d08c0201f52146eb6bc8c07310f8ab2bc945a7d",
+      "bytes": 3073
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -93,8 +93,8 @@
     },
     {
       "path": "docs/RESOURCES.md",
-      "sha256": "d9bdf28d895e0327e1ea503fd0ebaeb73dd0890668e84c67469fdd67beeb1b06",
-      "bytes": 2375
+      "sha256": "a05e1b9c1f588d79a1ec0992f2a2ab50927d4550c410b1d71145a00145dc068b",
+      "bytes": 2650
     },
     {
       "path": "docs/RESPONSIBILITY_BOUNDARIES.json",
@@ -130,6 +130,26 @@
       "path": "examples/search_smoke.py",
       "sha256": "3dce32ffb25cc8745f9b28c82e45281cb20f602ed619fb3fdbddc2755f6a9459",
       "bytes": 1660
+    },
+    {
+      "path": "handoff/catalog.json",
+      "sha256": "90a4138469d35a9816084c23def6b67ac2525e6f2a56df8b0d1c5622ecc51b30",
+      "bytes": 772
+    },
+    {
+      "path": "handoff/history-index.json",
+      "sha256": "e658ff2fe9c68554fe712c6c69808dfded47e037097120752cf26d5b50877a61",
+      "bytes": 4441
+    },
+    {
+      "path": "handoff/local-state/previous-release-ready.json",
+      "sha256": "142e2216a935996dc66c92bdbca195529619c974ff5c984ad3a491e801eaa938",
+      "bytes": 489
+    },
+    {
+      "path": "handoff/material-disposition.json",
+      "sha256": "9685fe5f98e01736dd3cdb3e70a047c833d37264fb8c75643b9b81a565378802",
+      "bytes": 8084
     },
     {
       "path": "protocols/pfsp_enlarged_random_posthoc_robustness_v1.json",
@@ -9217,6 +9237,11 @@
       "bytes": 1385
     },
     {
+      "path": "scripts/handoff.py",
+      "sha256": "e38364a671bd1101d787f010df1e5ca27aebabd592f3cf732a39646e730919ad",
+      "bytes": 15219
+    },
+    {
       "path": "src/sbs_ea/__init__.py",
       "sha256": "bcb416c777264590e57748b13676789fb992ade28d9ee6dbcf84109de3eb4b3d",
       "bytes": 326
@@ -9615,6 +9640,11 @@
       "path": "tests/test_graphprize.py",
       "sha256": "9008a7a6d7203fbe63bd634f428e7a816d5e058b7688d3604848069908120a8e",
       "bytes": 1005
+    },
+    {
+      "path": "tests/test_handoff_restore.py",
+      "sha256": "a1df9c41ecdcd0246779069bcf56149d8a70a51d0af9ac4959a1b8e80e6a7d28",
+      "bytes": 7614
     },
     {
       "path": "tests/test_maxcover.py",

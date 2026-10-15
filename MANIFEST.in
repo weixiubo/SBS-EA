@@ -8,3 +8,4 @@ graft reproduce
 recursive-include src/sbs_ea *.py *.json *.gz py.typed
 graft tests
 global-exclude __pycache__ *.py[cod]
+recursive-include handoff *

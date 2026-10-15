@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "project": "SBS-EA",
+  "repository": "weixiubo/SBS-EA",
+  "release": "handoff-2026-10-15",
+  "public": true,
+  "manifest": {
+    "name": "materials.json.gz",
+    "size": 4249202,
+    "sha256": "395f7fbb9b6b87bbbbc90dd7ee1fc8a6a21383ceb571ef889d5a8317737bef57"
+  },
+  "parts": [
+    {
+      "name": "materials.tar.gz.part001",
+      "size": 967538377,
+      "sha256": "c72b98c441ab35b8c3609b12e309582806d09e03d41be5975ebd8a45e1cad048"
+    }
+  ],
+  "archive_sha256": "c72b98c441ab35b8c3609b12e309582806d09e03d41be5975ebd8a45e1cad048",
+  "totals": {
+    "entries": 48933,
+    "files": 42324,
+    "logical_file_bytes": 3006541674,
+    "unique_objects": 32009,
+    "unique_bytes": 2765527162,
+    "excluded_paths": 7802,
+    "excluded_bytes": 873775440
+  }
+}
