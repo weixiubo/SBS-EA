@@ -1,6 +1,6 @@
 # Validation
 
-The current suite contains 148 cases, including 75 deterministic comparisons
+The current suite contains 154 cases, including 75 deterministic comparisons
 against original producer modules. Comparisons cover priors, budget
 normalization, source-EA and no-operator results, GP search, probe trajectories,
 atomic selection and statistics. `TEST_MIGRATION.json` and
@@ -25,3 +25,11 @@ Wheel checks inspect licenses and package resources, import installed modules
 and execute search and reproduction outside the source tree. The sdist check
 creates a fresh locked environment, runs the full suite and compares rebuilt
 wheel contents. Source exports verify all `PUBLIC_MANIFEST.json` identities.
+
+## Public handoff acceptance
+
+Six additional handoff tests cover Unicode paths, missing and corrupt parts,
+repeat execution, modified-file protection, upstream assets and optional
+models. The current counts above include these cases. Full restoration,
+research-material checks and inherited limitations are recorded in the
+[handoff release](https://github.com/weixiubo/SBS-EA/releases/tag/handoff-2026-10-15).

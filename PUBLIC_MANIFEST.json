@@ -118,8 +118,8 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "8c3e07632b8f8b8397d0e45800ab4de3640617b2f06152d52b7eee585ef0c15a",
-      "bytes": 1366
+      "sha256": "b7e512398d8977233b99171b9bff82286753be3b734c52d1388c4fd149b96d70",
+      "bytes": 1777
     },
     {
       "path": "examples/make_inputs.py",
