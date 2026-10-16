@@ -2,26 +2,26 @@
   "schema": 2,
   "project": "SBS-EA",
   "repository": "weixiubo/SBS-EA",
-  "release": "research-artifacts-2026-10-16",
+  "release": "research-artifacts-2026-10-17",
   "public": true,
   "manifest": {
     "name": "materials.json.gz",
-    "size": 3097784,
-    "sha256": "619d65a59c35913019666ebc4c7c67b0ae37b5f68228bcab662015ed1fedd5a2"
+    "size": 2684966,
+    "sha256": "698f9015cd225d6d980d25ade6a2548d9d09a3b64486a08193af97883d8b3f7e"
   },
   "parts": [
     {
       "name": "materials.tar.gz.part001",
-      "size": 952728910,
-      "sha256": "1a1551188b6d32ad208c2edc845420465ebf2905265b40da416281f47bb0943c"
+      "size": 490193214,
+      "sha256": "54a0b603fae4ded83dd9c7334dbbdb81777a30c18cc35894cf760b9c2f831797"
     }
   ],
-  "archive_sha256": "1a1551188b6d32ad208c2edc845420465ebf2905265b40da416281f47bb0943c",
+  "archive_sha256": "54a0b603fae4ded83dd9c7334dbbdb81777a30c18cc35894cf760b9c2f831797",
   "totals": {
-    "entries": 37993,
-    "files": 33495,
-    "logical_file_bytes": 2899967360,
-    "unique_objects": 29107,
-    "unique_bytes": 2743843794
+    "entries": 33719,
+    "files": 29342,
+    "logical_file_bytes": 2174192784,
+    "unique_objects": 24988,
+    "unique_bytes": 2033521122
   }
 }

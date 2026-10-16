@@ -43,8 +43,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "a0386ae09152c3ec1613ae49646027e2b2af72587959cde213d380d234ba6766",
-      "bytes": 3059
+      "sha256": "5c09a849fe42d83d33461fc917bed4b189defb809f31a98267fc13f3334e589d",
+      "bytes": 3060
     },
     {
       "path": "SOURCE_PROVENANCE.json",
@@ -73,8 +73,8 @@
     },
     {
       "path": "docs/ARTIFACTS.md",
-      "sha256": "d944f0e3f062143733a1397412ae48bbd7f386394538a767dba89822f9f48b50",
-      "bytes": 4349
+      "sha256": "4e5d5be83aba8d9af34a8c001f429ad4d13c5e3e89e8cd5093cbe19e3a13ebbb",
+      "bytes": 2818
     },
     {
       "path": "docs/DEVELOPMENT.md",
@@ -123,7 +123,7 @@
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "046f355332dad9550d4acaf414e65554911a54ad272c7b53de7b974a60e82c6f",
+      "sha256": "d67e20b9ff0ebb515983c05e53387c703988524c383675656bf4b21cde4a6799",
       "bytes": 1863
     },
     {
@@ -138,18 +138,18 @@
     },
     {
       "path": "handoff/catalog.json",
-      "sha256": "922dbc08a86fdeb311bd9114e43b22312c8db3faed6d42758f82836ae2af7758",
+      "sha256": "a0c2a3757a6a1c25d20452a9db0acb0d1f68bbbe2076b79b14c99b4ff6b1fa96",
       "bytes": 723
     },
     {
       "path": "handoff/history-index.json",
-      "sha256": "19a64700116f63cc783f98e943dd78d08e12ccfddf8c196826f81c7b3bea658c",
+      "sha256": "51397f2162d1839547ffe781df5d4caed005746c26ca3cdfc85df3a308b36f2b",
       "bytes": 9099
     },
     {
       "path": "handoff/material-disposition.json",
-      "sha256": "ffec3a6731896c196f31b9a605893416db8fd914c8a0dcc5a448e7b0f677be57",
-      "bytes": 340
+      "sha256": "68060af8dc6a9a482f86a8282d8ae5de5975f12ba96b5c0e4e741583c85230b5",
+      "bytes": 521
     },
     {
       "path": "protocols/pfsp_enlarged_random_posthoc_robustness_v1.json",
@@ -193,8 +193,8 @@
     },
     {
       "path": "reproduce/README.md",
-      "sha256": "8a3ffefd091be865ab6d593d1463f125a2e6551ce36b339204f44de7862f01b3",
-      "bytes": 1559
+      "sha256": "945155578869f1a426f173ff5c2db433c38771e9460b25bbbb75d26d1c79ac71",
+      "bytes": 1711
     },
     {
       "path": "reproduce/frozen/evidence/pfsp_final_crossed_confirmation/capacity_controls/capacity_control_manifest.json",

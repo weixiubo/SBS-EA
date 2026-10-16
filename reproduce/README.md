@@ -4,8 +4,8 @@
 uv run sbs-ea reproduce
 ```
 
-`python reproduce/verify.py` provides the repository entrypoint. The offline
-verifier checks 1,802 original evidence files, construction accounting and
+The repository command above runs the packaged verifier. The offline
+verifier checks 1,802 published evidence files, construction accounting and
 stored policy outcomes, then reconstructs condition mean gaps for VFR220.
 Bootstrap intervals are checked against their recorded evidence bindings.
 
@@ -31,3 +31,6 @@ follows the selected model's requirements. Current PFSP experiments use
 `sbs-ea run --config` with supplied dataset and proposal records; see
 [resources](../docs/RESOURCES.md). The generated-data example exercises search
 and control at fixed seeds with an NEH reference.
+
+The current public edition omits recorded model-message bodies. Its integrity
+indexes bind the published records; recorded statistical outcomes are retained.

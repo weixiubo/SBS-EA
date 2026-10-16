@@ -1,12 +1,12 @@
 {
   "schema": 2,
   "project": "SBS-EA",
-  "edition": "2026-10-16",
+  "edition": "2026-10-17",
   "contents": [
-    "Source versions",
-    "Recorded experiments and supporting inputs",
-    "Manuscripts and figures",
-    "Source-version correspondence"
+    "Maintained and historical computational source",
+    "Published measurements and supporting research inputs",
+    "Final manuscript sources and figures"
   ],
-  "integrity": "File sizes, SHA-256 identities, permissions and links are specified in the release manifest."
+  "scope": "Recorded model-message bodies, internal reviews, intermediate manuscript drafts, runtime databases and browser authentication captures are excluded.",
+  "integrity": "The public-edition manifest specifies file sizes, SHA-256 identities, permissions and links."
 }
