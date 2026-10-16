@@ -14,7 +14,7 @@ The installed package supports PFSP source-EA and its controls. Earlier
 BPP/JSSP selectors and manuscript-generation workflows are recorded in
 `SCOPE_MIGRATION.json`; current execution uses the `sbs-ea` entrypoint.
 
-`TEST_MIGRATION.json` maps test ownership. The current 148-case suite includes
+`TEST_MIGRATION.json` maps test ownership. The 148-case implementation suite includes
 75 deterministic comparisons and assertions from nine original test files
 relevant to the supported scope. Original evidence is verified separately
 by `sbs-ea reproduce`; new runs record distinct source and input identities.

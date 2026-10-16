@@ -1,4 +1,4 @@
-"""Restore and verify the public research handoff on Linux/WSL."""
+"""Restore and verify the public research artifacts on Linux/WSL."""
 
 from __future__ import annotations
 
@@ -42,7 +42,7 @@ def load_catalog(path: Path | None = None) -> dict[str, Any]:
     location = path or Path(__file__).resolve().parents[1] / "handoff/catalog.json"
     catalog = json.loads(location.read_text())
     if catalog.get("schema") != 1:
-        raise ValueError("Unsupported handoff catalog")
+        raise ValueError("Unsupported artifact catalog")
     return catalog
 
 
@@ -366,5 +366,5 @@ if __name__ == "__main__":
     try:
         raise SystemExit(main())
     except (OSError, ValueError, RuntimeError, subprocess.CalledProcessError) as error:
-        print(f"Handoff failed: {error}", file=sys.stderr)
+        print(f"Artifact restoration failed: {error}", file=sys.stderr)
         raise SystemExit(2) from error

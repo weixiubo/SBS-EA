@@ -1,4 +1,4 @@
-"""End-to-end restoration tests for the offline handoff interface."""
+"""End-to-end restoration tests for the offline artifact interface."""
 
 import gzip
 import hashlib

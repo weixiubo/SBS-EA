@@ -1,5 +1,5 @@
 {
-  "reason": "User explicitly requested deletion of downloaded third-party full texts on 2026-10-15.",
+  "reason": "Separately collected third-party full-text documents were excluded from the public archive on 2026-10-15.",
   "stores": [
     {
       "original_git_dir": "/home/weixiubo/research/archives/2026-10-02-open-source/SBS-EA/original/当前/.git",
