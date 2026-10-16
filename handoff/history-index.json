@@ -1,94 +1,98 @@
 {
-  "reason": "Separately collected third-party full-text documents were excluded from the public archive on 2026-10-15.",
-  "stores": [
+  "schema": 2,
+  "project": "SBS-EA",
+  "repositories": [
     {
-      "original_git_dir": "/home/weixiubo/research/archives/2026-10-02-open-source/SBS-EA/original/当前/.git",
-      "restored_git_dir": "snapshot/historical-git/git-01/repository.git",
-      "removed_blobs": [
-        "08117d571ce409df0ca717fba73c54471c3f6f77",
-        "65d4bf3bcc1a360a9166ef2795378294579a1d02",
-        "8cc9df7949601eab92247481cbf3a6b2c04cceb7",
-        "a76abcd8f76cb3fb64ec9a81a89dcbc400fa9b8f",
-        "c21d645222eeae333a06eb30d7fffba979bb16c7",
-        "cbdbbad1bbe1b492894248c3e13b2cd48544d5f3",
-        "d27a96bc0ae87535ab93c63c819f5d61613145d3",
-        "fed37ac06d3e468fafc3b6f8cd1db9cd83f18f1e"
-      ],
-      "named_fulltexts": [
-        {
-          "object": "fed37ac06d3e468fafc3b6f8cd1db9cd83f18f1e",
-          "path": "literature/aaai_exemplars/eohs_aaai26.pdf",
-          "sha256": "150a05379384fa0f5b1c2ed9f1f5708f815162c1a15ffdcb6bf73bca46720ca5",
-          "size": 443823
-        },
-        {
-          "object": "a76abcd8f76cb3fb64ec9a81a89dcbc400fa9b8f",
-          "path": "literature/aaai_exemplars/hsevo_aaai25.pdf",
-          "sha256": "3626e8626bd65cb0dd6fd5e9143e54c85d3c938b97b90d187866e67ae4f45158",
-          "size": 244953
-        },
-        {
-          "object": "8cc9df7949601eab92247481cbf3a6b2c04cceb7",
-          "path": "literature/aaai_exemplars/hydra_aaai10.pdf",
-          "sha256": "c812c5e852dc5bc4237510de0db1083bd188d1237f6b8fcded3fe09bb6ee1cbf",
-          "size": 373146
-        },
-        {
-          "object": "65d4bf3bcc1a360a9166ef2795378294579a1d02",
-          "path": "literature/aaai_exemplars/meoh_aaai25.pdf",
-          "sha256": "f0966f7610ea6e319fdb97cdeeb6d90368ae6134244798a3c12e04bb58ebf09a",
-          "size": 296832
-        },
-        {
-          "object": "08117d571ce409df0ca717fba73c54471c3f6f77",
-          "path": "literature/aaai_exemplars/mpage_aaai26.pdf",
-          "sha256": "41bbe13733b6f6d1cdaf6a0b1bb6ed91a27ba14e42b8aa98492e1ddc0b6bfe27",
-          "size": 382559
-        },
-        {
-          "object": "c21d645222eeae333a06eb30d7fffba979bb16c7",
-          "path": "literature/aaai_exemplars/saycanpay_aaai24.pdf",
-          "sha256": "5f4a4d972e9b52834558867ec115a4a13a11b9ab0732f5796f0c49788f82fea2",
-          "size": 502953
-        },
-        {
-          "object": "cbdbbad1bbe1b492894248c3e13b2cd48544d5f3",
-          "path": "literature/aaai_exemplars/llm_moea_aaai25.pdf",
-          "sha256": "635ef2a0f141896b8691c83af5836e0c52a2dccc3d108db922f938286c2119b7",
-          "size": 275482
-        },
-        {
-          "object": "d27a96bc0ae87535ab93c63c819f5d61613145d3",
-          "path": "literature/aaai_exemplars/trajevo_aaai26.pdf",
-          "sha256": "1d813ad7c728b42ed1865d5c5cf4a10325ea40f8dc36b107961672e87b5a31cc",
-          "size": 4774080
-        }
-      ],
-      "preserved_blob_count": 22252,
-      "original_commit_count": 4692,
-      "mapped_commit_count": 4692,
-      "unreferenced_blobs_preserved": 0,
-      "fsck_passed": true,
-      "commit_map_sha256": "d0b5dcea97e640d2e81ff720fa807160d18a0a032d757c89cc478c61616f3ebe"
+      "id": "research",
+      "bundle": "snapshot/source-history/research/source.bundle",
+      "repository": "snapshot/source-history/research/repository.git",
+      "head": "refs/heads/submission/aaai27-final-20260725",
+      "refs": {
+        "refs/handoff-retained/4f0bf67b6f33ab57754cf11e15c3d5412a57d7b9": "0629badbb66a68fb010adb499ae54e2d3180bac4",
+        "refs/heads/candidate/aaai27-end-to-end-timing-20260725": "49020c9cd5651f816420def5604685d721dd7bb4",
+        "refs/heads/candidate/aaai27-f3f3-pagefix-20260725": "1ccddcab395ae3e8cee14d8c406fc8a1a5d47f33",
+        "refs/heads/candidate/aaai27-method-first-20260725": "ccb22c522eb0e0926dc2eea9f4193e83a53cd321",
+        "refs/heads/candidate/aaai27-source-audit-appendix-20260725": "ff661d99066b962d0ea96189751dacdf5e870f5e",
+        "refs/heads/experiment/pfsp-symbolic-gp-vfr220-20260725": "1f7e36cd3cfe6c60d16da67d341691614cd878d7",
+        "refs/heads/submission/aaai27-fallback-final-20260725": "68b0406763784ca48587b487df6cd72ffe5f8cf3",
+        "refs/heads/submission/aaai27-final-20260725": "acd8685ace980748edb816a62504ed9986d3cbdc",
+        "refs/heads/保留改动/2026-4-14idea-28d-hardgate-484a05f4": "554bafd3f60f45958d6f1c4582fc84ccf8c9285e",
+        "refs/heads/保留改动/2026-4-14idea-8d4911e4": "3841e65650d9fed49473f3c70149fa73ae6f246b",
+        "refs/heads/保留改动/2026-4-14idea-aaai27-6ef1c170": "3cde12cff409bd032279aeeb1601e17ebab8dd4a",
+        "refs/heads/保留改动/aaai27_fallback_final-7766ebfd": "ac225dac0424707a11939212f8bc1a1b31aed530",
+        "refs/heads/保留改动/aaai27_gp_external-9dfbb5a1": "e73e7b84fcbde2c6777f5a2a055654df0e2d24bc",
+        "refs/heads/保留改动/aaai27_method_first_candidate-fd53d645": "fd88344c00d2e93f758cc46a17fa283428744910",
+        "refs/heads/保留改动/aaai27_patch_worktree-46cb5db3": "68fecd51e42aca5e48e494a99bf51eb5db0dc0e3",
+        "refs/heads/保留改动/aaai27_population_candidate_final-9310a4b3": "8884a0875af2ba295efda2d1b5e2979f0734b7df",
+        "refs/heads/保留改动/aaai27_population_promotion_candidate-c9e8118f": "c1dae6166817d059a72f0e36f5cd96bfe7a258f4",
+        "refs/heads/保留改动/aaai27_timing_candidate-2d0bf75f": "671239807ff5e26c201b224b6f4c374e87dc5eaa",
+        "refs/heads/保留改动/cached_smoke_scale_path2_input_6c4ef21b.tar.gz-b3ae1b15": "ab3a0acf212fddc1176f49f9977058a6aa79c0ad",
+        "refs/heads/保留改动/frozen_jssp_worker_5f031d20-37826304": "16432f747df457cd76280aab4ab06069e460278e",
+        "refs/heads/保留改动/jsplib-master.zip-d500dfb6": "b8f33984b17eca1db98f8a0452d3f0b71af760ea",
+        "refs/heads/保留改动/jul21_f3_worktree-68068747": "f714b58a13cec69224dff8467ff0fa606614ac49",
+        "refs/heads/保留改动/official_aaai27_AuthorKit.zip-fdf07a9f": "914befde6c4fb15513e275621bd96b51865393e0",
+        "refs/heads/保留改动/pulse_rescue_v2-ad52ac26": "97d770b4efd6937480883e1416b8fcc5fffbf6f1",
+        "refs/heads/保留改动/sbs-ea-anonymous-artifact-4903b2fe.zip-17c88803": "94c4dfbd1ca4f78b0c8272959fc785e9b4acdf90",
+        "refs/heads/保留改动/sbs_ea_aaai2027_anonymous_code_bundle.zip-b0994787": "a6b389a89d1b4934d0cf6ae96c2d52b80866f4e9",
+        "refs/heads/保留改动/sbs_ea_anonymous_code_data.zip-a5cee008": "0336cc02746e887bfe2f56cedde93ed47e6ab46e",
+        "refs/heads/保留改动/sbs_ea_anonymous_code_data.zip-ec34277d": "b46c9aae8a3164f9b2e0cf9b70fdab082f43aa8d",
+        "refs/heads/保留改动/sbs_ea_anonymous_code_data_candidate.zip-26a399af": "3ae795e478326d51de53ea0372a84370a9fb4a88",
+        "refs/heads/保留改动/sbs_ea_anonymous_code_data_timing_candidate.zip-12fa26c2": "de08613ed37e8d8c6d855baa29c8ebe014077c6e",
+        "refs/heads/保留改动/sbs_ea_anonymous_code_data_timing_locked_update.zip-321aad1f": "6b26a04a6a51cccc94e94a45e01f8fe90697b2a7",
+        "refs/heads/保留改动/sbs_ea_v2_final-4b21dea8": "323a8cbc4517c6d28f56b0a50ea3de701960ed72",
+        "refs/heads/保留改动/semantic_order_aaai27_artifact.zip-90c5af05": "d4c3dd4594b04bf11172181a4672d3fa8aab9bce",
+        "refs/heads/保留改动/semantic_order_aaai27_artifact.zip-d0e0babd": "8df4f7f1b7e3e71291e4e9a673827571a7f1483f",
+        "refs/heads/保留改动/supplementary-research-70288fd8": "4831dbd7262ac6da0ce230c927b44a232a733e0e",
+        "refs/heads/保留版本/2026-4-14idea-28d-hardgate-484a05f4": "d6904b5e60b50791009113a28dafdc473419568b",
+        "refs/heads/保留版本/2026-4-14idea-8d4911e4": "efbc48f74effc9850f2bc58da0509c5d14912aeb",
+        "refs/heads/保留版本/2026-4-14idea-aaai27-6ef1c170": "12e5ded98f740db81a3bc72a015b61d45445d313",
+        "refs/heads/保留版本/SBSEA_AAAI27-01236780": "f1e39e0c2e0028879e59e077de91cd4cbaa75a96",
+        "refs/heads/保留版本/aaai27_incumbent_crossmodel-01ea29ac": "a6bcd2b953a9850efa324c1464589f24c8b2446f",
+        "refs/heads/保留版本/direct_rule_worktree-0c22ea73": "4581e7f8bacdb727aae7548782e749746da5810d",
+        "refs/heads/保留版本/jul21_f3_worktree-68068747": "813e274e9e796ceecac8fffbbb7b20d15b8bb29e",
+        "refs/heads/保留版本/pulse_rescue_v2-ad52ac26": "e66d91184727efece2953f9045c41780af661b7b",
+        "refs/heads/保留版本/sbs_ea_v2_final-4b21dea8": "7934975dab0dbc105878c1b48e90a82c6e902bce",
+        "refs/stash": "ddcd2d79769315d025defbe77485bdf68913f88d",
+        "refs/tags/source-aaai27-final-20260721": "55058ae0be58fe3bd89f62f5e80cf6c85ec389a9",
+        "refs/tags/source-aaai27-final-20260721-v2": "c09bb46d33af34a75284321374ff78665d52d01f",
+        "refs/tags/source-aaai27-final-20260721-v3": "3bd410f178a843c0bd3f8c5717403f0b97aab6e5",
+        "refs/保留备份提交/190939947f7d492d6e751fb56d7268702ea3726f": "2b067ee67123b7f9abf4980b96c0508bbb074bd5",
+        "refs/保留备份提交/1994b5e7654f26d0f4942df315ca6b94ee40d675": "645b99bea0d0fb83e72b33d3e7091e0e8493a83f",
+        "refs/保留备份提交/373933c97330ddcd3327c60c53655ab8346b8245": "89be7f3ccbeedc0729e83532ca8050c7bf477856",
+        "refs/保留备份提交/3d761469a8b192c3320c0cc5fe2f85dd5b929a2b": "d06f9d841f43beddf6571ffac7bbbfb55f293ddb",
+        "refs/保留备份提交/42ce8b3a8d7c08def34bd71d3ffa1377be448c47": "9d816c4ab02ba306a6ec53106538a2fbac858662",
+        "refs/保留备份提交/48ad24c8d2ee3bd52877b598306f21c709a9fda4": "25a358ab8bca455a526908bd1af0079424630dab",
+        "refs/保留备份提交/51656c1ff7de680c830ae8be06c9efa76025785c": "676a2dd77c76bee2daffd77176e72e54c878db96",
+        "refs/保留备份提交/69d7d6a7b5d47c6f7ee80489d1a6cb252b56ef0b": "3746fd47ea2c3af09718766990eae30107adbd8d",
+        "refs/保留备份提交/7c5b7bec9d9431a10488cacc36adb5cf3d0cbfe0": "296b197d142528dcc77d460ed5e26e2b76db7976",
+        "refs/保留备份提交/7d1cdedb3b30ec6fad40a478d54d2541ec7d0388": "51716704b28ff6a10459c86dd9df1128322314c5",
+        "refs/保留备份提交/96399245034abf669c349e265043dcc2ab879ecf": "197173fba0865615e38ce12b286c6bc4601a2ea6",
+        "refs/保留备份提交/a6d012ae6ebd35b6b2915c68622fc478bc2244ea": "4dbd774796e6477d8cfc2a5c44c1ed36fc3cc0a9",
+        "refs/保留备份提交/a8c09239cbfdfd511806691ff78367411eb3e4a4": "16ba2cf115f5ba75a08caf17888c745e862dfa9b",
+        "refs/保留备份提交/af7d719cf16f7be6dc209b0302565895a0162223": "6480bc1b5c93c86cb6a0e22de37146e63126ba1c",
+        "refs/保留备份提交/af9d75dc9632780b728d416ef7c5b8b833e64a05": "da47b73075c6fd53ef5c7e9248fedc6884a224dc",
+        "refs/保留备份提交/b3dc869d9104995268520bf4b9adb54f7d148c65": "4c3e16947512939ddc83e228345d00b443edce62",
+        "refs/保留备份提交/c3b842590bbc6d4027c5ca2e23d991725ca08a2c": "4581e7f8bacdb727aae7548782e749746da5810d",
+        "refs/保留备份提交/cc4f8c825266c044d3eea5d7b0b93ee76d7d6170": "51f26a79c1aca47564b1d3b8ccbf3cc8e979f105",
+        "refs/保留备份提交/ce3b5b99278b4e122741dd49a8c4f4bac1eb1ded": "72bb06072aeef6780011cf9d994e7d4e7d17c503",
+        "refs/保留备份提交/d4a791a5578bd50f6e24def4cce21180585ff1de": "8f43f382cc3819e80bb22b64ed592adde34a406f",
+        "refs/保留备份提交/d5f78b08ee475c3da8eaca4d132dcec68abdba07": "54b7b03c08b7a7ee86a5fa369111051c538c87e3",
+        "refs/保留备份提交/ea5135cef120d31511c845c9d4c2675facf69486": "f86a67f07f500ab2de3e258c540ef80ff34b2667",
+        "refs/保留备份提交/fcc268483473db306135abeacd7040527d930be2": "d6e9655f7bf49725948a068fd45a62f2d4307a2b"
+      },
+      "revision_map": "snapshot/source-history/research/commit-map.txt"
+    },
+    {
+      "id": "implementation",
+      "bundle": "snapshot/source-history/implementation/source.bundle",
+      "repository": "snapshot/source-history/implementation/repository.git",
+      "head": "refs/heads/main",
+      "refs": {
+        "refs/heads/main": "451345f7b1069d4e11aad44f225af6a69b5d7a05",
+        "refs/heads/refactor/public-research-release": "df952a9dc9498a4cbcdd1e25496a9f3b28fe0505",
+        "refs/remotes/origin/main": "451345f7b1069d4e11aad44f225af6a69b5d7a05"
+      },
+      "revision_map": "snapshot/source-history/implementation/commit-map.txt"
     }
-  ],
-  "deleted_fulltext_hashes": [
-    "1348834b7a7c403f8439657b8889bcb4cddfa0a20149eace8e05cc6dab64691f",
-    "143f021d0d4b04c10b51686f660088d1efbc722d8bc0cca98c1317c3d9471182",
-    "150a05379384fa0f5b1c2ed9f1f5708f815162c1a15ffdcb6bf73bca46720ca5",
-    "1ad0a5b97db4df172d46e696b813d264585e4d941bb77091c5c85f5921c306ca",
-    "1d813ad7c728b42ed1865d5c5cf4a10325ea40f8dc36b107961672e87b5a31cc",
-    "3626e8626bd65cb0dd6fd5e9143e54c85d3c938b97b90d187866e67ae4f45158",
-    "3afb28e0adcca8ca8e214e264b0de41a69c24e85fe8d1bb915820318467e28a1",
-    "41bbe13733b6f6d1cdaf6a0b1bb6ed91a27ba14e42b8aa98492e1ddc0b6bfe27",
-    "54ab283c13c63a8033058fc1c844e522e403c222b7d23ba7be29c0c650c6a44f",
-    "5f4a4d972e9b52834558867ec115a4a13a11b9ab0732f5796f0c49788f82fea2",
-    "635ef2a0f141896b8691c83af5836e0c52a2dccc3d108db922f938286c2119b7",
-    "7762b2503b0d48e2be700e0d3fd23af937588f51c9c2bfd5042205c549737c87",
-    "a3ddae4cee97529216408e3e08aa31fa7bc8d609fb500dab534520983f256086",
-    "c812c5e852dc5bc4237510de0db1083bd188d1237f6b8fcded3fe09bb6ee1cbf",
-    "d689c44fa24d454329c074f1a9cd2ba1a298e822d41307eec8f7a3c193913a64",
-    "f0966f7610ea6e319fdb97cdeeb6d90368ae6134244798a3c12e04bb58ebf09a",
-    "f7917d8ecb4a92270f31cf1c3ed305a1af2a677d64c5a1d1ac366556340b791d"
   ]
 }

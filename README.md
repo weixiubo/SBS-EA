@@ -9,7 +9,7 @@ symbolic genetic-programming comparison.
 
 The [artifact guide](docs/ARTIFACTS.md) describes the recorded experiments,
 manuscript sources, datasets and historical source versions in the
-[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/handoff-2026-10-15).
+[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/research-artifacts-2026-10-16).
 Downloads are public and include file-level integrity verification.
 
 ## Installation and examples

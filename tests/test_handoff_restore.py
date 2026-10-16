@@ -206,3 +206,145 @@ def test_optional_model_restore_and_changed_file_refusal(tmp_path):
     result = subprocess.run(command, capture_output=True, text=True, check=False)
     assert result.returncode == 2 and "Existing modified model" in result.stderr
     assert destination.read_bytes() == b"locally modified checkpoint"
+
+
+def git_fixture_command(path, *args):
+    return subprocess.check_output(
+        [
+            "git",
+            "-c",
+            "user.name=Archive test",
+            "-c",
+            "user.email=archive@example.invalid",
+            "-c",
+            "core.hooksPath=/dev/null",
+            "-C",
+            str(path),
+            *args,
+        ],
+        stderr=subprocess.STDOUT,
+        text=True,
+    ).strip()
+
+
+def sample_history(tmp_path):
+    root, catalog_path, contents = sample(tmp_path)
+    source = tmp_path / "source"
+    source.mkdir()
+    git_fixture_command(source, "init", "-b", "main")
+    (source / "result.txt").write_text("recorded input\n")
+    git_fixture_command(source, "add", "result.txt")
+    git_fixture_command(source, "commit", "-m", "Record input")
+    git_fixture_command(source, "tag", "v1")
+    (source / "result.txt").write_text("recorded result\n")
+    git_fixture_command(source, "commit", "-am", "Record result")
+    bundle = tmp_path / "source.bundle"
+    git_fixture_command(source, "bundle", "create", str(bundle), "--all")
+    refs = dict(
+        line.split()
+        for line in git_fixture_command(
+            source, "for-each-ref", "--format=%(refname) %(objectname)"
+        ).splitlines()
+    )
+    downloads = root / ".handoff-downloads"
+    manifest_path = downloads / "materials.json.gz"
+    manifest = json.loads(gzip.decompress(manifest_path.read_bytes()))
+    manifest["schema"] = 2
+    for item in manifest["roots"]:
+        item.pop("original_path")
+    for item in manifest["entries"]:
+        if item["kind"] == "symlink":
+            item["restored_target"] = "内容.txt"
+    manifest["roots"].append({"id": "history", "restore_prefix": "history"})
+    payload = bundle.read_bytes()
+    sha = hashlib.sha256(payload).hexdigest()
+    manifest["objects"].append({"sha256": sha, "size": len(payload)})
+    manifest["entries"].append(
+        {
+            "root": "history",
+            "path": "source.bundle",
+            "kind": "file",
+            "mode": 0o644,
+            "mtime_ns": 0,
+            "sha256": sha,
+            "size": len(payload),
+        }
+    )
+    manifest["histories"] = [
+        {
+            "bundle": "history/source.bundle",
+            "repository": "history/repository.git",
+            "head": "refs/heads/main",
+            "refs": refs,
+        }
+    ]
+    buffer = io.BytesIO()
+    with tarfile.open(fileobj=buffer, mode="w:gz") as archive:
+        for data in (contents, payload):
+            info = tarfile.TarInfo("objects/" + hashlib.sha256(data).hexdigest())
+            info.size = len(data)
+            archive.addfile(info, io.BytesIO(data))
+    packed = buffer.getvalue()
+    catalog = json.loads(catalog_path.read_text())
+    catalog["schema"] = 2
+    for item, data in zip(
+        catalog["parts"], (packed[: len(packed) // 2], packed[len(packed) // 2 :]), strict=True
+    ):
+        (downloads / item["name"]).write_bytes(data)
+        item.update(size=len(data), sha256=hashlib.sha256(data).hexdigest())
+    material = gzip.compress(json.dumps(manifest).encode(), mtime=0)
+    manifest_path.write_bytes(material)
+    catalog["manifest"].update(size=len(material), sha256=hashlib.sha256(material).hexdigest())
+    catalog_path.write_text(json.dumps(catalog))
+    return root, catalog_path, refs
+
+
+def test_portable_history_restores_offline_and_repeats(tmp_path):
+    root, catalog, refs = sample_history(tmp_path)
+    restored = call(root, catalog)
+    assert restored.returncode == 0, restored.stderr
+    path = root / "history/repository.git"
+    actual = dict(
+        line.split()
+        for line in git_fixture_command(
+            path, "for-each-ref", "--format=%(refname) %(objectname)"
+        ).splitlines()
+    )
+    assert actual == refs
+    assert call(root, catalog).returncode == 0
+    assert call(root, catalog, "verify").returncode == 0
+
+
+def test_history_ref_modifications_are_preserved_and_rejected(tmp_path):
+    root, catalog, refs = sample_history(tmp_path)
+    assert call(root, catalog).returncode == 0
+    path = root / "history/repository.git"
+    git_fixture_command(path, "update-ref", "refs/heads/local-work", refs["refs/heads/main"])
+    for command in ("restore", "verify"):
+        result = call(root, catalog, command)
+        assert result.returncode == 2
+        assert "references have changed" in result.stderr
+    assert git_fixture_command(path, "rev-parse", "refs/heads/local-work") == refs["refs/heads/main"]
+
+
+def test_history_external_object_dependency_is_rejected(tmp_path):
+    root, catalog, _ = sample_history(tmp_path)
+    assert call(root, catalog).returncode == 0
+    alternates = root / "history/repository.git/objects/info/alternates"
+    alternates.write_text(str(tmp_path / "external-objects") + "\n")
+    result = call(root, catalog, "verify")
+    assert result.returncode == 2
+    assert "external object dependencies" in result.stderr
+
+
+def test_history_symlink_cannot_redirect_restoration(tmp_path):
+    root, catalog, _ = sample_history(tmp_path)
+    outside = tmp_path / "separate-content"
+    outside.mkdir()
+    (outside / "record.txt").write_text("retain local content\n")
+    (root / "history").mkdir()
+    (root / "history/repository.git").symlink_to(outside, target_is_directory=True)
+    result = call(root, catalog)
+    assert result.returncode == 2
+    assert (outside / "record.txt").read_text() == "retain local content\n"
+    assert sorted(p.name for p in outside.iterdir()) == ["record.txt"]

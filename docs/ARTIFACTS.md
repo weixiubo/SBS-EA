@@ -1,14 +1,15 @@
 # Research artifacts
 
-This repository contains the maintained SBS-EA implementation. Its public
-[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/handoff-2026-10-15) contains the
-research materials and their file-level checksums. The archive includes
-recorded experiments, supporting inputs and historical source versions.
+The [research archive](https://github.com/weixiubo/SBS-EA/releases/tag/research-artifacts-2026-10-16)
+contains recorded experiments, supporting inputs, manuscripts, figures and
+source versions for SBS-EA. Maintained source and installation instructions
+are available on the main branch.
 
-## Restore and use
+## Download and verification
 
-Use Linux or WSL, with the checkout and material directory on the Linux
-filesystem. Install Git, Python 3.11 and uv, then run:
+Use Git, Python 3.11 and uv on Linux or WSL. The destination must be on the
+Linux filesystem. Use an empty destination when selecting a different archive
+edition; repeated restoration of the same edition reuses verified files.
 
 ```sh
 git clone https://github.com/weixiubo/SBS-EA.git
@@ -20,48 +21,54 @@ uv sync --locked
 uv run --no-sync sbs-ea doctor
 uv run --no-sync sbs-ea demo
 uv run --no-sync sbs-ea reproduce
-uv run --no-sync pytest -q
 ```
 
-No GitHub account is required. Every release part is required; the script
-checks downloads before extraction and verifies restored paths, SHA-256,
-permissions and symbolic links. Repeating restoration reuses verified files
-and refuses to overwrite local modifications. `--offline` uses existing
-verified downloads. Keep new work outside the immutable `snapshot/` tree.
+Downloads require no GitHub account. All material parts are required. The
+client verifies each download before extraction, then checks paths, sizes,
+SHA-256 identities, file permissions and symbolic links. Existing modified
+files or source-history references cause an error. `--offline` uses a complete
+set of previously verified downloads.
 
-`resources.json` and `activate.sh` bind the restored inputs and a fresh run
-output directory. Resource prerequisites for new experiments remain listed
-in [RESOURCES.md](RESOURCES.md). Frozen evidence verification reconstructs
-recorded results; it does not rerun GPU inference or live platform studies.
+## Archive organization
 
-## Material organization
+| Location | Contents |
+| --- | --- |
+| `snapshot/data/` | Recorded research inputs and resource metadata |
+| `snapshot/runs/` | Experiment records |
+| `snapshot/archive-original*/` | Historical research materials and manuscript sources |
+| `snapshot/source-snapshot/` | A recorded implementation snapshot |
+| `snapshot/source-history/research/` | Research source history and revision correspondence |
+| `snapshot/source-history/implementation/` | Maintained implementation history and revision correspondence |
+| `resources.json`, `activate.sh` | Configuration for restored inputs and separate run outputs |
 
-- Git: maintained source, tests, dependency lock and development branch.
-- `snapshot/`: retained datasets, original experiment records, databases,
-  checkpoints, papers and historical source snapshots.
-- `snapshot/historical-git/`, when present: standalone historical Git stores,
-  original-to-public commit maps, branch identities and otherwise unreferenced
-  source blobs. `handoff/history-index.json` identifies each store.
-- `handoff/material-disposition.json`: resource sources and explicit content
-  transformations. Separately collected third-party literature PDFs are excluded;
-  project papers, references and bibliography metadata remain.
+The file manifest contains 33,495 retained file entries.
+Archive file identities are specified in `materials.json.gz`. The maintained
+source export is specified separately in `PUBLIC_MANIFEST.json`.
 
-Historical stores that contained excluded full texts have new commit IDs.
-Their commit maps preserve the correspondence to original scientific source
-identities. Retained source blobs are unchanged. Clone the selected
-`repository.git` into a separate directory to work on a historical version;
-keep the snapshot itself unchanged. Original branch, index and tag metadata
-are retained for provenance. Existing partial upstream vendor repositories
-remain identified as such and can use their recorded public origins.
+## Source versions
+
+Restoration creates independent bare repositories from the source bundles.
+Each repository is checked for complete object storage, its recorded branch
+and tag references, and its default branch. Source revision maps identify the
+correspondence between recorded versions and the distributed source editions.
 
 ```sh
-git clone /path/to/materials/snapshot/historical-git/git-NN/repository.git historical-work
+git clone ../SBS-EA-materials/snapshot/source-history/research/repository.git historical-source
 ```
 
-Caches, virtual environments and rebuildable distributions are omitted.
-Identical payloads are stored once in the release; historical paths that are
-needed to interpret records remain represented in the file manifest. The
-manifest contains 42,324 retained file entries.
+The source bundles are independent of the machine on which the experiments
+were recorded. [history-index.json](../handoff/history-index.json) lists the
+repositories and revision maps. Recorded experiment inputs, measurements and
+signed evidence retain their original bytes. The restored snapshot is read-only
+research material; new experiments use separate source and output directories.
+
+## Resource configuration and evidence
+
+`resources.json` and `activate.sh` select restored inputs and a separate output
+directory. [RESOURCES.md](RESOURCES.md) specifies additional model, browser,
+emulator and service requirements. The reproduction command checks recorded
+evidence and reconstructs the associated analysis; it does not rerun the full
+GPU or live-service experiment matrix.
 
 ## Historical benchmark downloads
 
@@ -74,13 +81,10 @@ packaged 1,802-file evidence verifier and generated-data examples are separate.
 Hard-coded API credentials in five archived third-party EoH examples are removed;
 the change records identify the original and sanitized file hashes.
 
-## Verification records and archive scope
+## Verification scope
 
-The release includes `verification.json`, `material-notes.json` and
-`history-equivalence.json`. These record the checks performed on 2026-10-15,
-source-version mappings and limitations of the historical inputs. Historical
-shallow boundaries, normalized remote-reference names and reconstruction
-commands are recorded in `history-equivalence.json`.
-Directory resources may still be labelled `present_unverified` by `doctor`;
-use the artifact verification command and the project's original evidence verifier
-for their complete file-level checks.
+The release provides file-level integrity indexes and a verification record.
+Software tests, source-history checks and evidence reproduction have distinct
+purposes. Their outcomes do not change the recorded scientific conclusions.
+Directory presence alone is reported as `present_unverified` by `doctor`;
+the artifact verifier performs the complete file-level checks.

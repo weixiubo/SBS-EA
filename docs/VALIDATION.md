@@ -1,6 +1,6 @@
 # Validation
 
-The current suite contains 154 cases, including 75 deterministic comparisons
+The current suite contains 158 cases, including 75 deterministic comparisons
 against original producer modules. Comparisons cover priors, budget
 normalization, source-EA and no-operator results, GP search, probe trajectories,
 atomic selection and statistics. `TEST_MIGRATION.json` and
@@ -28,8 +28,8 @@ wheel contents. Source exports verify all `PUBLIC_MANIFEST.json` identities.
 
 ## Artifact restoration checks
 
-Six artifact restoration tests cover Unicode paths, missing and corrupt parts,
-repeat execution, modified-file protection, upstream assets and optional
-models. The suite counts above include these cases. The restoration and
-research-material checks performed on 2026-10-15 are recorded in the
-[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/handoff-2026-10-15).
+Ten artifact restoration tests cover Unicode paths, missing and corrupt parts,
+repeat execution, modified-file protection, upstream assets, optional
+models and independent Git history with reference and link protection. The suite counts above include these cases. The restoration and
+research-material checks for the distributed archive edition are recorded in the
+[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/research-artifacts-2026-10-16).

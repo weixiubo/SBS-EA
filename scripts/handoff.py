@@ -14,6 +14,7 @@ import shutil
 import subprocess
 import sys
 import tarfile
+import tempfile
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -41,7 +42,7 @@ def checked_path(root: Path, relative: str) -> Path:
 def load_catalog(path: Path | None = None) -> dict[str, Any]:
     location = path or Path(__file__).resolve().parents[1] / "handoff/catalog.json"
     catalog = json.loads(location.read_text())
-    if catalog.get("schema") != 1:
+    if catalog.get("schema") not in {1, 2}:
         raise ValueError("Unsupported artifact catalog")
     return catalog
 
@@ -317,6 +318,90 @@ def external_models(root: Path, catalog: dict[str, Any], restore: bool, offline:
             raise ValueError(f"Optional model checksum mismatch: {asset['name']}")
 
 
+def history_git(path: Path, *args: str) -> str:
+    env = dict(
+        os.environ,
+        GIT_NO_LAZY_FETCH="1",
+        GIT_OPTIONAL_LOCKS="0",
+        GIT_TERMINAL_PROMPT="0",
+        GIT_CONFIG_NOSYSTEM="1",
+        GIT_CONFIG_GLOBAL="/dev/null",
+    )
+    result = subprocess.run(
+        [
+            "git",
+            "-c",
+            "gc.auto=0",
+            "-c",
+            "maintenance.auto=false",
+            "-c",
+            "core.hooksPath=/dev/null",
+            "-C",
+            str(path),
+            *args,
+        ],
+        env=env,
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    if result.returncode:
+        raise ValueError(f"Historical Git {args[0]} failed: {result.stderr.strip()}")
+    return result.stdout.strip()
+
+
+def history_path(root: Path, relative: str) -> Path:
+    path = checked_path(root, relative)
+    for item in (path, *path.parents):
+        if item == root:
+            break
+        if item.is_symlink():
+            raise ValueError(f"Symbolic link in historical repository path: {relative}")
+    return path
+
+
+def verify_history(root: Path, record: dict[str, Any]) -> None:
+    path = history_path(root, record["repository"])
+    if not path.is_dir() or (path / "objects/info/alternates").exists():
+        raise ValueError("Historical repository is missing or has external object dependencies")
+    if history_git(path, "rev-parse", "--is-bare-repository") != "true":
+        raise ValueError("Historical repository must be bare")
+    refs = dict(
+        line.split()
+        for line in history_git(path, "for-each-ref", "--format=%(refname) %(objectname)").splitlines()
+    )
+    if refs != record["refs"]:
+        raise ValueError("Historical Git references have changed")
+    if history_git(path, "symbolic-ref", "HEAD") != record["head"]:
+        raise ValueError("Historical Git HEAD has changed")
+    history_git(path, "fsck", "--full", "--no-reflogs")
+
+
+def restore_histories(root: Path, manifest: dict[str, Any]) -> None:
+    for record in manifest.get("histories", []):
+        target = history_path(root, record["repository"])
+        if target.exists():
+            verify_history(root, record)
+            continue
+        bundle = history_path(root, record["bundle"])
+        target.parent.mkdir(parents=True, exist_ok=True)
+        staging = Path(tempfile.mkdtemp(prefix=".history-", dir=target.parent))
+        try:
+            history_git(staging, "init", "--bare", ".")
+            history_git(staging, "fetch", "--no-tags", str(bundle), "+refs/*:refs/*")
+            history_git(staging, "symbolic-ref", "HEAD", record["head"])
+            staging.rename(target)
+        finally:
+            if staging.exists():
+                shutil.rmtree(staging)
+        verify_history(root, record)
+
+
+def verify_histories(root: Path, manifest: dict[str, Any]) -> None:
+    for record in manifest.get("histories", []):
+        verify_history(root, record)
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("command", choices=("restore", "verify"))
@@ -354,9 +439,11 @@ def main() -> int:
                 shutil.copyfile(cached, target)
         materialize(root, manifest, objects)
         prepare_resources(root, manifest)
+        restore_histories(root, manifest)
     if args.with_models:
         external_models(root, catalog, args.command == "restore", args.offline)
     result = verify(root, manifest)
+    verify_histories(root, manifest)
     (root / "verification.json").write_text(json.dumps(result, ensure_ascii=False, indent=2))
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0
