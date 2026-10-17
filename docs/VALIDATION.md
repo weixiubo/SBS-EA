@@ -32,4 +32,4 @@ Ten artifact restoration tests cover Unicode paths, missing and corrupt parts,
 repeat execution, modified-file protection, upstream assets, optional
 models and independent Git history with reference and link protection. The suite counts above include these cases. The restoration and
 research-material checks for the distributed archive edition are recorded in the
-[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/research-artifacts-2026-10-17).
+[research archive](https://github.com/weixiubo/SBS-EA/releases/tag/research-artifacts-2026-10-17-r2).
